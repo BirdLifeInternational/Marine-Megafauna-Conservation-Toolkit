@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>30 Track2KBA - Central Place Foragers: Analyse cleanded data | Marine Megafauna Conservation Toolkit</title>
+  <meta name="description" content="30 Track2KBA - Central Place Foragers: Analyse cleanded data | Marine Megafauna Conservation Toolkit" />
+  <meta name="generator" content="bookdown 0.37 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="30 Track2KBA - Central Place Foragers: Analyse cleanded data | Marine Megafauna Conservation Toolkit" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="30 Track2KBA - Central Place Foragers: Analyse cleanded data | Marine Megafauna Conservation Toolkit" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"/>
+<link rel="next" href="track2kba-non-central-place-foraging-animal-movement.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<link href="libs/vembedr-0.1.5/css/vembedr.css" rel="stylesheet" />
+<script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.2.1/leaflet.js"></script>
+<script src="libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
+<script src="libs/leaflet-providers-plugin-2.2.1/leaflet-providers-plugin.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#toolkit-overview"><i class="fa fa-check"></i>Toolkit overview</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#what-is-the-toolkit"><i class="fa fa-check"></i>What is the toolkit?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-does-the-toolkit-work"><i class="fa fa-check"></i>How does the toolkit work?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#what-content-does-the-toolkit-cover"><i class="fa fa-check"></i>What content does the toolkit cover?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#who-made-the-toolkit"><i class="fa fa-check"></i>Who made the toolkit</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="executive-summary.html"><a href="executive-summary.html"><i class="fa fa-check"></i><b>1</b> Executive summary</a></li>
+<li class="chapter" data-level="2" data-path="what-the-toolkit-offers.html"><a href="what-the-toolkit-offers.html"><i class="fa fa-check"></i><b>2</b> What the toolkit offers</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="what-the-toolkit-offers.html"><a href="what-the-toolkit-offers.html#key-biodiversity-areas"><i class="fa fa-check"></i><b>2.1</b> Key Biodiversity Areas</a></li>
+<li class="chapter" data-level="2.2" data-path="what-the-toolkit-offers.html"><a href="what-the-toolkit-offers.html#overview-of-toolkit-content"><i class="fa fa-check"></i><b>2.2</b> Overview of toolkit content</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="what-the-toolkit-does-not-offer.html"><a href="what-the-toolkit-does-not-offer.html"><i class="fa fa-check"></i><b>3</b> What the toolkit does not offer</a></li>
+<li class="chapter" data-level="4" data-path="contribute-to-the-toolkit.html"><a href="contribute-to-the-toolkit.html"><i class="fa fa-check"></i><b>4</b> Contribute to the toolkit</a></li>
+<li class="chapter" data-level="5" data-path="getting-a-site-conserved.html"><a href="getting-a-site-conserved.html"><i class="fa fa-check"></i><b>5</b> Getting a site conserved</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="getting-a-site-conserved.html"><a href="getting-a-site-conserved.html#theory-of-change"><i class="fa fa-check"></i><b>5.1</b> Theory of Change</a></li>
+<li class="chapter" data-level="5.2" data-path="getting-a-site-conserved.html"><a href="getting-a-site-conserved.html#simplified-theory-of-change"><i class="fa fa-check"></i><b>5.2</b> Simplified Theory of Change</a></li>
+<li class="chapter" data-level="5.3" data-path="getting-a-site-conserved.html"><a href="getting-a-site-conserved.html#detailed-theory-of-change"><i class="fa fa-check"></i><b>5.3</b> Detailed Theory of Change</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="project-management-considerations.html"><a href="project-management-considerations.html"><i class="fa fa-check"></i><b>6</b> Project management considerations</a></li>
+<li class="chapter" data-level="7" data-path="before-you-begin-a-kba-project.html"><a href="before-you-begin-a-kba-project.html"><i class="fa fa-check"></i><b>7</b> Before you begin a KBA project</a></li>
+<li class="chapter" data-level="8" data-path="sites-marine-sites-concepts.html"><a href="sites-marine-sites-concepts.html"><i class="fa fa-check"></i><b>8</b> Sites: Marine sites concepts</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="sites-marine-sites-concepts.html"><a href="sites-marine-sites-concepts.html#key-biodiversity-areas-1"><i class="fa fa-check"></i><b>8.1</b> Key Biodiversity Areas</a></li>
+<li class="chapter" data-level="8.2" data-path="sites-marine-sites-concepts.html"><a href="sites-marine-sites-concepts.html#important-bird-and-biodiversity-areas"><i class="fa fa-check"></i><b>8.2</b> Important Bird and Biodiversity Areas</a></li>
+<li class="chapter" data-level="8.3" data-path="sites-marine-sites-concepts.html"><a href="sites-marine-sites-concepts.html#other-sites"><i class="fa fa-check"></i><b>8.3</b> Other sites</a></li>
+<li class="chapter" data-level="8.4" data-path="sites-marine-sites-concepts.html"><a href="sites-marine-sites-concepts.html#important-sites-in-the-marine-environment"><i class="fa fa-check"></i><b>8.4</b> Important sites in the marine environment</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="sites-kbas-ibas.html"><a href="sites-kbas-ibas.html"><i class="fa fa-check"></i><b>9</b> Sites: KBAs &amp; IBAs</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="sites-kbas-ibas.html"><a href="sites-kbas-ibas.html#key-biodiversity-areas-kbas"><i class="fa fa-check"></i><b>9.1</b> Key Biodiversity Areas (KBAs)</a>
+<ul>
+<li class="chapter" data-level="9.1.1" data-path="sites-kbas-ibas.html"><a href="sites-kbas-ibas.html#kba-site-definition"><i class="fa fa-check"></i><b>9.1.1</b> KBA site definition</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="sites-kbas-ibas.html"><a href="sites-kbas-ibas.html#important-bird-and-biodiversity-areas-ibas"><i class="fa fa-check"></i><b>9.2</b> Important Bird and Biodiversity Areas (IBAs)</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="sites-kbas-ibas.html"><a href="sites-kbas-ibas.html#iba-site-definition"><i class="fa fa-check"></i><b>9.2.1</b> IBA site definition</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="sites-toolkit-context.html"><a href="sites-toolkit-context.html"><i class="fa fa-check"></i><b>10</b> Sites: Toolkit context</a></li>
+<li class="chapter" data-level="11" data-path="sites-method-considerations-for-project-managers.html"><a href="sites-method-considerations-for-project-managers.html"><i class="fa fa-check"></i><b>11</b> Sites: Method considerations for project managers</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="sites-method-considerations-for-project-managers.html"><a href="sites-method-considerations-for-project-managers.html#colony-site-abundance-data"><i class="fa fa-check"></i><b>11.1</b> Colony site (abundance data)</a></li>
+<li class="chapter" data-level="11.2" data-path="sites-method-considerations-for-project-managers.html"><a href="sites-method-considerations-for-project-managers.html#seaward-extension-site-distribution-estimates"><i class="fa fa-check"></i><b>11.2</b> Seaward extension site (distribution estimates)</a></li>
+<li class="chapter" data-level="11.3" data-path="sites-method-considerations-for-project-managers.html"><a href="sites-method-considerations-for-project-managers.html#pelagic-site-tracking-data"><i class="fa fa-check"></i><b>11.3</b> Pelagic site (tracking data)</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="sites-conservation-of-sites-summary.html"><a href="sites-conservation-of-sites-summary.html"><i class="fa fa-check"></i><b>12</b> Sites: Conservation of sites (summary)</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="sites-conservation-of-sites-summary.html"><a href="sites-conservation-of-sites-summary.html#what-threats-exist"><i class="fa fa-check"></i><b>12.1</b> What threats exist?</a></li>
+<li class="chapter" data-level="12.2" data-path="sites-conservation-of-sites-summary.html"><a href="sites-conservation-of-sites-summary.html#what-threats-impact-seabirds"><i class="fa fa-check"></i><b>12.2</b> What threats impact seabirds?</a></li>
+<li class="chapter" data-level="12.3" data-path="sites-conservation-of-sites-summary.html"><a href="sites-conservation-of-sites-summary.html#what-known-solutions-to-threats-exist"><i class="fa fa-check"></i><b>12.3</b> What known solutions to threats exist?</a></li>
+<li class="chapter" data-level="12.4" data-path="sites-conservation-of-sites-summary.html"><a href="sites-conservation-of-sites-summary.html#what-scale-should-threat-mitigation-be-considered-over"><i class="fa fa-check"></i><b>12.4</b> What scale should threat mitigation be considered over?</a></li>
+<li class="chapter" data-level="12.5" data-path="sites-conservation-of-sites-summary.html"><a href="sites-conservation-of-sites-summary.html#best-available-science"><i class="fa fa-check"></i><b>12.5</b> Best available science</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="sites-policy-advocacy-tools-summary.html"><a href="sites-policy-advocacy-tools-summary.html"><i class="fa fa-check"></i><b>13</b> Sites: Policy &amp; Advocacy tools (summary)</a></li>
+<li class="chapter" data-level="14" data-path="data-needs-identifying-a-site.html"><a href="data-needs-identifying-a-site.html"><i class="fa fa-check"></i><b>14</b> Data needs: Identifying a site</a></li>
+<li class="chapter" data-level="15" data-path="data-needs-datagroup-unit-of-analysis.html"><a href="data-needs-datagroup-unit-of-analysis.html"><i class="fa fa-check"></i><b>15</b> Data needs: dataGroup (unit of analysis)</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="data-needs-datagroup-unit-of-analysis.html"><a href="data-needs-datagroup-unit-of-analysis.html#example-datagroup-for-analysing-tracking-data-to-identify-an-important-site"><i class="fa fa-check"></i><b>15.1</b> Example dataGroup for analysing tracking data to identify an important site</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="breeding-location-abundance-data-single-species-single-site.html"><a href="breeding-location-abundance-data-single-species-single-site.html"><i class="fa fa-check"></i><b>16</b> Breeding location (abundance data): single species, single site</a></li>
+<li class="chapter" data-level="17" data-path="breeding-location-abundance-data-single-species-multiple-sites.html"><a href="breeding-location-abundance-data-single-species-multiple-sites.html"><i class="fa fa-check"></i><b>17</b> Breeding location (abundance data): single species, multiple sites</a></li>
+<li class="chapter" data-level="18" data-path="breeding-location-abundance-data-multi-species-multiple-sites.html"><a href="breeding-location-abundance-data-multi-species-multiple-sites.html"><i class="fa fa-check"></i><b>18</b> Breeding location (abundance data): multi species, multiple sites</a></li>
+<li class="chapter" data-level="19" data-path="seaward-extension-introduction.html"><a href="seaward-extension-introduction.html"><i class="fa fa-check"></i><b>19</b> Seaward Extension: Introduction</a></li>
+<li class="chapter" data-level="20" data-path="seaward-extension-single-colony.html"><a href="seaward-extension-single-colony.html"><i class="fa fa-check"></i><b>20</b> Seaward Extension: single colony</a>
+<ul>
+<li class="chapter" data-level="20.1" data-path="seaward-extension-single-colony.html"><a href="seaward-extension-single-colony.html#summary"><i class="fa fa-check"></i><b>20.1</b> <strong>Summary</strong></a></li>
+<li class="chapter" data-level="20.2" data-path="seaward-extension-single-colony.html"><a href="seaward-extension-single-colony.html#load-required-r-packages"><i class="fa fa-check"></i><b>20.2</b> <strong>Load required R packages:</strong></a></li>
+<li class="chapter" data-level="20.3" data-path="seaward-extension-single-colony.html"><a href="seaward-extension-single-colony.html#supply-input-data"><i class="fa fa-check"></i><b>20.3</b> <strong>Supply input data</strong></a></li>
+<li class="chapter" data-level="20.4" data-path="seaward-extension-single-colony.html"><a href="seaward-extension-single-colony.html#format-colony-location-as-spatial-objects"><i class="fa fa-check"></i><b>20.4</b> <strong>Format colony location as spatial objects</strong></a></li>
+<li class="chapter" data-level="20.5" data-path="seaward-extension-single-colony.html"><a href="seaward-extension-single-colony.html#create-a-background-raster"><i class="fa fa-check"></i><b>20.5</b> <strong>Create a background raster</strong></a></li>
+<li class="chapter" data-level="20.6" data-path="seaward-extension-single-colony.html"><a href="seaward-extension-single-colony.html#calculate-distance-by-sea-from-the-colony-per-cell"><i class="fa fa-check"></i><b>20.6</b> <strong>Calculate distance by sea from the colony per cell</strong></a></li>
+<li class="chapter" data-level="20.7" data-path="seaward-extension-single-colony.html"><a href="seaward-extension-single-colony.html#calculate-estimate-number-of-birds-from-the-colony-using-each-cell"><i class="fa fa-check"></i><b>20.7</b> <strong>Calculate estimate number of birds from the colony using each cell</strong></a></li>
+<li class="chapter" data-level="20.8" data-path="seaward-extension-single-colony.html"><a href="seaward-extension-single-colony.html#save-raster-output"><i class="fa fa-check"></i><b>20.8</b> <strong>Save raster output</strong></a></li>
+<li class="chapter" data-level="20.9" data-path="seaward-extension-single-colony.html"><a href="seaward-extension-single-colony.html#calculate-iba-raster"><i class="fa fa-check"></i><b>20.9</b> <strong>Calculate IBA raster</strong></a></li>
+<li class="chapter" data-level="20.10" data-path="seaward-extension-single-colony.html"><a href="seaward-extension-single-colony.html#calculate-iba-polygon"><i class="fa fa-check"></i><b>20.10</b> <strong>Calculate IBA polygon</strong></a></li>
+<li class="chapter" data-level="20.11" data-path="seaward-extension-single-colony.html"><a href="seaward-extension-single-colony.html#plot-and-save-the-final-iba-polygon"><i class="fa fa-check"></i><b>20.11</b> Plot and save the final IBA polygon</a></li>
+<li class="chapter" data-level="20.12" data-path="seaward-extension-single-colony.html"><a href="seaward-extension-single-colony.html#record-the-metadata"><i class="fa fa-check"></i><b>20.12</b> Record the metadata</a></li>
+</ul></li>
+<li class="chapter" data-level="21" data-path="seaward-extension-multiple-colonies.html"><a href="seaward-extension-multiple-colonies.html"><i class="fa fa-check"></i><b>21</b> Seaward Extension: multiple colonies</a>
+<ul>
+<li class="chapter" data-level="21.1" data-path="seaward-extension-multiple-colonies.html"><a href="seaward-extension-multiple-colonies.html#load-required-r-packages-1"><i class="fa fa-check"></i><b>21.1</b> <strong>Load required R packages:</strong></a></li>
+<li class="chapter" data-level="21.2" data-path="seaward-extension-multiple-colonies.html"><a href="seaward-extension-multiple-colonies.html#supply-input-data-1"><i class="fa fa-check"></i><b>21.2</b> <strong>Supply input data</strong></a></li>
+<li class="chapter" data-level="21.3" data-path="seaward-extension-multiple-colonies.html"><a href="seaward-extension-multiple-colonies.html#format-colony-locations-as-spatial-objects"><i class="fa fa-check"></i><b>21.3</b> <strong>Format colony locations as spatial objects</strong></a></li>
+<li class="chapter" data-level="21.4" data-path="seaward-extension-multiple-colonies.html"><a href="seaward-extension-multiple-colonies.html#create-a-background-raster-1"><i class="fa fa-check"></i><b>21.4</b> <strong>Create a background raster</strong></a></li>
+<li class="chapter" data-level="21.5" data-path="seaward-extension-multiple-colonies.html"><a href="seaward-extension-multiple-colonies.html#calculate-distance-by-sea-from-the-colony-per-cell-1"><i class="fa fa-check"></i><b>21.5</b> <strong>Calculate distance by sea from the colony per cell</strong></a></li>
+<li class="chapter" data-level="21.6" data-path="seaward-extension-multiple-colonies.html"><a href="seaward-extension-multiple-colonies.html#inspect-the-output-distance-from-colony-rasters"><i class="fa fa-check"></i><b>21.6</b> <strong>Inspect the output distance from colony rasters</strong></a></li>
+<li class="chapter" data-level="21.7" data-path="seaward-extension-multiple-colonies.html"><a href="seaward-extension-multiple-colonies.html#for-each-colony-estimate-number-of-birds-that-use-each-cell"><i class="fa fa-check"></i><b>21.7</b> <strong>For each colony, estimate number of birds that use each cell</strong></a></li>
+<li class="chapter" data-level="21.8" data-path="seaward-extension-multiple-colonies.html"><a href="seaward-extension-multiple-colonies.html#overlap-the-rasters-and-save-raster-outputs"><i class="fa fa-check"></i><b>21.8</b> <strong>Overlap the rasters and save raster outputs</strong></a></li>
+<li class="chapter" data-level="21.9" data-path="seaward-extension-multiple-colonies.html"><a href="seaward-extension-multiple-colonies.html#calculate-iba-raster-1"><i class="fa fa-check"></i><b>21.9</b> <strong>Calculate IBA raster</strong></a></li>
+<li class="chapter" data-level="21.10" data-path="seaward-extension-multiple-colonies.html"><a href="seaward-extension-multiple-colonies.html#calculate-iba-polygon-1"><i class="fa fa-check"></i><b>21.10</b> <strong>Calculate IBA polygon</strong></a></li>
+<li class="chapter" data-level="21.11" data-path="seaward-extension-multiple-colonies.html"><a href="seaward-extension-multiple-colonies.html#split-into-separate-iba-polygons-and-save-metadata"><i class="fa fa-check"></i><b>21.11</b> <strong>Split into separate IBA polygons and save metadata</strong></a></li>
+<li class="chapter" data-level="21.12" data-path="seaward-extension-multiple-colonies.html"><a href="seaward-extension-multiple-colonies.html#record-the-metadata-1"><i class="fa fa-check"></i><b>21.12</b> Record the metadata</a></li>
+</ul></li>
+<li class="chapter" data-level="22" data-path="tracking-data-brief-introduction.html"><a href="tracking-data-brief-introduction.html"><i class="fa fa-check"></i><b>22</b> Tracking data: Brief introduction</a>
+<ul>
+<li class="chapter" data-level="22.1" data-path="tracking-data-brief-introduction.html"><a href="tracking-data-brief-introduction.html#animal-tracking-data-considered-in-this-toolkit"><i class="fa fa-check"></i><b>22.1</b> Animal tracking data considered in this toolkit</a></li>
+<li class="chapter" data-level="22.2" data-path="tracking-data-brief-introduction.html"><a href="tracking-data-brief-introduction.html#general-introduction-to-animal-tracking-data"><i class="fa fa-check"></i><b>22.2</b> General introduction to animal tracking data</a></li>
+</ul></li>
+<li class="chapter" data-level="23" data-path="tracking-data-sampling-strategy.html"><a href="tracking-data-sampling-strategy.html"><i class="fa fa-check"></i><b>23</b> Tracking data: Sampling strategy</a>
+<ul>
+<li class="chapter" data-level="23.1" data-path="tracking-data-sampling-strategy.html"><a href="tracking-data-sampling-strategy.html#sampling-strategy-when-collecting-animal-tracking-data-for-seabirds"><i class="fa fa-check"></i><b>23.1</b> Sampling strategy when collecting animal tracking data for seabirds</a></li>
+<li class="chapter" data-level="23.2" data-path="tracking-data-sampling-strategy.html"><a href="tracking-data-sampling-strategy.html#how-many-birds-should-you-track"><i class="fa fa-check"></i><b>23.2</b> How many birds should you track?</a></li>
+<li class="chapter" data-level="23.3" data-path="tracking-data-sampling-strategy.html"><a href="tracking-data-sampling-strategy.html#how-many-years-of-tracking-data-should-you-collect"><i class="fa fa-check"></i><b>23.3</b> How many years of tracking data should you collect?</a></li>
+<li class="chapter" data-level="23.4" data-path="tracking-data-sampling-strategy.html"><a href="tracking-data-sampling-strategy.html#how-many-years-of-tracking-data-should-you-collect-for-kba-or-iba-identification"><i class="fa fa-check"></i><b>23.4</b> How many years of tracking data should you collect for KBA or IBA identification?</a></li>
+<li class="chapter" data-level="23.5" data-path="tracking-data-sampling-strategy.html"><a href="tracking-data-sampling-strategy.html#which-locations-should-you-track-animals-from"><i class="fa fa-check"></i><b>23.5</b> Which locations should you track animals from?</a></li>
+<li class="chapter" data-level="23.6" data-path="tracking-data-sampling-strategy.html"><a href="tracking-data-sampling-strategy.html#sampling-strategy-general-recommendations"><i class="fa fa-check"></i><b>23.6</b> Sampling strategy general recommendations</a></li>
+</ul></li>
+<li class="chapter" data-level="24" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html"><i class="fa fa-check"></i><b>24</b> Tracking data: Merge files together for analysis</a>
+<ul>
+<li class="chapter" data-level="24.1" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html#what-this-chapter-covers"><i class="fa fa-check"></i><b>24.1</b> What this chapter covers:</a></li>
+<li class="chapter" data-level="24.2" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html#where-you-can-get-example-data-for-the-chapter"><i class="fa fa-check"></i><b>24.2</b> Where you can get example data for the chapter:</a></li>
+<li class="chapter" data-level="24.3" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html#load-packages"><i class="fa fa-check"></i><b>24.3</b> Load packages</a></li>
+<li class="chapter" data-level="24.4" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html#define-object-names-for-chapter"><i class="fa fa-check"></i><b>24.4</b> Define object names for chapter</a></li>
+<li class="chapter" data-level="24.5" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html#storing-reading-and-formatting-raw-tracking-data"><i class="fa fa-check"></i><b>24.5</b> Storing, reading, and formatting raw tracking data</a>
+<ul>
+<li class="chapter" data-level="24.5.1" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html#storing-raw-tracking-data"><i class="fa fa-check"></i><b>24.5.1</b> Storing raw tracking data</a></li>
+<li class="chapter" data-level="24.5.2" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html#reading-raw-tracking-data-into-r-rstudio"><i class="fa fa-check"></i><b>24.5.2</b> Reading raw tracking data into R / Rstudio</a></li>
+</ul></li>
+<li class="chapter" data-level="24.6" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html#example-data-summary-yelkouan-shearwaters-puffinus-yelkouan-croatia"><i class="fa fa-check"></i><b>24.6</b> Example data summary: Yelkouan Shearwaters (<em>Puffinus yelkouan</em>), Croatia</a></li>
+<li class="chapter" data-level="24.7" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html#loading-example-data-yelkouan-shearwaters-puffinus-yelkouan"><i class="fa fa-check"></i><b>24.7</b> Loading example data: Yelkouan Shearwaters (<em>Puffinus yelkouan</em>)</a>
+<ul>
+<li class="chapter" data-level="24.7.1" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html#load-example-data-first-exploring-the-data-on-your-machine"><i class="fa fa-check"></i><b>24.7.1</b> Load example data: First, exploring the data on your machine</a></li>
+<li class="chapter" data-level="24.7.2" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html#load-example-data-second-prepare-the-files-for-loading-into-r"><i class="fa fa-check"></i><b>24.7.2</b> Load example data: Second, prepare the files for loading into R</a></li>
+<li class="chapter" data-level="24.7.3" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html#load-example-data-third-load-the-files-into-a-single-data-frame-in-r"><i class="fa fa-check"></i><b>24.7.3</b> Load example data: Third, load the files into a single data frame in R</a>
+<ul>
+<li class="chapter" data-level="24.7.3.1" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html#produce-list-of-file-names-with-all-your-tracking-data"><i class="fa fa-check"></i><b>24.7.3.1</b> Produce list of file names with all your tracking data</a></li>
+<li class="chapter" data-level="24.7.3.2" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html#merge-tracking-data-together-to-create-singe-file"><i class="fa fa-check"></i><b>24.7.3.2</b> Merge tracking data together to create singe file</a></li>
+</ul></li>
+<li class="chapter" data-level="24.7.4" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html#review-the-data-you-have-read-into-r"><i class="fa fa-check"></i><b>24.7.4</b> Review the data you have read into R</a></li>
+<li class="chapter" data-level="24.7.5" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html#save-the-merged-data"><i class="fa fa-check"></i><b>24.7.5</b> Save the merged data</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="25" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><i class="fa fa-check"></i><b>25</b> Tracking data: Convert files into format of Seabird Tracking Database</a>
+<ul>
+<li class="chapter" data-level="25.1" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#what-this-chapter-covers-1"><i class="fa fa-check"></i><b>25.1</b> What this chapter covers:</a></li>
+<li class="chapter" data-level="25.2" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#where-you-can-get-example-data-for-the-chapter-1"><i class="fa fa-check"></i><b>25.2</b> Where you can get example data for the chapter:</a></li>
+<li class="chapter" data-level="25.3" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#load-packages-1"><i class="fa fa-check"></i><b>25.3</b> Load packages</a></li>
+<li class="chapter" data-level="25.4" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#define-object-names-for-chapter-1"><i class="fa fa-check"></i><b>25.4</b> Define object names for chapter</a></li>
+<li class="chapter" data-level="25.5" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#load-file-created-from-previous-chapter"><i class="fa fa-check"></i><b>25.5</b> Load file created from previous chapter</a></li>
+<li class="chapter" data-level="25.6" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#seabird-tracking-database-format"><i class="fa fa-check"></i><b>25.6</b> Seabird Tracking Database format</a></li>
+<li class="chapter" data-level="25.7" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#loading-the-dataset-template-from-seabird-tracking-database"><i class="fa fa-check"></i><b>25.7</b> Loading the dataset template from Seabird Tracking Database</a></li>
+<li class="chapter" data-level="25.8" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#input-format-seabird-tracking-database"><i class="fa fa-check"></i><b>25.8</b> INPUT format: Seabird Tracking Database</a>
+<ul>
+<li class="chapter" data-level="25.8.1" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#formatting-own-data-to-align-with-seabird-tracking-database-input-format"><i class="fa fa-check"></i><b>25.8.1</b> Formatting own data to align with Seabird Tracking Database INPUT format</a>
+<ul>
+<li class="chapter" data-level="25.8.1.1" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#dataset-level-information-required-for-stdb"><i class="fa fa-check"></i><b>25.8.1.1</b> “Dataset” level information required for STDB</a></li>
+<li class="chapter" data-level="25.8.1.2" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#metadata-information"><i class="fa fa-check"></i><b>25.8.1.2</b> Metadata information</a></li>
+<li class="chapter" data-level="25.8.1.3" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#obtain-point-data-file-for-data-points-level-information-required-for-stdb"><i class="fa fa-check"></i><b>25.8.1.3</b> Obtain point data file for “Data points” level information required for STDB</a></li>
+<li class="chapter" data-level="25.8.1.4" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#review-of-the-input-format-for-the-seabird-tracking-database"><i class="fa fa-check"></i><b>25.8.1.4</b> Review of the INPUT format for the Seabird Tracking Database</a></li>
+</ul></li>
+<li class="chapter" data-level="25.8.2" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#input-stdb-format-saving"><i class="fa fa-check"></i><b>25.8.2</b> INPUT STDB format: saving</a></li>
+</ul></li>
+<li class="chapter" data-level="25.9" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#output-format-seabird-tracking-database"><i class="fa fa-check"></i><b>25.9</b> OUTPUT format: Seabird Tracking Database</a>
+<ul>
+<li class="chapter" data-level="25.9.1" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#load-stdb-output-template"><i class="fa fa-check"></i><b>25.9.1</b> Load STDB output template</a></li>
+<li class="chapter" data-level="25.9.2" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#convert-data-to-stdb-output-template"><i class="fa fa-check"></i><b>25.9.2</b> Convert data to STDB output template</a></li>
+<li class="chapter" data-level="25.9.3" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#output-stdb-format-saving"><i class="fa fa-check"></i><b>25.9.3</b> OUTPUT STDB format: saving</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="26" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><i class="fa fa-check"></i><b>26</b> Tracking data: Plotting tracks and reviewing tabular data</a>
+<ul>
+<li class="chapter" data-level="26.1" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#what-this-chapter-covers-2"><i class="fa fa-check"></i><b>26.1</b> What this chapter covers:</a></li>
+<li class="chapter" data-level="26.2" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#where-you-can-get-example-data-for-the-chapter-2"><i class="fa fa-check"></i><b>26.2</b> Where you can get example data for the chapter:</a></li>
+<li class="chapter" data-level="26.3" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#load-packages-2"><i class="fa fa-check"></i><b>26.3</b> Load packages</a></li>
+<li class="chapter" data-level="26.4" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#define-object-names-for-chapter-2"><i class="fa fa-check"></i><b>26.4</b> Define object names for chapter</a></li>
+<li class="chapter" data-level="26.5" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#load-file-or-file-created-from-previous-chapter"><i class="fa fa-check"></i><b>26.5</b> Load file (or file created from previous chapter)</a>
+<ul>
+<li class="chapter" data-level="26.5.1" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#simplify-object-names-if-need-be"><i class="fa fa-check"></i><b>26.5.1</b> Simplify object names if need be</a></li>
+</ul></li>
+<li class="chapter" data-level="26.6" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#explore-the-tabular-data"><i class="fa fa-check"></i><b>26.6</b> Explore the tabular data</a></li>
+<li class="chapter" data-level="26.7" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#review-of-summary-output"><i class="fa fa-check"></i><b>26.7</b> Review of summary output</a></li>
+<li class="chapter" data-level="26.8" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#arrange-data-and-remove-duplicate-entries"><i class="fa fa-check"></i><b>26.8</b> Arrange data and remove duplicate entries</a></li>
+<li class="chapter" data-level="26.9" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#visualise-all-the-location-data"><i class="fa fa-check"></i><b>26.9</b> Visualise all the location data</a></li>
+<li class="chapter" data-level="26.10" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#review-of-overall-plot-for-all-data-points"><i class="fa fa-check"></i><b>26.10</b> Review of overall plot for all data points</a></li>
+<li class="chapter" data-level="26.11" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#save-all-the-location-data-as-a-shapefile"><i class="fa fa-check"></i><b>26.11</b> Save all the location data as a shapefile</a></li>
+<li class="chapter" data-level="26.12" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#save-all-the-location-data-as-a-plot"><i class="fa fa-check"></i><b>26.12</b> Save all the location data as a plot</a></li>
+<li class="chapter" data-level="26.13" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#visualise-individual-animal-tracks"><i class="fa fa-check"></i><b>26.13</b> Visualise individual animal tracks</a>
+<ul>
+<li class="chapter" data-level="26.13.1" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#denote-beginning-and-end-of-tracks-for-individual-animals-entire-track"><i class="fa fa-check"></i><b>26.13.1</b> Denote beginning and end of tracks for individual animals entire track</a></li>
+<li class="chapter" data-level="26.13.2" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#save-individual-tracks-as-static-plots"><i class="fa fa-check"></i><b>26.13.2</b> Save individual tracks as static plots</a></li>
+<li class="chapter" data-level="26.13.3" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#save-individual-tracks-as-shapefiles"><i class="fa fa-check"></i><b>26.13.3</b> Save individual tracks as shapefiles</a></li>
+</ul></li>
+<li class="chapter" data-level="26.14" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#when-to-remove-or-salvage-data-from-a-tracked-individuals"><i class="fa fa-check"></i><b>26.14</b> When to remove or salvage data from a tracked individual(s)</a></li>
+</ul></li>
+<li class="chapter" data-level="27" data-path="tracking-data-cleaning-tracking-data.html"><a href="tracking-data-cleaning-tracking-data.html"><i class="fa fa-check"></i><b>27</b> Tracking data: Cleaning tracking data</a></li>
+<li class="chapter" data-level="28" data-path="track2kba-introduction.html"><a href="track2kba-introduction.html"><i class="fa fa-check"></i><b>28</b> Track2KBA: Introduction</a></li>
+<li class="chapter" data-level="29" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><i class="fa fa-check"></i><b>29</b> Track2KBA - Central Place Foragers: Clean and summarise data for analysis</a>
+<ul>
+<li class="chapter" data-level="29.1" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#what-this-chapter-covers-3"><i class="fa fa-check"></i><b>29.1</b> What this chapter covers:</a></li>
+<li class="chapter" data-level="29.2" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#outputs-and-assumptions-of-data-within-this-chapter"><i class="fa fa-check"></i><b>29.2</b> Outputs and assumptions of data within this chapter:</a></li>
+<li class="chapter" data-level="29.3" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#where-you-can-get-example-data-for-the-chapter-3"><i class="fa fa-check"></i><b>29.3</b> Where you can get example data for the chapter:</a></li>
+<li class="chapter" data-level="29.4" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#load-packages-3"><i class="fa fa-check"></i><b>29.4</b> Load packages</a></li>
+<li class="chapter" data-level="29.5" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#define-object-names-for-chapter-3"><i class="fa fa-check"></i><b>29.5</b> Define object names for chapter</a></li>
+<li class="chapter" data-level="29.6" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#load-file-or-file-created-from-previous-chapter-1"><i class="fa fa-check"></i><b>29.6</b> Load file (or file created from previous chapter)</a></li>
+<li class="chapter" data-level="29.7" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#datagroup-prepare-relevant-grouping-of-data-for-analyses"><i class="fa fa-check"></i><b>29.7</b> dataGroup: prepare relevant grouping of data for analyses</a>
+<ul>
+<li class="chapter" data-level="29.7.1" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#datagroup-defining-the-datagroup-for-the-tutorial"><i class="fa fa-check"></i><b>29.7.1</b> dataGroup: Defining the dataGroup for the tutorial</a></li>
+<li class="chapter" data-level="29.7.2" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#datagroup-extracting-data-for-the-analyses"><i class="fa fa-check"></i><b>29.7.2</b> dataGroup: extracting data for the analyses</a></li>
+</ul></li>
+<li class="chapter" data-level="29.8" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#datagroup-inspection-visual-review"><i class="fa fa-check"></i><b>29.8</b> dataGroup inspection: visual review</a></li>
+<li class="chapter" data-level="29.9" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#arrange-data-and-remove-duplicate-entries-1"><i class="fa fa-check"></i><b>29.9</b> Arrange data and remove duplicate entries</a></li>
+<li class="chapter" data-level="29.10" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#speed-filter-gps-data-remove-erroneous-location-points"><i class="fa fa-check"></i><b>29.10</b> Speed filter GPS data: remove erroneous location points</a></li>
+<li class="chapter" data-level="29.11" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#speed-filter-ptt-data-remove-erroneous-location-points"><i class="fa fa-check"></i><b>29.11</b> Speed filter PTT data: remove erroneous location points</a></li>
+<li class="chapter" data-level="29.12" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#speed-filter-data-review-plotting"><i class="fa fa-check"></i><b>29.12</b> Speed filter data review: plotting</a></li>
+<li class="chapter" data-level="29.13" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#data-cleaning-for-cpf-n_locs-sampling-interval-interpolation"><i class="fa fa-check"></i><b>29.13</b> Data cleaning for CPF: n_locs, sampling interval, interpolation</a>
+<ul>
+<li class="chapter" data-level="29.13.1" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#data-cleaning-for-cpf-seabirds-tracks-vs.-trips"><i class="fa fa-check"></i><b>29.13.1</b> Data cleaning for CPF seabirds: tracks vs. trips</a></li>
+<li class="chapter" data-level="29.13.2" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#data-cleaning-for-cpf-seabirds-nesting-habitat-considerations"><i class="fa fa-check"></i><b>29.13.2</b> Data cleaning for CPF seabirds: Nesting habitat considerations</a></li>
+</ul></li>
+<li class="chapter" data-level="29.14" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#track2kba-format-data-for-use"><i class="fa fa-check"></i><b>29.14</b> track2KBA: format data for use</a>
+<ul>
+<li class="chapter" data-level="29.14.1" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#track2kbaformatfields"><i class="fa fa-check"></i><b>29.14.1</b> track2KBA::formatFields()</a></li>
+</ul></li>
+<li class="chapter" data-level="29.15" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#track2kba-split-tracks-into-trips"><i class="fa fa-check"></i><b>29.15</b> track2KBA: Split tracks into trips</a>
+<ul>
+<li class="chapter" data-level="29.15.1" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#define-colony-of-origin"><i class="fa fa-check"></i><b>29.15.1</b> Define colony of origin</a></li>
+<li class="chapter" data-level="29.15.2" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#colony-of-origin-review"><i class="fa fa-check"></i><b>29.15.2</b> Colony of origin review</a></li>
+<li class="chapter" data-level="29.15.3" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#apply-tripsplit"><i class="fa fa-check"></i><b>29.15.3</b> Apply <code>tripSplit()</code></a></li>
+<li class="chapter" data-level="29.15.4" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#review-of-tripsplit-output"><i class="fa fa-check"></i><b>29.15.4</b> Review of tripSplit() output</a></li>
+<li class="chapter" data-level="29.15.5" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#understanding-what-is-happening-in-tripsplit-further"><i class="fa fa-check"></i><b>29.15.5</b> Understanding what is happening in tripSplit() further</a></li>
+<li class="chapter" data-level="29.15.6" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#review-the-individual-trips-for-each-tracked-animal-after-applying-tripsplit"><i class="fa fa-check"></i><b>29.15.6</b> Review the individual trips for each tracked animal after applying tripSplit()</a></li>
+<li class="chapter" data-level="29.15.7" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#plot-the-individual-trips-for-each-tracked-animal-after-applying-tripsplit"><i class="fa fa-check"></i><b>29.15.7</b> Plot the individual trips for each tracked animal after applying tripSplit()</a></li>
+</ul></li>
+<li class="chapter" data-level="29.16" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#track2kba-what-trip-data-to-use-complete-or-incomplete-trips"><i class="fa fa-check"></i><b>29.16</b> track2kba: What trip data to use (complete or incomplete trips)</a>
+<ul>
+<li class="chapter" data-level="29.16.1" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#track2kba-choice-of-complete-trips-only"><i class="fa fa-check"></i><b>29.16.1</b> track2KBA: Choice of complete trips only</a></li>
+</ul></li>
+<li class="chapter" data-level="29.17" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#track2kba-use-only-at-sea-sections-of-trips"><i class="fa fa-check"></i><b>29.17</b> track2KBA: Use only at-sea sections of trips</a></li>
+<li class="chapter" data-level="29.18" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#track2kba-number-of-locations-filter"><i class="fa fa-check"></i><b>29.18</b> track2KBA: Number of locations filter</a></li>
+<li class="chapter" data-level="29.19" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#track2kba-tripsummary"><i class="fa fa-check"></i><b>29.19</b> track2KBA: tripSummary()</a>
+<ul>
+<li class="chapter" data-level="29.19.1" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#trip-summary-data-review"><i class="fa fa-check"></i><b>29.19.1</b> Trip summary data review</a></li>
+</ul></li>
+<li class="chapter" data-level="29.20" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#track2kba-sampling-interval-assessment"><i class="fa fa-check"></i><b>29.20</b> track2KBA: Sampling interval assessment</a>
+<ul>
+<li class="chapter" data-level="29.20.1" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#sampling-interval-review"><i class="fa fa-check"></i><b>29.20.1</b> Sampling interval review</a></li>
+</ul></li>
+<li class="chapter" data-level="29.21" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#track2kba-interpolating-data-for-analysis"><i class="fa fa-check"></i><b>29.21</b> track2KBA: Interpolating data for analysis</a>
+<ul>
+<li class="chapter" data-level="29.21.1" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#interpolating-data-using-only-at-sea-locations"><i class="fa fa-check"></i><b>29.21.1</b> Interpolating data: using only at-sea locations</a></li>
+<li class="chapter" data-level="29.21.2" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#interpolating-data-choice-of-sampling-interval"><i class="fa fa-check"></i><b>29.21.2</b> Interpolating data: choice of sampling interval</a></li>
+<li class="chapter" data-level="29.21.3" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#interpolating-data-linear-interpolation-implementation"><i class="fa fa-check"></i><b>29.21.3</b> Interpolating data: linear interpolation implementation</a></li>
+</ul></li>
+<li class="chapter" data-level="29.22" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#save-data"><i class="fa fa-check"></i><b>29.22</b> Save data</a></li>
+</ul></li>
+<li class="chapter" data-level="30" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html"><i class="fa fa-check"></i><b>30</b> Track2KBA - Central Place Foragers: Analyse cleanded data</a>
+<ul>
+<li class="chapter" data-level="30.1" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#what-this-chapter-covers-4"><i class="fa fa-check"></i><b>30.1</b> What this chapter covers:</a></li>
+<li class="chapter" data-level="30.2" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#where-you-can-get-example-data-for-the-chapter-4"><i class="fa fa-check"></i><b>30.2</b> Where you can get example data for the chapter:</a></li>
+<li class="chapter" data-level="30.3" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#description-of-data-prefiltering-for-main-track2kba-analysis"><i class="fa fa-check"></i><b>30.3</b> Description of data prefiltering for main track2kba analysis:</a></li>
+<li class="chapter" data-level="30.4" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#load-packages-4"><i class="fa fa-check"></i><b>30.4</b> Load packages</a></li>
+<li class="chapter" data-level="30.5" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#define-object-names-for-chapter-4"><i class="fa fa-check"></i><b>30.5</b> Define object names for chapter</a></li>
+<li class="chapter" data-level="30.6" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#read-in-file-or-file-created-from-previous-chapter"><i class="fa fa-check"></i><b>30.6</b> Read in file (or file created from previous chapter)</a></li>
+<li class="chapter" data-level="30.7" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kba-format-data-for-use-1"><i class="fa fa-check"></i><b>30.7</b> track2KBA: format data for use</a>
+<ul>
+<li class="chapter" data-level="30.7.1" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kbaformatfields-1"><i class="fa fa-check"></i><b>30.7.1</b> track2KBA::formatFields()</a></li>
+</ul></li>
+<li class="chapter" data-level="30.8" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kba-projecttracks"><i class="fa fa-check"></i><b>30.8</b> track2kba:: projectTracks()</a></li>
+<li class="chapter" data-level="30.9" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kba-findscale"><i class="fa fa-check"></i><b>30.9</b> track2kba:: findScale()</a></li>
+<li class="chapter" data-level="30.10" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kba-estspaceuse"><i class="fa fa-check"></i><b>30.10</b> track2kba: estSpaceUse()</a></li>
+<li class="chapter" data-level="30.11" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kba-mapkde"><i class="fa fa-check"></i><b>30.11</b> track2kba:: mapKDE()</a></li>
+<li class="chapter" data-level="30.12" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kba-review-choice-of-smoothing-parameter"><i class="fa fa-check"></i><b>30.12</b> track2kba: review choice of smoothing parameter</a></li>
+<li class="chapter" data-level="30.13" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kbarepassess"><i class="fa fa-check"></i><b>30.13</b> track2kba::repAssess()</a></li>
+<li class="chapter" data-level="30.14" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kbafindsite"><i class="fa fa-check"></i><b>30.14</b> track2kba::findSite()</a></li>
+<li class="chapter" data-level="30.15" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kbamapsite"><i class="fa fa-check"></i><b>30.15</b> track2kba::mapSite()</a></li>
+<li class="chapter" data-level="30.16" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kbafindsite-further-understanding"><i class="fa fa-check"></i><b>30.16</b> track2kba::findSite(), further understanding</a></li>
+<li class="chapter" data-level="30.17" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kbafindsite-outputs-explained"><i class="fa fa-check"></i><b>30.17</b> track2kba::findSite(), outputs explained</a></li>
+<li class="chapter" data-level="30.18" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kba-save-key-outputs"><i class="fa fa-check"></i><b>30.18</b> track2kba: Save key outputs</a></li>
+<li class="chapter" data-level="30.19" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kbafindsite-iba-kba-assessment-considerations"><i class="fa fa-check"></i><b>30.19</b> track2kba::findSite(), IBA / KBA assessment considerations</a></li>
+<li class="chapter" data-level="30.20" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#iba-assessment-data-preparation"><i class="fa fa-check"></i><b>30.20</b> IBA assessment data preparation</a></li>
+<li class="chapter" data-level="30.21" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#saving-outputs"><i class="fa fa-check"></i><b>30.21</b> SAVING OUTPUTS</a></li>
+</ul></li>
+<li class="chapter" data-level="31" data-path="track2kba-non-central-place-foraging-animal-movement.html"><a href="track2kba-non-central-place-foraging-animal-movement.html"><i class="fa fa-check"></i><b>31</b> Track2KBA: Non central place foraging animal movement</a></li>
+<li class="chapter" data-level="32" data-path="sites-assessing-criteria.html"><a href="sites-assessing-criteria.html"><i class="fa fa-check"></i><b>32</b> Sites: Assessing criteria</a></li>
+<li class="chapter" data-level="33" data-path="sites-considerations-for-assessing-sites-against-criteria.html"><a href="sites-considerations-for-assessing-sites-against-criteria.html"><i class="fa fa-check"></i><b>33</b> Sites: Considerations for assessing sites against criteria</a></li>
+<li class="chapter" data-level="34" data-path="sites-merging-layers.html"><a href="sites-merging-layers.html"><i class="fa fa-check"></i><b>34</b> Sites: Merging layers</a></li>
+<li class="chapter" data-level="35" data-path="sites-refining-boundaries.html"><a href="sites-refining-boundaries.html"><i class="fa fa-check"></i><b>35</b> Sites: Refining boundaries</a>
+<ul>
+<li class="chapter" data-level="35.1" data-path="sites-refining-boundaries.html"><a href="sites-refining-boundaries.html#lessons-from-key-biodiversity-areas"><i class="fa fa-check"></i><b>35.1</b> Lessons from Key Biodiversity Areas</a></li>
+<li class="chapter" data-level="35.2" data-path="sites-refining-boundaries.html"><a href="sites-refining-boundaries.html#lessons-from-important-bird-and-biodiversity-areas"><i class="fa fa-check"></i><b>35.2</b> Lessons from Important Bird and Biodiversity Areas</a></li>
+</ul></li>
+<li class="chapter" data-level="36" data-path="supporting-data-at-sea-survey-data.html"><a href="supporting-data-at-sea-survey-data.html"><i class="fa fa-check"></i><b>36</b> Supporting data: At-sea survey data</a>
+<ul>
+<li class="chapter" data-level="36.1" data-path="supporting-data-at-sea-survey-data.html"><a href="supporting-data-at-sea-survey-data.html#at-sea-survey-data-and-tracking-data"><i class="fa fa-check"></i><b>36.1</b> At-sea survey data and tracking data</a></li>
+<li class="chapter" data-level="36.2" data-path="supporting-data-at-sea-survey-data.html"><a href="supporting-data-at-sea-survey-data.html#at-sea-survey-methodology"><i class="fa fa-check"></i><b>36.2</b> At-sea survey methodology</a></li>
+<li class="chapter" data-level="36.3" data-path="supporting-data-at-sea-survey-data.html"><a href="supporting-data-at-sea-survey-data.html#at-sea-survey-data-for-kbas-or-ibas"><i class="fa fa-check"></i><b>36.3</b> At-sea survey data for KBAs or IBAs</a></li>
+<li class="chapter" data-level="36.4" data-path="supporting-data-at-sea-survey-data.html"><a href="supporting-data-at-sea-survey-data.html#citations"><i class="fa fa-check"></i><b>36.4</b> Citations</a></li>
+</ul></li>
+<li class="chapter" data-level="37" data-path="supporting-data-statistical-models.html"><a href="supporting-data-statistical-models.html"><i class="fa fa-check"></i><b>37</b> Supporting data: statistical models</a>
+<ul>
+<li class="chapter" data-level="37.1" data-path="supporting-data-statistical-models.html"><a href="supporting-data-statistical-models.html#introduction-to-statistical-models-for-estimating-animal-distribution"><i class="fa fa-check"></i><b>37.1</b> Introduction to statistical models for estimating animal distribution</a></li>
+<li class="chapter" data-level="37.2" data-path="supporting-data-statistical-models.html"><a href="supporting-data-statistical-models.html#how-do-statistical-models-for-estimating-animal-distribution-work-broadly-speaking"><i class="fa fa-check"></i><b>37.2</b> How do statistical models for estimating animal distribution work (broadly speaking)?</a></li>
+<li class="chapter" data-level="37.3" data-path="supporting-data-statistical-models.html"><a href="supporting-data-statistical-models.html#examples-of-what-you-can-use-distribution-models-for"><i class="fa fa-check"></i><b>37.3</b> Examples of what you can use distribution models for</a></li>
+<li class="chapter" data-level="37.4" data-path="supporting-data-statistical-models.html"><a href="supporting-data-statistical-models.html#further-detail-to-statistical-models-for-estimating-animal-distribution"><i class="fa fa-check"></i><b>37.4</b> Further detail to statistical models for estimating animal distribution</a></li>
+<li class="chapter" data-level="37.5" data-path="supporting-data-statistical-models.html"><a href="supporting-data-statistical-models.html#examples-of-different-statistical-modelling-approaches-for-predicting-distribution"><i class="fa fa-check"></i><b>37.5</b> Examples of different statistical modelling approaches for predicting distribution</a></li>
+<li class="chapter" data-level="37.6" data-path="supporting-data-statistical-models.html"><a href="supporting-data-statistical-models.html#using-statistical-models-to-estimate-distribution-in-unsampled-locations"><i class="fa fa-check"></i><b>37.6</b> Using statistical models to estimate distribution in unsampled locations</a></li>
+<li class="chapter" data-level="37.7" data-path="supporting-data-statistical-models.html"><a href="supporting-data-statistical-models.html#examples-of-using-predicted-species-distribution-outputs-for-conservation-purposes"><i class="fa fa-check"></i><b>37.7</b> Examples of using predicted species distribution outputs for conservation purposes</a></li>
+<li class="chapter" data-level="37.8" data-path="supporting-data-statistical-models.html"><a href="supporting-data-statistical-models.html#further-resources"><i class="fa fa-check"></i><b>37.8</b> Further resources</a></li>
+</ul></li>
+<li class="chapter" data-level="38" data-path="sites-proposing-a-kba.html"><a href="sites-proposing-a-kba.html"><i class="fa fa-check"></i><b>38</b> Sites: Proposing a KBA</a>
+<ul>
+<li class="chapter" data-level="38.1" data-path="sites-proposing-a-kba.html"><a href="sites-proposing-a-kba.html#who-can-propose-a-kba"><i class="fa fa-check"></i><b>38.1</b> Who can propose a KBA?</a></li>
+<li class="chapter" data-level="38.2" data-path="sites-proposing-a-kba.html"><a href="sites-proposing-a-kba.html#queries-about-proposing-a-kba"><i class="fa fa-check"></i><b>38.2</b> Queries about proposing a KBA?</a></li>
+</ul></li>
+<li class="chapter" data-level="39" data-path="sites-monitoring.html"><a href="sites-monitoring.html"><i class="fa fa-check"></i><b>39</b> Sites: Monitoring</a>
+<ul>
+<li class="chapter" data-level="39.1" data-path="sites-monitoring.html"><a href="sites-monitoring.html#why-monitor-sites"><i class="fa fa-check"></i><b>39.1</b> Why monitor sites?</a></li>
+<li class="chapter" data-level="39.2" data-path="sites-monitoring.html"><a href="sites-monitoring.html#what-does-the-kba-monitoring-protocol-entail"><i class="fa fa-check"></i><b>39.2</b> What does the KBA monitoring protocol entail?</a></li>
+<li class="chapter" data-level="39.3" data-path="sites-monitoring.html"><a href="sites-monitoring.html#how-to-establish-an-effectively-implemented-monitoring-protocol"><i class="fa fa-check"></i><b>39.3</b> How to establish an effectively implemented monitoring protocol?</a></li>
+</ul></li>
+<li class="chapter" data-level="40" data-path="sites-conservation-of-sites.html"><a href="sites-conservation-of-sites.html"><i class="fa fa-check"></i><b>40</b> Sites: Conservation of sites</a>
+<ul>
+<li class="chapter" data-level="40.1" data-path="sites-conservation-of-sites.html"><a href="sites-conservation-of-sites.html#what-threats-exist-1"><i class="fa fa-check"></i><b>40.1</b> What threats exist?</a></li>
+<li class="chapter" data-level="40.2" data-path="sites-conservation-of-sites.html"><a href="sites-conservation-of-sites.html#what-threats-impact-seabirds-1"><i class="fa fa-check"></i><b>40.2</b> What threats impact seabirds?</a></li>
+<li class="chapter" data-level="40.3" data-path="sites-conservation-of-sites.html"><a href="sites-conservation-of-sites.html#what-known-solutions-to-threats-exist-1"><i class="fa fa-check"></i><b>40.3</b> What known solutions to threats exist?</a></li>
+<li class="chapter" data-level="40.4" data-path="sites-conservation-of-sites.html"><a href="sites-conservation-of-sites.html#what-scale-should-threat-mitigation-be-considered-over-1"><i class="fa fa-check"></i><b>40.4</b> What scale should threat mitigation be considered over?</a></li>
+<li class="chapter" data-level="40.5" data-path="sites-conservation-of-sites.html"><a href="sites-conservation-of-sites.html#best-available-science-1"><i class="fa fa-check"></i><b>40.5</b> Best available science</a></li>
+</ul></li>
+<li class="chapter" data-level="41" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html"><i class="fa fa-check"></i><b>41</b> Sites: Policy and advocacy</a>
+<ul>
+<li class="chapter" data-level="41.1" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#achieving-the-goal-marine-megafauna-in-favourable-conservation-status"><i class="fa fa-check"></i><b>41.1</b> Achieving the goal: “marine megafauna in favourable conservation status”</a></li>
+<li class="chapter" data-level="41.2" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#achieving-conservation-of-sites"><i class="fa fa-check"></i><b>41.2</b> Achieving conservation of sites</a></li>
+<li class="chapter" data-level="41.3" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#important-sites-in-the-marine-environment-1"><i class="fa fa-check"></i><b>41.3</b> Important sites in the marine environment</a></li>
+<li class="chapter" data-level="41.4" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#key-biodiversity-area-kba-definition-and-scope"><i class="fa fa-check"></i><b>41.4</b> Key Biodiversity Area (KBA) definition and scope</a></li>
+<li class="chapter" data-level="41.5" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#kba-recognition-internationally"><i class="fa fa-check"></i><b>41.5</b> KBA recognition internationally</a></li>
+<li class="chapter" data-level="41.6" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#kba-conservation-through-international-mechanisms"><i class="fa fa-check"></i><b>41.6</b> KBA conservation through international mechanisms</a>
+<ul>
+<li class="chapter" data-level="41.6.0.1" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#convention-on-biological-diversity-cbd"><i class="fa fa-check"></i><b>41.6.0.1</b> Convention on Biological Diversity (CBD)</a></li>
+<li class="chapter" data-level="41.6.1" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#united-nations-sustainable-development-goals"><i class="fa fa-check"></i><b>41.6.1</b> United Nation’s Sustainable Development Goals</a></li>
+<li class="chapter" data-level="41.6.2" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#united-nations-convention-on-the-law-of-the-sea-unclos"><i class="fa fa-check"></i><b>41.6.2</b> United Nations Convention on the Law of the Sea (UNCLOS)</a></li>
+</ul></li>
+<li class="chapter" data-level="41.7" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#kba-conservation-through-marine-protected-areas"><i class="fa fa-check"></i><b>41.7</b> KBA conservation through marine protected areas</a>
+<ul>
+<li class="chapter" data-level="41.7.1" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#regional-seas-agreements"><i class="fa fa-check"></i><b>41.7.1</b> Regional Seas Agreements</a></li>
+<li class="chapter" data-level="41.7.2" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#the-high-seas-treaty"><i class="fa fa-check"></i><b>41.7.2</b> The High Seas Treaty</a></li>
+<li class="chapter" data-level="41.7.3" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#advocating-for-the-protection-of-a-kba-through-mpa-status"><i class="fa fa-check"></i><b>41.7.3</b> Advocating for the protection of a KBA through MPA status</a>
+<ul>
+<li class="chapter" data-level="41.7.3.1" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#build-a-strong-case"><i class="fa fa-check"></i><b>41.7.3.1</b> Build a Strong Case</a></li>
+<li class="chapter" data-level="41.7.3.2" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#raise-awareness-and-mobilize-support"><i class="fa fa-check"></i><b>41.7.3.2</b> Raise Awareness and Mobilize Support</a></li>
+<li class="chapter" data-level="41.7.3.3" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#engage-decision-makers"><i class="fa fa-check"></i><b>41.7.3.3</b> Engage Decision-Makers</a></li>
+<li class="chapter" data-level="41.7.3.4" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#collaborate-with-environmental-mechanisms"><i class="fa fa-check"></i><b>41.7.3.4</b> Collaborate with Environmental Mechanisms</a></li>
+<li class="chapter" data-level="41.7.3.5" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#seek-legal-and-policy-support"><i class="fa fa-check"></i><b>41.7.3.5</b> Seek legal and policy support</a></li>
+</ul></li>
+<li class="chapter" data-level="41.7.4" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#kba-conservation-through-alternative-pathways"><i class="fa fa-check"></i><b>41.7.4</b> KBA conservation through alternative pathways</a>
+<ul>
+<li class="chapter" data-level="41.7.4.1" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#sustainable-fisheries-management"><i class="fa fa-check"></i><b>41.7.4.1</b> Sustainable fisheries management</a></li>
+<li class="chapter" data-level="41.7.4.2" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#ecosystem-based-management-through-marine-spatial-planning-msp"><i class="fa fa-check"></i><b>41.7.4.2</b> Ecosystem-based management through marine spatial planning (MSP)</a></li>
+<li class="chapter" data-level="41.7.4.3" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#major-conventions-convention-on-migratory-species"><i class="fa fa-check"></i><b>41.7.4.3</b> Major Conventions: Convention on Migratory Species</a></li>
+</ul></li>
+<li class="chapter" data-level="41.7.5" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#kba-conservation-guidance-further-information"><i class="fa fa-check"></i><b>41.7.5</b> KBA conservation guidance: further information</a>
+<ul>
+<li class="chapter" data-level="41.7.5.1" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#the-international-union-for-conservation-of-nature-iucn"><i class="fa fa-check"></i><b>41.7.5.1</b> The International Union for Conservation of Nature (IUCN)</a></li>
+<li class="chapter" data-level="41.7.5.2" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#the-global-ocean-biodiversity-initiative"><i class="fa fa-check"></i><b>41.7.5.2</b> The Global Ocean Biodiversity Initiative</a></li>
+</ul></li>
+<li class="chapter" data-level="41.7.6" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#are-kba-conservation-actions-working-monitor-and-document"><i class="fa fa-check"></i><b>41.7.6</b> Are KBA conservation actions working? Monitor and document</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="42" data-path="sites-proposing-an-iba.html"><a href="sites-proposing-an-iba.html"><i class="fa fa-check"></i><b>42</b> Sites: Proposing an IBA</a>
+<ul>
+<li class="chapter" data-level="42.1" data-path="sites-proposing-an-iba.html"><a href="sites-proposing-an-iba.html#who-can-propose-an-iba"><i class="fa fa-check"></i><b>42.1</b> Who can propose an IBA?</a></li>
+<li class="chapter" data-level="42.2" data-path="sites-proposing-an-iba.html"><a href="sites-proposing-an-iba.html#queries-about-proposing-an-iba"><i class="fa fa-check"></i><b>42.2</b> Queries about proposing an IBA?</a></li>
+</ul></li>
+<li class="chapter" data-level="43" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html"><i class="fa fa-check"></i><b>43</b> Appendix: Tracking data: advanced interpolation</a>
+<ul>
+<li class="chapter" data-level="43.1" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#goal-of-chapter"><i class="fa fa-check"></i><b>43.1</b> Goal of chapter:</a></li>
+<li class="chapter" data-level="43.2" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#interpolation"><i class="fa fa-check"></i><b>43.2</b> Interpolation</a></li>
+<li class="chapter" data-level="43.3" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#load-packages-5"><i class="fa fa-check"></i><b>43.3</b> Load packages</a></li>
+<li class="chapter" data-level="43.4" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#input-parameters-for-chapter-tutorial"><i class="fa fa-check"></i><b>43.4</b> Input parameters for chapter tutorial</a></li>
+<li class="chapter" data-level="43.5" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#load-input-example-data-and-prepare-for-track2kba-r-package-protocol"><i class="fa fa-check"></i><b>43.5</b> Load input example data and prepare for track2KBA R package protocol</a></li>
+<li class="chapter" data-level="43.6" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#interpolation-methods-differences"><i class="fa fa-check"></i><b>43.6</b> Interpolation methods differences</a>
+<ul>
+<li class="chapter" data-level="43.6.1" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#get-example-data-for-testing"><i class="fa fa-check"></i><b>43.6.1</b> Get example data for testing</a></li>
+</ul></li>
+<li class="chapter" data-level="43.7" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#speed-filter-linear-interpolation"><i class="fa fa-check"></i><b>43.7</b> Speed filter &amp; linear interpolation</a></li>
+<li class="chapter" data-level="43.8" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#plot-speed-filtered-and-linear-interpolation-data"><i class="fa fa-check"></i><b>43.8</b> Plot: speed filtered and linear interpolation data</a></li>
+<li class="chapter" data-level="43.9" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#advanced-interpolation"><i class="fa fa-check"></i><b>43.9</b> Advanced interpolation</a></li>
+<li class="chapter" data-level="43.10" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#compare-different-interplation-methods"><i class="fa fa-check"></i><b>43.10</b> Compare different interplation methods</a></li>
+<li class="chapter" data-level="43.11" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#review-comparison"><i class="fa fa-check"></i><b>43.11</b> Review comparison</a></li>
+<li class="chapter" data-level="43.12" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#interpolation-all-data"><i class="fa fa-check"></i><b>43.12</b> Interpolation: all data</a>
+<ul>
+<li class="chapter" data-level="43.12.1" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#linear-interpolation-all-animals"><i class="fa fa-check"></i><b>43.12.1</b> Linear interpolation: all animals</a>
+<ul>
+<li class="chapter" data-level="43.12.1.1" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#review-interpolation-for-all-animals"><i class="fa fa-check"></i><b>43.12.1.1</b> Review interpolation for all animals</a></li>
+<li class="chapter" data-level="43.12.1.2" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#save-linear-interpolation-for-all-animals-for-next-steps"><i class="fa fa-check"></i><b>43.12.1.2</b> Save linear interpolation for all animals for next steps</a></li>
+</ul></li>
+<li class="chapter" data-level="43.12.2" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#advanced-interpolation-all-animals"><i class="fa fa-check"></i><b>43.12.2</b> Advanced interpolation: all animals</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="44" data-path="contact-us.html"><a href="contact-us.html"><i class="fa fa-check"></i><b>44</b> Contact us</a></li>
+<li class="chapter" data-level="45" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>45</b> References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Marine Megafauna Conservation Toolkit</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="track2kba---central-place-foragers-analyse-cleanded-data" class="section level1 hasAnchor" number="30">
+<h1><span class="header-section-number">30</span> Track2KBA - Central Place Foragers: Analyse cleanded data<a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kba---central-place-foragers-analyse-cleanded-data" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Analyses outlined in this chapter were performed in <strong>R version 4.3.2 (2023-10-31 ucrt)</strong><br />
+</p>
+<p>This chapter was last updated on <strong>2024-02-23</strong></p>
+<p><br></p>
+<!--- This is an HTML comment in RMarkdown. You can use these comments to make notes that won't get read when running the code -->
+<!--- If you don't understand what a RMarkdown document is. Stop here. Go learn. -->
+<!--- Equally. You must understand the difference between Markdown vs. RMarkdown -->
+<!--- Remember, outside of the R code chunks we are now coding in HTML syntax, not R syntax -->
+<div id="what-this-chapter-covers-4" class="section level2 hasAnchor" number="30.1">
+<h2><span class="header-section-number">30.1</span> What this chapter covers:<a href="track2kba---central-place-foragers-analyse-cleanded-data.html#what-this-chapter-covers-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><p>Analysis of key data via the track2kba protocol</p></li>
+<li><p>Deriving a final site which could be used for conservation planning purposes (such as that of KBAs)</p></li>
+</ul>
+<p><br></p>
+</div>
+<div id="where-you-can-get-example-data-for-the-chapter-4" class="section level2 hasAnchor" number="30.2">
+<h2><span class="header-section-number">30.2</span> Where you can get example data for the chapter:<a href="track2kba---central-place-foragers-analyse-cleanded-data.html#where-you-can-get-example-data-for-the-chapter-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This tutorial uses example data from a project led by the BirdLife International partner in Croatia: BIOM</p>
+<ul>
+<li><p>The citation for this data is: <a href="https://datazone.birdlife.org/userfiles/images/Publications/Marine%20IBAs%20Croatia.pdf">Zec et al. 2023</a></p></li>
+<li><p>Example data is available upon request</p></li>
+<li><p>The prepared example data: <strong>See previous chapter</strong></p></li>
+</ul>
+<p><br></p>
+</div>
+<div id="description-of-data-prefiltering-for-main-track2kba-analysis" class="section level2 hasAnchor" number="30.3">
+<h2><span class="header-section-number">30.3</span> Description of data prefiltering for main track2kba analysis:<a href="track2kba---central-place-foragers-analyse-cleanded-data.html#description-of-data-prefiltering-for-main-track2kba-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><p>Central place foraging data used for this tutorial have been prepared previously as follows:</p>
+<ul>
+<li><p>General review of spatial data</p></li>
+<li><p>Removing - if necessary - sections of tracks when animals were not tracked but devices were recording information.</p></li>
+<li><p>Arranging data chronologically and removing duplicate entries</p></li>
+<li><p>Speed filter for clearly erroneous location points</p></li>
+<li><p>Removing location points around the vicinty of the colony (as specified by the inner buffer parameter in earlier steps using track2kba functions)</p></li>
+<li><p>Removing data with too few location points</p></li>
+<li><p>Generating basic summary statistics of the tracking data</p></li>
+<li><p>Reviewing the sampling frequency of data (i.e. what frequncy you set your devices to record at versus what they actually recorded at)</p></li>
+<li><p>Linearly interpolating data to generate tracking information that approximates an even sampling interval</p></li>
+</ul></li>
+</ul>
+<p><strong>Consider:</strong> When to clean data with respect to the steps above may depend on the type of animal you tracked and life-cycle stage the animal was tracked over.</p>
+<p><strong>Non central place foraging data:</strong> If your data relates to a period when an animal was not exhibiting central place foraging, consider cleaning the data in line with steps above. However, you would not need to split tracks into trips and summarise data as above. The key thing is to have data approximating an equal sampling interval (i.e. data points evenly sampled in time)</p>
+<!--- In the code chunk below, we specify include = F, so that we will run the chunk but not include the chunk in the final document. We set a global argument in the code chunk of echo = T, so that in later code chunks, the code will be displayed in the RMarkdown document -->
+<p><br></p>
+</div>
+<div id="load-packages-4" class="section level2 hasAnchor" number="30.4">
+<h2><span class="header-section-number">30.4</span> Load packages<a href="track2kba---central-place-foragers-analyse-cleanded-data.html#load-packages-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Load required R packages for use with codes in this chapter:</strong></p>
+<p>If the package(s) fails to load, you will need to install the relevant package(s).</p>
+<div class="sourceCode" id="cb305"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb305-1"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb305-1" tabindex="-1"></a><span class="do">## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span></span>
+<span id="cb305-2"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb305-2" tabindex="-1"></a><span class="do">## Load libraries --------------------------------------------------------------</span></span>
+<span id="cb305-3"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb305-3" tabindex="-1"></a><span class="do">## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span></span>
+<span id="cb305-4"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb305-4" tabindex="-1"></a></span>
+<span id="cb305-5"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb305-5" tabindex="-1"></a><span class="do">## sf package for spatial data analyses (i.e. vector files such as points, lines, polygons)</span></span>
+<span id="cb305-6"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb305-6" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
+<span id="cb305-7"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb305-7" tabindex="-1"></a><span class="do">## Tidyverse for data manipulation</span></span>
+<span id="cb305-8"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb305-8" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb305-9"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb305-9" tabindex="-1"></a><span class="do">## ggplot2 for plotting opionts</span></span>
+<span id="cb305-10"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb305-10" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb305-11"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb305-11" tabindex="-1"></a><span class="do">## rnaturalearth package for basemaps in R</span></span>
+<span id="cb305-12"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb305-12" tabindex="-1"></a><span class="fu">library</span>(rnaturalearth)</span>
+<span id="cb305-13"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb305-13" tabindex="-1"></a><span class="do">## leaflet package for interactive maps in R</span></span>
+<span id="cb305-14"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb305-14" tabindex="-1"></a><span class="co">#install.packages(&quot;leaflet&quot;)</span></span>
+<span id="cb305-15"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb305-15" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb305-16"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb305-16" tabindex="-1"></a><span class="do">##</span></span>
+<span id="cb305-17"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb305-17" tabindex="-1"></a><span class="fu">library</span>(purrr)</span>
+<span id="cb305-18"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb305-18" tabindex="-1"></a><span class="fu">library</span>(furrr)</span>
+<span id="cb305-19"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb305-19" tabindex="-1"></a><span class="co">#install.packages(&quot;track2KBA&quot;)</span></span>
+<span id="cb305-20"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb305-20" tabindex="-1"></a><span class="fu">library</span>(track2KBA)</span>
+<span id="cb305-21"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb305-21" tabindex="-1"></a><span class="do">## for date time</span></span>
+<span id="cb305-22"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb305-22" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
+<span id="cb305-23"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb305-23" tabindex="-1"></a><span class="do">## for stats</span></span>
+<span id="cb305-24"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb305-24" tabindex="-1"></a><span class="fu">library</span>(stats)</span>
+<span id="cb305-25"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb305-25" tabindex="-1"></a><span class="do">## speed filter</span></span>
+<span id="cb305-26"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb305-26" tabindex="-1"></a><span class="fu">library</span>(trip)</span>
+<span id="cb305-27"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb305-27" tabindex="-1"></a><span class="do">## linear interpolation</span></span>
+<span id="cb305-28"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb305-28" tabindex="-1"></a><span class="fu">library</span>(adehabitatLT)</span></code></pre></div>
+<p><br></p>
+</div>
+<div id="define-object-names-for-chapter-4" class="section level2 hasAnchor" number="30.5">
+<h2><span class="header-section-number">30.5</span> Define object names for chapter<a href="track2kba---central-place-foragers-analyse-cleanded-data.html#define-object-names-for-chapter-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Typically, if your data follows the same format as the examples in the chapter (and previous chapters), then below should be the only thing(s) you need to change.</p>
+<div class="sourceCode" id="cb306"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb306-1"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb306-1" tabindex="-1"></a><span class="do">## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span></span>
+<span id="cb306-2"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb306-2" tabindex="-1"></a><span class="do">## Specify projections / store needed CRS definitions as variables ----</span></span>
+<span id="cb306-3"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb306-3" tabindex="-1"></a><span class="do">## SEE: https://epsg.io/</span></span>
+<span id="cb306-4"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb306-4" tabindex="-1"></a><span class="do">## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span></span>
+<span id="cb306-5"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb306-5" tabindex="-1"></a></span>
+<span id="cb306-6"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb306-6" tabindex="-1"></a><span class="do">## world - unprojected coordinates</span></span>
+<span id="cb306-7"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb306-7" tabindex="-1"></a><span class="co"># wgs84 &lt;- st_crs(&quot;EPSG:4326&quot;)</span></span>
+<span id="cb306-8"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb306-8" tabindex="-1"></a></span>
+<span id="cb306-9"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb306-9" tabindex="-1"></a></span>
+<span id="cb306-10"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb306-10" tabindex="-1"></a><span class="do">## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span></span>
+<span id="cb306-11"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb306-11" tabindex="-1"></a><span class="do">## Source a relevant basemap (download / or load your own)</span></span>
+<span id="cb306-12"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb306-12" tabindex="-1"></a><span class="do">## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span></span>
+<span id="cb306-13"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb306-13" tabindex="-1"></a></span>
+<span id="cb306-14"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb306-14" tabindex="-1"></a><span class="do">## Source a world map from the rnaturalearth R package</span></span>
+<span id="cb306-15"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb306-15" tabindex="-1"></a><span class="do">## see details of function to change the type of map you get</span></span>
+<span id="cb306-16"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb306-16" tabindex="-1"></a><span class="do">## If you can&#39;t download this map - you may need to load a separate shapefile</span></span>
+<span id="cb306-17"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb306-17" tabindex="-1"></a><span class="do">## depicting a suitable basemap</span></span>
+<span id="cb306-18"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb306-18" tabindex="-1"></a><span class="co"># worldmap &lt;- rnaturalearth::ne_download(scale = &quot;large&quot;,</span></span>
+<span id="cb306-19"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb306-19" tabindex="-1"></a><span class="co">#                                        type = &quot;countries&quot;,</span></span>
+<span id="cb306-20"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb306-20" tabindex="-1"></a><span class="co">#                                        category = &quot;cultural&quot;,</span></span>
+<span id="cb306-21"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb306-21" tabindex="-1"></a><span class="co">#                                        destdir = tempdir(),</span></span>
+<span id="cb306-22"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb306-22" tabindex="-1"></a><span class="co">#                                        load = TRUE,</span></span>
+<span id="cb306-23"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb306-23" tabindex="-1"></a><span class="co">#                                        returnclass = &quot;sf&quot;)</span></span></code></pre></div>
+<p><br></p>
+</div>
+<div id="read-in-file-or-file-created-from-previous-chapter" class="section level2 hasAnchor" number="30.6">
+<h2><span class="header-section-number">30.6</span> Read in file (or file created from previous chapter)<a href="track2kba---central-place-foragers-analyse-cleanded-data.html#read-in-file-or-file-created-from-previous-chapter" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb307"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb307-1"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb307-1" tabindex="-1"></a><span class="do">## read in the pre-filtered, cleaned tracking data</span></span>
+<span id="cb307-2"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb307-2" tabindex="-1"></a>trips_interp_df <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;./data-testing/tracking-data/Puffinus-yelkouan-track2kba-files/Puffinus-yelkouan-input-tracks.csv&quot;</span>)</span>
+<span id="cb307-3"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb307-3" tabindex="-1"></a><span class="do">## read in the summary data for the tracks</span></span>
+<span id="cb307-4"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb307-4" tabindex="-1"></a>sumTrips <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;./data-testing/tracking-data/Puffinus-yelkouan-track2kba-files/Puffinus-yelkouan-input-summary.csv&quot;</span>)</span></code></pre></div>
+</div>
+<div id="track2kba-format-data-for-use-1" class="section level2 hasAnchor" number="30.7">
+<h2><span class="header-section-number">30.7</span> track2KBA: format data for use<a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kba-format-data-for-use-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><br></p>
+<div id="track2kbaformatfields-1" class="section level3 hasAnchor" number="30.7.1">
+<h3><span class="header-section-number">30.7.1</span> track2KBA::formatFields()<a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kbaformatfields-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>This function will help format your data to align with that required of track2KBA.</p>
+<p>In other words: for the track2KBA functions to work, your data needs to have certain columns named in the appropriate way. This function will help with that.</p>
+<blockquote>
+<p>We apply the formatting to the most recently filtered data.</p>
+</blockquote>
+<div class="sourceCode" id="cb308"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb308-1"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb308-1" tabindex="-1"></a><span class="do">## review current data</span></span>
+<span id="cb308-2"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb308-2" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">data.frame</span>(trips_interp_df),<span class="dv">2</span>)</span></code></pre></div>
+<pre><code>##             x          y                date          dx         dy
+## 1 16.88553100 42.8115280 2019-05-24 00:49:09 0.002069365  0.0001677
+## 2 16.88760037 42.8116957 2019-05-24 01:19:09 0.002553635 -0.0004107
+##             dist   dt             R2n      abs.angle     rel.angle
+## 1 0.002076149030 1800 0.000000000e+00  0.08086264312            NA
+## 2 0.002586450503 1800 4.310394793e-06 -0.15946401320 -0.2403266563
+##              trip_id              burst                                   pkey
+## 1 19_Tag17600_Z-9_01 19_Tag17600_Z-9_01 19_Tag17600_Z-9_01.2019-05-24 00:49:09
+## 2 19_Tag17600_Z-9_01 19_Tag17600_Z-9_01 19_Tag17600_Z-9_01.2019-05-24 01:19:09
+##     Longitude   Latitude   scientific_name         common_name   site_name
+## 1 16.88553100 42.8115280 Puffinus yelkouan Yelkouan Shearwater Lastovo SPA
+## 2 16.88760037 42.8116957 Puffinus yelkouan Yelkouan Shearwater Lastovo SPA
+##   colony_name lat_colony lon_colony         bird_id   age     sex   breed_stage
+## 1           Z  42.774893  16.875649 19_Tag17600_Z-9 adult unknown chick-rearing
+## 2           Z  42.774893  16.875649 19_Tag17600_Z-9 adult unknown chick-rearing
+##                 breed_status
+## 1 populated-upon-upload-STDB
+## 2 populated-upon-upload-STDB</code></pre>
+<div class="sourceCode" id="cb310"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb310-1"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb310-1" tabindex="-1"></a><span class="do">## Format the data BACK INTO key data fields to the standard used in track2KBA</span></span>
+<span id="cb310-2"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb310-2" tabindex="-1"></a>dataGroup_interp <span class="ot">&lt;-</span> <span class="fu">formatFields</span>(</span>
+<span id="cb310-3"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb310-3" tabindex="-1"></a>  <span class="do">## your input data.frame or tibble</span></span>
+<span id="cb310-4"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb310-4" tabindex="-1"></a>  <span class="at">dataGroup =</span> trips_interp_df, </span>
+<span id="cb310-5"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb310-5" tabindex="-1"></a>  <span class="do">## ID of the animal you tracked</span></span>
+<span id="cb310-6"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb310-6" tabindex="-1"></a>  <span class="at">fieldID   =</span> <span class="st">&quot;bird_id&quot;</span>, </span>
+<span id="cb310-7"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb310-7" tabindex="-1"></a>  <span class="at">fieldDateTime =</span> <span class="st">&quot;date&quot;</span>,</span>
+<span id="cb310-8"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb310-8" tabindex="-1"></a>  <span class="do">## longitude of device</span></span>
+<span id="cb310-9"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb310-9" tabindex="-1"></a>  <span class="at">fieldLon  =</span> <span class="st">&quot;Longitude&quot;</span>, </span>
+<span id="cb310-10"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb310-10" tabindex="-1"></a>  <span class="do">## latitude of device</span></span>
+<span id="cb310-11"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb310-11" tabindex="-1"></a>  <span class="at">fieldLat  =</span> <span class="st">&quot;Latitude&quot;</span></span>
+<span id="cb310-12"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb310-12" tabindex="-1"></a>)</span>
+<span id="cb310-13"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb310-13" tabindex="-1"></a></span>
+<span id="cb310-14"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb310-14" tabindex="-1"></a><span class="do">## Check output. Output is a data.frame</span></span>
+<span id="cb310-15"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb310-15" tabindex="-1"></a><span class="fu">head</span>(dataGroup_interp,<span class="dv">2</span>)</span></code></pre></div>
+<pre><code>##             x          y                date          dx         dy
+## 1 16.88553100 42.8115280 2019-05-24 00:49:09 0.002069365  0.0001677
+## 2 16.88760037 42.8116957 2019-05-24 01:19:09 0.002553635 -0.0004107
+##             dist   dt             R2n      abs.angle     rel.angle
+## 1 0.002076149030 1800 0.000000000e+00  0.08086264312            NA
+## 2 0.002586450503 1800 4.310394793e-06 -0.15946401320 -0.2403266563
+##              trip_id              burst                                   pkey
+## 1 19_Tag17600_Z-9_01 19_Tag17600_Z-9_01 19_Tag17600_Z-9_01.2019-05-24 00:49:09
+## 2 19_Tag17600_Z-9_01 19_Tag17600_Z-9_01 19_Tag17600_Z-9_01.2019-05-24 01:19:09
+##     Longitude   Latitude   scientific_name         common_name   site_name
+## 1 16.88553100 42.8115280 Puffinus yelkouan Yelkouan Shearwater Lastovo SPA
+## 2 16.88760037 42.8116957 Puffinus yelkouan Yelkouan Shearwater Lastovo SPA
+##   colony_name lat_colony lon_colony              ID   age     sex   breed_stage
+## 1           Z  42.774893  16.875649 19_Tag17600_Z-9 adult unknown chick-rearing
+## 2           Z  42.774893  16.875649 19_Tag17600_Z-9 adult unknown chick-rearing
+##                 breed_status            DateTime
+## 1 populated-upon-upload-STDB 2019-05-24 00:49:09
+## 2 populated-upon-upload-STDB 2019-05-24 01:19:09</code></pre>
+<p><br></p>
+</div>
+</div>
+<div id="track2kba-projecttracks" class="section level2 hasAnchor" number="30.8">
+<h2><span class="header-section-number">30.8</span> track2kba:: projectTracks()<a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kba-projecttracks" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb312"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb312-1"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb312-1" tabindex="-1"></a><span class="do">## run the function</span></span>
+<span id="cb312-2"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb312-2" tabindex="-1"></a>tracks_interp <span class="ot">&lt;-</span> <span class="fu">projectTracks</span>(<span class="at">dataGroup =</span> dataGroup_interp, <span class="at">projType =</span> <span class="st">&#39;azim&#39;</span>, <span class="at">custom=</span><span class="cn">TRUE</span> )</span></code></pre></div>
+<p><br></p>
+</div>
+<div id="track2kba-findscale" class="section level2 hasAnchor" number="30.9">
+<h2><span class="header-section-number">30.9</span> track2kba:: findScale()<a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kba-findscale" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><code>findScale()</code> provides options for setting the all-important smoothing parameter in the KDE.</p>
+<p><code>findScale()</code> calculates candidate smoothing parameter values using different methods.</p>
+<blockquote>
+<p>Choosing the ‘optimal’ smoothing parameter is critical. See GitHub page.</p>
+</blockquote>
+<p>[Consider what further advice we can give to users regarding choice of smoothing parameter?]</p>
+<div class="sourceCode" id="cb313"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb313-1"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb313-1" tabindex="-1"></a><span class="do">## implement findScale function</span></span>
+<span id="cb313-2"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb313-2" tabindex="-1"></a></span>
+<span id="cb313-3"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb313-3" tabindex="-1"></a>hVals <span class="ot">&lt;-</span> <span class="fu">findScale</span>(</span>
+<span id="cb313-4"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb313-4" tabindex="-1"></a>  <span class="at">tracks   =</span> tracks_interp,</span>
+<span id="cb313-5"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb313-5" tabindex="-1"></a>  <span class="at">scaleARS =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb313-6"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb313-6" tabindex="-1"></a>  <span class="at">sumTrips =</span> sumTrips)</span></code></pre></div>
+<p><img src="_main_files/figure-html/track2kba-analysis-findscale-1.png" width="672" /></p>
+<div class="sourceCode" id="cb314"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb314-1"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb314-1" tabindex="-1"></a><span class="do">## Review output</span></span>
+<span id="cb314-2"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb314-2" tabindex="-1"></a>hVals</span></code></pre></div>
+<pre><code>##   med_max_dist step_length  mag  href scaleARS
+## 1        44.05        1.37 3.79 14.33       17</code></pre>
+<div class="sourceCode" id="cb316"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb316-1"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb316-1" tabindex="-1"></a><span class="do">## must choose between one of three smoothing parameters for further analyses</span></span>
+<span id="cb316-2"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb316-2" tabindex="-1"></a><span class="do">## smoothing parameter is distance in km. Read more in supporting documents.</span></span>
+<span id="cb316-3"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb316-3" tabindex="-1"></a></span>
+<span id="cb316-4"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb316-4" tabindex="-1"></a><span class="do">## Review each outputted smoothing parameter option</span></span>
+<span id="cb316-5"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb316-5" tabindex="-1"></a>hVals<span class="sc">$</span>mag <span class="co"># affected by range of animal movement. Only works for central place foragers.</span></span></code></pre></div>
+<pre><code>## [1] 3.79</code></pre>
+<div class="sourceCode" id="cb318"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb318-1"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb318-1" tabindex="-1"></a>hVals<span class="sc">$</span>href <span class="co"># sort of represents quality of data</span></span></code></pre></div>
+<pre><code>## [1] 14.33</code></pre>
+<div class="sourceCode" id="cb320"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb320-1"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb320-1" tabindex="-1"></a>hVals<span class="sc">$</span>scaleARS <span class="co"># affected by quality of data and subsequent ability to determine scale at which animal interacts with environment. Learn more about First Passage Time analysis</span></span></code></pre></div>
+<pre><code>## [1] 17</code></pre>
+<p><br></p>
+</div>
+<div id="track2kba-estspaceuse" class="section level2 hasAnchor" number="30.10">
+<h2><span class="header-section-number">30.10</span> track2kba: estSpaceUse()<a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kba-estspaceuse" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Produce KDEs for each individual animal.</p>
+<p>NOTE: The grid cell size (i.e., grid resolution) should be less than the selected h value, otherwise the entire space use area of the animal may be encompassed in few cells.</p>
+<blockquote>
+<p>Guidance needed on choice of smoothing parameter</p>
+</blockquote>
+<p>[Guidance: Choice of smoothing parameter]</p>
+<blockquote>
+<p>Guidance on choice of UD</p>
+</blockquote>
+<p>[Guidance on choice of UD]</p>
+<div class="sourceCode" id="cb322"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb322-1"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb322-1" tabindex="-1"></a>KDE <span class="ot">&lt;-</span> <span class="fu">estSpaceUse</span>(</span>
+<span id="cb322-2"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb322-2" tabindex="-1"></a>  <span class="at">tracks =</span> tracks_interp, </span>
+<span id="cb322-3"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb322-3" tabindex="-1"></a>  <span class="at">scale =</span> hVals<span class="sc">$</span>mag, </span>
+<span id="cb322-4"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb322-4" tabindex="-1"></a>  <span class="at">levelUD =</span> <span class="dv">50</span>, </span>
+<span id="cb322-5"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb322-5" tabindex="-1"></a>  <span class="at">polyOut =</span> <span class="cn">TRUE</span></span>
+<span id="cb322-6"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb322-6" tabindex="-1"></a>)</span></code></pre></div>
+<p><br></p>
+</div>
+<div id="track2kba-mapkde" class="section level2 hasAnchor" number="30.11">
+<h2><span class="header-section-number">30.11</span> track2kba:: mapKDE()<a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kba-mapkde" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>use the simple mapping function to get an overview of UDs for individuals</p>
+<div class="sourceCode" id="cb323"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb323-1"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb323-1" tabindex="-1"></a><span class="do">## Specify colony location if you have this.</span></span>
+<span id="cb323-2"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb323-2" tabindex="-1"></a><span class="co">#colony &lt;- data.frame()</span></span>
+<span id="cb323-3"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb323-3" tabindex="-1"></a></span>
+<span id="cb323-4"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb323-4" tabindex="-1"></a><span class="do">##</span></span>
+<span id="cb323-5"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb323-5" tabindex="-1"></a><span class="fu">mapKDE</span>(<span class="at">KDE =</span> KDE<span class="sc">$</span>UDPolygons,</span>
+<span id="cb323-6"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb323-6" tabindex="-1"></a>       <span class="at">colony =</span> <span class="cn">NULL</span>) <span class="co"># input your colony location if you have this, to view in plot</span></span></code></pre></div>
+<p><img src="_main_files/figure-html/track2kba-analysis-mapkde-1.png" width="672" /></p>
+<p><br></p>
+</div>
+<div id="track2kba-review-choice-of-smoothing-parameter" class="section level2 hasAnchor" number="30.12">
+<h2><span class="header-section-number">30.12</span> track2kba: review choice of smoothing parameter<a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kba-review-choice-of-smoothing-parameter" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>After applying estSpaceUse and viewing plot with mapKDE, at this step we should
+verify that the smoothing parameter value we selected is producing reasonable
+space use estimates, given what we know about our study animals. Are the core
+areas much larger than expected? Much smaller? If so, consider using a different
+value for the <code>scale</code> parameter in the estSpaceUse function.</p>
+<div class="sourceCode" id="cb324"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb324-1"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb324-1" tabindex="-1"></a><span class="do">## specify an individual</span></span>
+<span id="cb324-2"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb324-2" tabindex="-1"></a><span class="do">## 14</span></span>
+<span id="cb324-3"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb324-3" tabindex="-1"></a>p <span class="ot">=</span> <span class="dv">7</span></span>
+<span id="cb324-4"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb324-4" tabindex="-1"></a></span>
+<span id="cb324-5"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb324-5" tabindex="-1"></a><span class="do">## convert to sf object </span></span>
+<span id="cb324-6"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb324-6" tabindex="-1"></a>trips_sf_IndBird <span class="ot">&lt;-</span> <span class="fu">st_as_sf</span>(tracks_interp) <span class="sc">%&gt;%</span> </span>
+<span id="cb324-7"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb324-7" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(ID <span class="sc">==</span> <span class="fu">unique</span>(tracks_interp<span class="sc">$</span>ID)[p])</span>
+<span id="cb324-8"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb324-8" tabindex="-1"></a></span>
+<span id="cb324-9"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb324-9" tabindex="-1"></a><span class="do">## get the UD for a single individual </span></span>
+<span id="cb324-10"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb324-10" tabindex="-1"></a>ud_sf_IndBird <span class="ot">&lt;-</span> KDE<span class="sc">$</span>UDPolygons <span class="sc">%&gt;%</span> </span>
+<span id="cb324-11"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb324-11" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(id <span class="sc">==</span> trips_sf_IndBird<span class="sc">$</span>ID[<span class="dv">1</span>]) <span class="sc">%&gt;%</span> </span>
+<span id="cb324-12"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb324-12" tabindex="-1"></a>  <span class="fu">st_transform</span>(.,<span class="at">crs =</span> <span class="fu">st_crs</span>(tracks_interp))</span>
+<span id="cb324-13"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb324-13" tabindex="-1"></a></span>
+<span id="cb324-14"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb324-14" tabindex="-1"></a><span class="do">## Plot OVERALL data again for first single individual</span></span>
+<span id="cb324-15"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb324-15" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">st_geometry</span>(trips_sf_IndBird), </span>
+<span id="cb324-16"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb324-16" tabindex="-1"></a>     <span class="at">cex =</span> <span class="fl">0.5</span>, </span>
+<span id="cb324-17"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb324-17" tabindex="-1"></a>     <span class="at">pch =</span> <span class="dv">1</span>)</span>
+<span id="cb324-18"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb324-18" tabindex="-1"></a></span>
+<span id="cb324-19"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb324-19" tabindex="-1"></a><span class="do">## and add the UD to the plot</span></span>
+<span id="cb324-20"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb324-20" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">st_geometry</span>(ud_sf_IndBird),<span class="at">add=</span>T, <span class="at">border =</span> <span class="st">&quot;red&quot;</span>)</span></code></pre></div>
+<p><img src="_main_files/figure-html/track2kba-analysis-smooth-review-1.png" width="672" /></p>
+<div class="sourceCode" id="cb325"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb325-1"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb325-1" tabindex="-1"></a><span class="fu">warning</span>(<span class="st">&quot;Assess whether your selected smoothing parameter has resulted in sensible</span></span>
+<span id="cb325-2"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb325-2" tabindex="-1"></a><span class="st">        Utilisation Distributions.&quot;</span>)</span></code></pre></div>
+<p><br></p>
+</div>
+<div id="track2kbarepassess" class="section level2 hasAnchor" number="30.13">
+<h2><span class="header-section-number">30.13</span> track2kba::repAssess()<a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kbarepassess" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Estimate how representative this sample of animals is of the population.</p>
+<blockquote>
+<p><strong>NOTE:</strong> iterations should be set to 100 at a minimum when running the script for analytical purposes. You can leave iterations as 1 when running the script for testing / exploratory purposes given this is a computer memory intensive task (i.e. it can take a long time).</p>
+</blockquote>
+<div class="sourceCode" id="cb326"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb326-1"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb326-1" tabindex="-1"></a><span class="do">##</span></span>
+<span id="cb326-2"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb326-2" tabindex="-1"></a>repr <span class="ot">&lt;-</span> <span class="fu">repAssess</span>(</span>
+<span id="cb326-3"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb326-3" tabindex="-1"></a>  <span class="at">tracks    =</span> tracks_interp, </span>
+<span id="cb326-4"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb326-4" tabindex="-1"></a>  <span class="at">KDE       =</span> KDE<span class="sc">$</span>KDE.Surface,</span>
+<span id="cb326-5"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb326-5" tabindex="-1"></a>  <span class="at">levelUD   =</span> <span class="dv">50</span>,</span>
+<span id="cb326-6"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb326-6" tabindex="-1"></a>  <span class="at">iteration =</span> <span class="dv">1</span>, <span class="do">## iterations should be set to 100 at a minimum when running the script officially</span></span>
+<span id="cb326-7"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb326-7" tabindex="-1"></a>  <span class="at">bootTable =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
+<p><img src="_main_files/figure-html/track2kba-analysis-repassess-1.png" width="672" /></p>
+<p><br></p>
+</div>
+<div id="track2kbafindsite" class="section level2 hasAnchor" number="30.14">
+<h2><span class="header-section-number">30.14</span> track2kba::findSite()<a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kbafindsite" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Using findSite() we can identify areas where animals are overlapping in space and delineate boundaries of sites which may be suited to area-based conservation measures.</p>
+<p>When you have data that has a high representativeness score (i.e. &gt; 70%), this essentialy indicates that animals are regularly using the location identified from the findSite() function (according to the data). Therefore, the outputted site from the findSite() function is the site that could be used to consider data against the Key Biodiversity Area criteria, or could also be used to showcase important sites at local, national and regional scales.</p>
+<blockquote>
+<p>NOTE: The findSite() function is a computationally intensive task. It may take some time (several minutes) to run. Go make a cup of tea while you wait :)</p>
+</blockquote>
+<div class="sourceCode" id="cb327"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb327-1"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb327-1" tabindex="-1"></a><span class="do">## indicate the population size of your source populaiton. e.g. the population size</span></span>
+<span id="cb327-2"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb327-2" tabindex="-1"></a><span class="do">## of the colony from which you tracked birds. For KBA identification, this estimate</span></span>
+<span id="cb327-3"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb327-3" tabindex="-1"></a><span class="do">## should be in Mature Individuals.</span></span>
+<span id="cb327-4"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb327-4" tabindex="-1"></a><span class="do">## I.e. for seabird colonies: breeding pairs * 2 = mature individuals</span></span>
+<span id="cb327-5"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb327-5" tabindex="-1"></a>SourcePopulationSize <span class="ot">=</span> <span class="dv">1200</span></span>
+<span id="cb327-6"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb327-6" tabindex="-1"></a></span>
+<span id="cb327-7"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb327-7" tabindex="-1"></a><span class="do">##</span></span>
+<span id="cb327-8"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb327-8" tabindex="-1"></a><span class="fu">sf_use_s2</span>(<span class="cn">FALSE</span>)</span>
+<span id="cb327-9"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb327-9" tabindex="-1"></a></span>
+<span id="cb327-10"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb327-10" tabindex="-1"></a><span class="do">## findSite function</span></span>
+<span id="cb327-11"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb327-11" tabindex="-1"></a>Site_PolyTrue <span class="ot">&lt;-</span> <span class="fu">findSite</span>(</span>
+<span id="cb327-12"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb327-12" tabindex="-1"></a>  <span class="at">KDE =</span> KDE<span class="sc">$</span>KDE.Surface,</span>
+<span id="cb327-13"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb327-13" tabindex="-1"></a>  <span class="at">represent =</span> repr<span class="sc">$</span>out,</span>
+<span id="cb327-14"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb327-14" tabindex="-1"></a>  <span class="at">levelUD =</span> <span class="dv">50</span>,</span>
+<span id="cb327-15"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb327-15" tabindex="-1"></a>  <span class="at">popSize =</span> SourcePopulationSize,     </span>
+<span id="cb327-16"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb327-16" tabindex="-1"></a>  <span class="at">polyOut =</span> T</span>
+<span id="cb327-17"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb327-17" tabindex="-1"></a>)</span>
+<span id="cb327-18"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb327-18" tabindex="-1"></a></span>
+<span id="cb327-19"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb327-19" tabindex="-1"></a><span class="do">## review key outputs</span></span>
+<span id="cb327-20"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb327-20" tabindex="-1"></a>Site_PolyTrue</span></code></pre></div>
+<pre><code>## Simple feature collection with 32 features and 3 fields
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: 12.05180343 ymin: 41.60260051 xmax: 19.77106214 ymax: 45.69826995
+## Geodetic CRS:  WGS 84
+## First 10 features:
+##       N_animals N_IND potentialSite                       geometry
+## 1    0.00000000     0         FALSE MULTIPOLYGON (((16.856635 4...
+## 2   34.90059119     1         FALSE MULTIPOLYGON (((13.00827288...
+## 3   69.80118238     2         FALSE MULTIPOLYGON (((12.69810649...
+## 4  104.70177357     3         FALSE MULTIPOLYGON (((12.77142009...
+## 5  139.60236477     4          TRUE MULTIPOLYGON (((13.00721945...
+## 6  174.50295596     5          TRUE MULTIPOLYGON (((12.96094533...
+## 7  209.40354715     6          TRUE MULTIPOLYGON (((12.95967702...
+## 8  244.30413834     7          TRUE MULTIPOLYGON (((16.6171124 ...
+## 9  279.20472953     8          TRUE MULTIPOLYGON (((16.70347028...
+## 10 314.10532072     9          TRUE MULTIPOLYGON (((16.70347028...</code></pre>
+<div class="sourceCode" id="cb329"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb329-1"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb329-1" tabindex="-1"></a><span class="fu">dim</span>(Site_PolyTrue)</span></code></pre></div>
+<pre><code>## [1] 32  4</code></pre>
+<div class="sourceCode" id="cb331"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb331-1"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb331-1" tabindex="-1"></a>Site_PolyTrue<span class="sc">$</span>potentialSite</span></code></pre></div>
+<pre><code>##  [1] FALSE FALSE FALSE FALSE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+## [13]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+## [25]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE</code></pre>
+</div>
+<div id="track2kbamapsite" class="section level2 hasAnchor" number="30.15">
+<h2><span class="header-section-number">30.15</span> track2kba::mapSite()<a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kbamapsite" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A simple plotting option for mapping the outputs of findSite().</p>
+<div class="sourceCode" id="cb333"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb333-1"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb333-1" tabindex="-1"></a><span class="do">## plot option</span></span>
+<span id="cb333-2"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb333-2" tabindex="-1"></a>Sitemap_PolyTrue <span class="ot">&lt;-</span> <span class="fu">mapSite</span>(Site_PolyTrue, </span>
+<span id="cb333-3"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb333-3" tabindex="-1"></a>                            <span class="at">colony =</span> <span class="cn">NULL</span>)</span></code></pre></div>
+<p><img src="_main_files/figure-html/track2kba-analysis-mapsite-1.png" width="672" /></p>
+<div class="sourceCode" id="cb334"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb334-1"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb334-1" tabindex="-1"></a><span class="do">## review output object</span></span>
+<span id="cb334-2"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb334-2" tabindex="-1"></a>Sitemap_PolyTrue</span></code></pre></div>
+<p><img src="_main_files/figure-html/track2kba-analysis-mapsite-2.png" width="672" /></p>
+</div>
+<div id="track2kbafindsite-further-understanding" class="section level2 hasAnchor" number="30.16">
+<h2><span class="header-section-number">30.16</span> track2kba::findSite(), further understanding<a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kbafindsite-further-understanding" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>If in findSite we instead specify polyOut=FALSE, our output will be a spatial
+grid of animal densities, with each cell representing the estimated number, or
+percentage of animals using that area. So this output is independent of the
+representativness-based importance threshold. i.e. the output indicates
+only the areas used by more or less individuals that you tracked, it does not
+give you a polygon that you would necessarily assess against IBA / KBA criteria.
+The output also does not use the representatives measure to estimate the OVERALL
+number of individuals that are likely using certain areas when you specify the
+popSize of your source population.</p>
+<div class="sourceCode" id="cb335"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb335-1"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb335-1" tabindex="-1"></a><span class="co"># ## findSite with polyOut=FALSE</span></span>
+<span id="cb335-2"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb335-2" tabindex="-1"></a><span class="co"># Site_PolyFalse &lt;- findSite(</span></span>
+<span id="cb335-3"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb335-3" tabindex="-1"></a><span class="co">#   KDE = KDE$KDE.Surface,</span></span>
+<span id="cb335-4"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb335-4" tabindex="-1"></a><span class="co">#   represent = repr$out,</span></span>
+<span id="cb335-5"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb335-5" tabindex="-1"></a><span class="co">#   levelUD = 50,</span></span>
+<span id="cb335-6"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb335-6" tabindex="-1"></a><span class="co">#   popSize = SourcePopulationSize, </span></span>
+<span id="cb335-7"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb335-7" tabindex="-1"></a><span class="co">#   polyOut = FALSE</span></span>
+<span id="cb335-8"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb335-8" tabindex="-1"></a><span class="co"># )</span></span>
+<span id="cb335-9"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb335-9" tabindex="-1"></a><span class="co"># </span></span>
+<span id="cb335-10"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb335-10" tabindex="-1"></a><span class="co"># ## review outputs</span></span>
+<span id="cb335-11"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb335-11" tabindex="-1"></a><span class="co"># dim(Site_PolyFalse)</span></span>
+<span id="cb335-12"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb335-12" tabindex="-1"></a><span class="co"># max(Site_PolyFalse@data$N_IND)</span></span>
+<span id="cb335-13"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb335-13" tabindex="-1"></a><span class="co"># max(Site_PolyFalse@data$N_animals)</span></span>
+<span id="cb335-14"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb335-14" tabindex="-1"></a><span class="co"># head(unique(Site_PolyFalse@data$ID_IND))</span></span>
+<span id="cb335-15"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb335-15" tabindex="-1"></a><span class="co"># </span></span>
+<span id="cb335-16"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb335-16" tabindex="-1"></a><span class="co"># ## simple plot option</span></span>
+<span id="cb335-17"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb335-17" tabindex="-1"></a><span class="co"># Sitemap_PolyFalse &lt;- mapSite(Site_PolyFalse, colony = colony)</span></span>
+<span id="cb335-18"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb335-18" tabindex="-1"></a><span class="co"># </span></span>
+<span id="cb335-19"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb335-19" tabindex="-1"></a><span class="co"># ## review output object</span></span>
+<span id="cb335-20"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb335-20" tabindex="-1"></a><span class="co"># Sitemap_PolyFalse</span></span></code></pre></div>
+</div>
+<div id="track2kbafindsite-outputs-explained" class="section level2 hasAnchor" number="30.17">
+<h2><span class="header-section-number">30.17</span> track2kba::findSite(), outputs explained<a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kbafindsite-outputs-explained" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>By default, findSite sets the threshold of site importance for the source population based on the degree of tracking sample representativeness following Lascelles et al. (2016): i.e., samples that are &gt;90%, 80-89%, 70-79%, and &lt;70% representative set the threshold for delineating a site as important for the local source population at 10%, 12.5%, 25%, and 50%, respectively)</p>
+<p>For example, for samples with representativeness of &gt;90%, the area that is considered
+potentially suitable for assessment against relevant criteria. eg. KBAs,
+is only that area used by 10% or MORE of the individuals from the source
+population. Any area used by 10% or LESS of the source population is not
+thought to sufficiently represent where the source population may be found,
+and hence is excluded from further assessment.</p>
+<p>The threshold rules were agreed upon by expert consensus.</p>
+<p>Note, when representativeness = 90% a bigger overall area in red is defined
+as potentially suitable for assessment against relevant criteria.
+when representativeness = 75% a SMALLER overall area in red is defined
+as potentially suitable for assessment against relevant criteria.
+This is because with a lower representativeness score, track2KBA provides
+a more conservative estimate of which areas can definitively be considered
+core areas regularly used by the sampled population.
+NOTE also: the total number of individuals estimated using the area is reduced
+when representativeness is lower. ie. basically, a lower total number of
+individuals are estimated to be using smaller areas when we are more unsure about how
+well the data likely represents the source population.</p>
+</div>
+<div id="track2kba-save-key-outputs" class="section level2 hasAnchor" number="30.18">
+<h2><span class="header-section-number">30.18</span> track2kba: Save key outputs<a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kba-save-key-outputs" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>[Consider saving key outputs here instead and aligning output names with the seaward extension outputs. Then we could have a single chapter where we deal with the outputs of both for assessing sites against relevant criteria]</p>
+</div>
+<div id="track2kbafindsite-iba-kba-assessment-considerations" class="section level2 hasAnchor" number="30.19">
+<h2><span class="header-section-number">30.19</span> track2kba::findSite(), IBA / KBA assessment considerations<a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kbafindsite-iba-kba-assessment-considerations" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>[Consider further text / options here]</p>
+</div>
+<div id="iba-assessment-data-preparation" class="section level2 hasAnchor" number="30.20">
+<h2><span class="header-section-number">30.20</span> IBA assessment data preparation<a href="track2kba---central-place-foragers-analyse-cleanded-data.html#iba-assessment-data-preparation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>NOTE, when polyOut = TRUE for function findSite(), the output includes a simple features object with polygons (represented by each row of data)
+that represent the number of overlapping UDs for individuals (N_IND), and the associated estimate of abundance (N_animals) within each of those polygons scaled according to the popSize and representativeness score.</p>
+<p>In track2KBA we don’t offer much advice about how to use the final outputs
+from findSite() for assessing data against various criteria, such as the IBA
+or KBA criteria. The text on GitHub (as of 18 Oct 2022), notes:</p>
+<p>‘Then, we can combine all the polygons within the ’potentialSite’ area,
+and use, for example, the maximum number of individuals present in that
+area to assess whether it may merit identification as a Key Biodiversity
+Area according to the KBA standard.’,</p>
+<p>BUT: This does text does not describe how to deal with all the individual
+polygons that were representative, and may be quite separate from each
+other in space!</p>
+<div class="sourceCode" id="cb336"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb336-1"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb336-1" tabindex="-1"></a><span class="do">## To assess each polygon we first need to summarise the data further.</span></span>
+<span id="cb336-2"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb336-2" tabindex="-1"></a><span class="do">## First, we must determine how many and where each unique polygon is.</span></span>
+<span id="cb336-3"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb336-3" tabindex="-1"></a>Site.polygons <span class="ot">&lt;-</span> Site_PolyTrue <span class="sc">%&gt;%</span> </span>
+<span id="cb336-4"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb336-4" tabindex="-1"></a>  <span class="do">## filter to only include potentialSite&#39;s</span></span>
+<span id="cb336-5"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb336-5" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(potentialSite<span class="sc">==</span><span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb336-6"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb336-6" tabindex="-1"></a>  <span class="do">## union to create multipart polygon</span></span>
+<span id="cb336-7"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb336-7" tabindex="-1"></a>  <span class="fu">st_union</span>(.) <span class="sc">%&gt;%</span> </span>
+<span id="cb336-8"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb336-8" tabindex="-1"></a>  <span class="do">## cast to create single part polygon object</span></span>
+<span id="cb336-9"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb336-9" tabindex="-1"></a>  <span class="fu">st_cast</span>(., <span class="st">&quot;POLYGON&quot;</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb336-10"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb336-10" tabindex="-1"></a>  <span class="fu">st_as_sf</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb336-11"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb336-11" tabindex="-1"></a>  <span class="do">## add unique id for each polygon</span></span>
+<span id="cb336-12"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb336-12" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">poly.id =</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(.))</span>
+<span id="cb336-13"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb336-13" tabindex="-1"></a></span>
+<span id="cb336-14"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb336-14" tabindex="-1"></a><span class="do">## Plot to review</span></span>
+<span id="cb336-15"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb336-15" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb336-16"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb336-16" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> Site.polygons, <span class="fu">aes</span>(<span class="at">fill =</span> <span class="fu">as.factor</span>(poly.id))) <span class="sc">+</span></span>
+<span id="cb336-17"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb336-17" tabindex="-1"></a>  <span class="co">#scale_fill_viridis_c(trans = &quot;sqrt&quot;, alpha = 1) +</span></span>
+<span id="cb336-18"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb336-18" tabindex="-1"></a>  <span class="fu">scale_color_viridis</span>(<span class="at">discrete =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb336-19"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb336-19" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">fill=</span><span class="fu">guide_legend</span>(<span class="at">title=</span><span class="st">&#39;Polygon&#39;</span>)) <span class="sc">+</span></span>
+<span id="cb336-20"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb336-20" tabindex="-1"></a>  <span class="do">## add the polygon labels</span></span>
+<span id="cb336-21"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb336-21" tabindex="-1"></a>  <span class="fu">geom_sf_text</span>(<span class="at">data =</span> Site.polygons, <span class="fu">aes</span>(<span class="at">label =</span> poly.id), <span class="at">colour =</span> <span class="st">&quot;black&quot;</span>, <span class="at">size =</span> <span class="dv">5</span>) <span class="sc">+</span></span>
+<span id="cb336-22"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb336-22" tabindex="-1"></a>  <span class="do">## remove x y labels</span></span>
+<span id="cb336-23"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb336-23" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.title.x =</span> <span class="fu">element_blank</span>()) <span class="sc">+</span></span>
+<span id="cb336-24"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb336-24" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.title.y =</span> <span class="fu">element_blank</span>()) <span class="sc">+</span></span>
+<span id="cb336-25"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb336-25" tabindex="-1"></a>  <span class="co"># Title</span></span>
+<span id="cb336-26"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb336-26" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="fu">paste</span>(<span class="st">&quot;Polygons for assessment against IBA criteria&quot;</span>,<span class="at">sep=</span><span class="st">&quot;&quot;</span>))<span class="sc">+</span></span>
+<span id="cb336-27"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb336-27" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">hjust =</span> <span class="fl">0.5</span>))</span>
+<span id="cb336-28"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb336-28" tabindex="-1"></a></span>
+<span id="cb336-29"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb336-29" tabindex="-1"></a>p</span></code></pre></div>
+<p><img src="_main_files/figure-html/track2kba-analysis-findsite-3-1.png" width="672" /></p>
+<div class="sourceCode" id="cb337"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb337-1"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb337-1" tabindex="-1"></a><span class="do">## Second, considering that for each representative polygon, the maximum number</span></span>
+<span id="cb337-2"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb337-2" tabindex="-1"></a><span class="do">## of animals could technically spread across anywhere in the site, we need</span></span>
+<span id="cb337-3"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb337-3" tabindex="-1"></a><span class="do">## to get the maximum number of animals for each site.</span></span>
+<span id="cb337-4"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb337-4" tabindex="-1"></a></span>
+<span id="cb337-5"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb337-5" tabindex="-1"></a><span class="do">## Merge the new unique polygons with the Site info and get overlapping data</span></span>
+<span id="cb337-6"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb337-6" tabindex="-1"></a>sf<span class="sc">::</span><span class="fu">sf_use_s2</span>(<span class="cn">FALSE</span>) <span class="co"># run this if issues with st_intersection: https://stackoverflow.com/questions/68478179/how-to-resolve-spherical-geometry-failures-when-joining-spatial-data</span></span>
+<span id="cb337-7"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb337-7" tabindex="-1"></a><span class="do">## Using an intersection, find all the data from Site object (the findSite output) </span></span>
+<span id="cb337-8"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb337-8" tabindex="-1"></a><span class="do">## that intersects with Site.polygons object (the unique polygons)</span></span>
+<span id="cb337-9"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb337-9" tabindex="-1"></a>Site.polygons.data <span class="ot">&lt;-</span> <span class="fu">st_intersection</span>(Site.polygons, Site_PolyTrue)</span>
+<span id="cb337-10"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb337-10" tabindex="-1"></a></span>
+<span id="cb337-11"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb337-11" tabindex="-1"></a><span class="do">## Summarise the data for each unique polygon.</span></span>
+<span id="cb337-12"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb337-12" tabindex="-1"></a>Site.polygons.data.summary <span class="ot">&lt;-</span> Site.polygons.data <span class="sc">%&gt;%</span> </span>
+<span id="cb337-13"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb337-13" tabindex="-1"></a>  <span class="fu">group_by</span>(poly.id) <span class="sc">%&gt;%</span> </span>
+<span id="cb337-14"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb337-14" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">N_animals_max =</span> <span class="fu">round</span>(<span class="fu">max</span>(N_animals),<span class="dv">0</span>),</span>
+<span id="cb337-15"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb337-15" tabindex="-1"></a>            <span class="at">N_IND_max  =</span> <span class="fu">round</span>(<span class="fu">max</span>(N_IND ),<span class="dv">0</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb337-16"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb337-16" tabindex="-1"></a>  <span class="fu">st_drop_geometry</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb337-17"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb337-17" tabindex="-1"></a>  <span class="fu">data.frame</span>()</span>
+<span id="cb337-18"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb337-18" tabindex="-1"></a></span>
+<span id="cb337-19"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb337-19" tabindex="-1"></a><span class="do">## bind this data back onto the spatial object</span></span>
+<span id="cb337-20"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb337-20" tabindex="-1"></a>Site.polygons <span class="ot">&lt;-</span> <span class="fu">left_join</span>(Site.polygons, </span>
+<span id="cb337-21"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb337-21" tabindex="-1"></a>                           Site.polygons.data.summary,</span>
+<span id="cb337-22"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#cb337-22" tabindex="-1"></a>                           <span class="at">by =</span> <span class="st">&quot;poly.id&quot;</span>)</span></code></pre></div>
+<p>[Further guidance will need to be provided about the weird artefact sites you can get from the track2kba analysis]</p>
+</div>
+<div id="saving-outputs" class="section level2 hasAnchor" number="30.21">
+<h2><span class="header-section-number">30.21</span> SAVING OUTPUTS<a href="track2kba---central-place-foragers-analyse-cleanded-data.html#saving-outputs" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>[May be better to save key outputs here for further assessment against relevant criteria]</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="track2kba-non-central-place-foraging-animal-movement.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>21 Seaward Extension: multiple colonies | Marine Megafauna Conservation Toolkit</title>
+  <meta name="description" content="21 Seaward Extension: multiple colonies | Marine Megafauna Conservation Toolkit" />
+  <meta name="generator" content="bookdown 0.37 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="21 Seaward Extension: multiple colonies | Marine Megafauna Conservation Toolkit" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="21 Seaward Extension: multiple colonies | Marine Megafauna Conservation Toolkit" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="seaward-extension-single-colony.html"/>
+<link rel="next" href="tracking-data-brief-introduction.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<link href="libs/vembedr-0.1.5/css/vembedr.css" rel="stylesheet" />
+<script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.2.1/leaflet.js"></script>
+<script src="libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
+<script src="libs/leaflet-providers-plugin-2.2.1/leaflet-providers-plugin.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#toolkit-overview"><i class="fa fa-check"></i>Toolkit overview</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#what-is-the-toolkit"><i class="fa fa-check"></i>What is the toolkit?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-does-the-toolkit-work"><i class="fa fa-check"></i>How does the toolkit work?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#what-content-does-the-toolkit-cover"><i class="fa fa-check"></i>What content does the toolkit cover?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#who-made-the-toolkit"><i class="fa fa-check"></i>Who made the toolkit</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="executive-summary.html"><a href="executive-summary.html"><i class="fa fa-check"></i><b>1</b> Executive summary</a></li>
+<li class="chapter" data-level="2" data-path="what-the-toolkit-offers.html"><a href="what-the-toolkit-offers.html"><i class="fa fa-check"></i><b>2</b> What the toolkit offers</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="what-the-toolkit-offers.html"><a href="what-the-toolkit-offers.html#key-biodiversity-areas"><i class="fa fa-check"></i><b>2.1</b> Key Biodiversity Areas</a></li>
+<li class="chapter" data-level="2.2" data-path="what-the-toolkit-offers.html"><a href="what-the-toolkit-offers.html#overview-of-toolkit-content"><i class="fa fa-check"></i><b>2.2</b> Overview of toolkit content</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="what-the-toolkit-does-not-offer.html"><a href="what-the-toolkit-does-not-offer.html"><i class="fa fa-check"></i><b>3</b> What the toolkit does not offer</a></li>
+<li class="chapter" data-level="4" data-path="contribute-to-the-toolkit.html"><a href="contribute-to-the-toolkit.html"><i class="fa fa-check"></i><b>4</b> Contribute to the toolkit</a></li>
+<li class="chapter" data-level="5" data-path="getting-a-site-conserved.html"><a href="getting-a-site-conserved.html"><i class="fa fa-check"></i><b>5</b> Getting a site conserved</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="getting-a-site-conserved.html"><a href="getting-a-site-conserved.html#theory-of-change"><i class="fa fa-check"></i><b>5.1</b> Theory of Change</a></li>
+<li class="chapter" data-level="5.2" data-path="getting-a-site-conserved.html"><a href="getting-a-site-conserved.html#simplified-theory-of-change"><i class="fa fa-check"></i><b>5.2</b> Simplified Theory of Change</a></li>
+<li class="chapter" data-level="5.3" data-path="getting-a-site-conserved.html"><a href="getting-a-site-conserved.html#detailed-theory-of-change"><i class="fa fa-check"></i><b>5.3</b> Detailed Theory of Change</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="project-management-considerations.html"><a href="project-management-considerations.html"><i class="fa fa-check"></i><b>6</b> Project management considerations</a></li>
+<li class="chapter" data-level="7" data-path="before-you-begin-a-kba-project.html"><a href="before-you-begin-a-kba-project.html"><i class="fa fa-check"></i><b>7</b> Before you begin a KBA project</a></li>
+<li class="chapter" data-level="8" data-path="sites-marine-sites-concepts.html"><a href="sites-marine-sites-concepts.html"><i class="fa fa-check"></i><b>8</b> Sites: Marine sites concepts</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="sites-marine-sites-concepts.html"><a href="sites-marine-sites-concepts.html#key-biodiversity-areas-1"><i class="fa fa-check"></i><b>8.1</b> Key Biodiversity Areas</a></li>
+<li class="chapter" data-level="8.2" data-path="sites-marine-sites-concepts.html"><a href="sites-marine-sites-concepts.html#important-bird-and-biodiversity-areas"><i class="fa fa-check"></i><b>8.2</b> Important Bird and Biodiversity Areas</a></li>
+<li class="chapter" data-level="8.3" data-path="sites-marine-sites-concepts.html"><a href="sites-marine-sites-concepts.html#other-sites"><i class="fa fa-check"></i><b>8.3</b> Other sites</a></li>
+<li class="chapter" data-level="8.4" data-path="sites-marine-sites-concepts.html"><a href="sites-marine-sites-concepts.html#important-sites-in-the-marine-environment"><i class="fa fa-check"></i><b>8.4</b> Important sites in the marine environment</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="sites-kbas-ibas.html"><a href="sites-kbas-ibas.html"><i class="fa fa-check"></i><b>9</b> Sites: KBAs &amp; IBAs</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="sites-kbas-ibas.html"><a href="sites-kbas-ibas.html#key-biodiversity-areas-kbas"><i class="fa fa-check"></i><b>9.1</b> Key Biodiversity Areas (KBAs)</a>
+<ul>
+<li class="chapter" data-level="9.1.1" data-path="sites-kbas-ibas.html"><a href="sites-kbas-ibas.html#kba-site-definition"><i class="fa fa-check"></i><b>9.1.1</b> KBA site definition</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="sites-kbas-ibas.html"><a href="sites-kbas-ibas.html#important-bird-and-biodiversity-areas-ibas"><i class="fa fa-check"></i><b>9.2</b> Important Bird and Biodiversity Areas (IBAs)</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="sites-kbas-ibas.html"><a href="sites-kbas-ibas.html#iba-site-definition"><i class="fa fa-check"></i><b>9.2.1</b> IBA site definition</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="sites-toolkit-context.html"><a href="sites-toolkit-context.html"><i class="fa fa-check"></i><b>10</b> Sites: Toolkit context</a></li>
+<li class="chapter" data-level="11" data-path="sites-method-considerations-for-project-managers.html"><a href="sites-method-considerations-for-project-managers.html"><i class="fa fa-check"></i><b>11</b> Sites: Method considerations for project managers</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="sites-method-considerations-for-project-managers.html"><a href="sites-method-considerations-for-project-managers.html#colony-site-abundance-data"><i class="fa fa-check"></i><b>11.1</b> Colony site (abundance data)</a></li>
+<li class="chapter" data-level="11.2" data-path="sites-method-considerations-for-project-managers.html"><a href="sites-method-considerations-for-project-managers.html#seaward-extension-site-distribution-estimates"><i class="fa fa-check"></i><b>11.2</b> Seaward extension site (distribution estimates)</a></li>
+<li class="chapter" data-level="11.3" data-path="sites-method-considerations-for-project-managers.html"><a href="sites-method-considerations-for-project-managers.html#pelagic-site-tracking-data"><i class="fa fa-check"></i><b>11.3</b> Pelagic site (tracking data)</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="sites-conservation-of-sites-summary.html"><a href="sites-conservation-of-sites-summary.html"><i class="fa fa-check"></i><b>12</b> Sites: Conservation of sites (summary)</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="sites-conservation-of-sites-summary.html"><a href="sites-conservation-of-sites-summary.html#what-threats-exist"><i class="fa fa-check"></i><b>12.1</b> What threats exist?</a></li>
+<li class="chapter" data-level="12.2" data-path="sites-conservation-of-sites-summary.html"><a href="sites-conservation-of-sites-summary.html#what-threats-impact-seabirds"><i class="fa fa-check"></i><b>12.2</b> What threats impact seabirds?</a></li>
+<li class="chapter" data-level="12.3" data-path="sites-conservation-of-sites-summary.html"><a href="sites-conservation-of-sites-summary.html#what-known-solutions-to-threats-exist"><i class="fa fa-check"></i><b>12.3</b> What known solutions to threats exist?</a></li>
+<li class="chapter" data-level="12.4" data-path="sites-conservation-of-sites-summary.html"><a href="sites-conservation-of-sites-summary.html#what-scale-should-threat-mitigation-be-considered-over"><i class="fa fa-check"></i><b>12.4</b> What scale should threat mitigation be considered over?</a></li>
+<li class="chapter" data-level="12.5" data-path="sites-conservation-of-sites-summary.html"><a href="sites-conservation-of-sites-summary.html#best-available-science"><i class="fa fa-check"></i><b>12.5</b> Best available science</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="sites-policy-advocacy-tools-summary.html"><a href="sites-policy-advocacy-tools-summary.html"><i class="fa fa-check"></i><b>13</b> Sites: Policy &amp; Advocacy tools (summary)</a></li>
+<li class="chapter" data-level="14" data-path="data-needs-identifying-a-site.html"><a href="data-needs-identifying-a-site.html"><i class="fa fa-check"></i><b>14</b> Data needs: Identifying a site</a></li>
+<li class="chapter" data-level="15" data-path="data-needs-datagroup-unit-of-analysis.html"><a href="data-needs-datagroup-unit-of-analysis.html"><i class="fa fa-check"></i><b>15</b> Data needs: dataGroup (unit of analysis)</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="data-needs-datagroup-unit-of-analysis.html"><a href="data-needs-datagroup-unit-of-analysis.html#example-datagroup-for-analysing-tracking-data-to-identify-an-important-site"><i class="fa fa-check"></i><b>15.1</b> Example dataGroup for analysing tracking data to identify an important site</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="breeding-location-abundance-data-single-species-single-site.html"><a href="breeding-location-abundance-data-single-species-single-site.html"><i class="fa fa-check"></i><b>16</b> Breeding location (abundance data): single species, single site</a></li>
+<li class="chapter" data-level="17" data-path="breeding-location-abundance-data-single-species-multiple-sites.html"><a href="breeding-location-abundance-data-single-species-multiple-sites.html"><i class="fa fa-check"></i><b>17</b> Breeding location (abundance data): single species, multiple sites</a></li>
+<li class="chapter" data-level="18" data-path="breeding-location-abundance-data-multi-species-multiple-sites.html"><a href="breeding-location-abundance-data-multi-species-multiple-sites.html"><i class="fa fa-check"></i><b>18</b> Breeding location (abundance data): multi species, multiple sites</a></li>
+<li class="chapter" data-level="19" data-path="seaward-extension-introduction.html"><a href="seaward-extension-introduction.html"><i class="fa fa-check"></i><b>19</b> Seaward Extension: Introduction</a></li>
+<li class="chapter" data-level="20" data-path="seaward-extension-single-colony.html"><a href="seaward-extension-single-colony.html"><i class="fa fa-check"></i><b>20</b> Seaward Extension: single colony</a>
+<ul>
+<li class="chapter" data-level="20.1" data-path="seaward-extension-single-colony.html"><a href="seaward-extension-single-colony.html#summary"><i class="fa fa-check"></i><b>20.1</b> <strong>Summary</strong></a></li>
+<li class="chapter" data-level="20.2" data-path="seaward-extension-single-colony.html"><a href="seaward-extension-single-colony.html#load-required-r-packages"><i class="fa fa-check"></i><b>20.2</b> <strong>Load required R packages:</strong></a></li>
+<li class="chapter" data-level="20.3" data-path="seaward-extension-single-colony.html"><a href="seaward-extension-single-colony.html#supply-input-data"><i class="fa fa-check"></i><b>20.3</b> <strong>Supply input data</strong></a></li>
+<li class="chapter" data-level="20.4" data-path="seaward-extension-single-colony.html"><a href="seaward-extension-single-colony.html#format-colony-location-as-spatial-objects"><i class="fa fa-check"></i><b>20.4</b> <strong>Format colony location as spatial objects</strong></a></li>
+<li class="chapter" data-level="20.5" data-path="seaward-extension-single-colony.html"><a href="seaward-extension-single-colony.html#create-a-background-raster"><i class="fa fa-check"></i><b>20.5</b> <strong>Create a background raster</strong></a></li>
+<li class="chapter" data-level="20.6" data-path="seaward-extension-single-colony.html"><a href="seaward-extension-single-colony.html#calculate-distance-by-sea-from-the-colony-per-cell"><i class="fa fa-check"></i><b>20.6</b> <strong>Calculate distance by sea from the colony per cell</strong></a></li>
+<li class="chapter" data-level="20.7" data-path="seaward-extension-single-colony.html"><a href="seaward-extension-single-colony.html#calculate-estimate-number-of-birds-from-the-colony-using-each-cell"><i class="fa fa-check"></i><b>20.7</b> <strong>Calculate estimate number of birds from the colony using each cell</strong></a></li>
+<li class="chapter" data-level="20.8" data-path="seaward-extension-single-colony.html"><a href="seaward-extension-single-colony.html#save-raster-output"><i class="fa fa-check"></i><b>20.8</b> <strong>Save raster output</strong></a></li>
+<li class="chapter" data-level="20.9" data-path="seaward-extension-single-colony.html"><a href="seaward-extension-single-colony.html#calculate-iba-raster"><i class="fa fa-check"></i><b>20.9</b> <strong>Calculate IBA raster</strong></a></li>
+<li class="chapter" data-level="20.10" data-path="seaward-extension-single-colony.html"><a href="seaward-extension-single-colony.html#calculate-iba-polygon"><i class="fa fa-check"></i><b>20.10</b> <strong>Calculate IBA polygon</strong></a></li>
+<li class="chapter" data-level="20.11" data-path="seaward-extension-single-colony.html"><a href="seaward-extension-single-colony.html#plot-and-save-the-final-iba-polygon"><i class="fa fa-check"></i><b>20.11</b> Plot and save the final IBA polygon</a></li>
+<li class="chapter" data-level="20.12" data-path="seaward-extension-single-colony.html"><a href="seaward-extension-single-colony.html#record-the-metadata"><i class="fa fa-check"></i><b>20.12</b> Record the metadata</a></li>
+</ul></li>
+<li class="chapter" data-level="21" data-path="seaward-extension-multiple-colonies.html"><a href="seaward-extension-multiple-colonies.html"><i class="fa fa-check"></i><b>21</b> Seaward Extension: multiple colonies</a>
+<ul>
+<li class="chapter" data-level="21.1" data-path="seaward-extension-multiple-colonies.html"><a href="seaward-extension-multiple-colonies.html#load-required-r-packages-1"><i class="fa fa-check"></i><b>21.1</b> <strong>Load required R packages:</strong></a></li>
+<li class="chapter" data-level="21.2" data-path="seaward-extension-multiple-colonies.html"><a href="seaward-extension-multiple-colonies.html#supply-input-data-1"><i class="fa fa-check"></i><b>21.2</b> <strong>Supply input data</strong></a></li>
+<li class="chapter" data-level="21.3" data-path="seaward-extension-multiple-colonies.html"><a href="seaward-extension-multiple-colonies.html#format-colony-locations-as-spatial-objects"><i class="fa fa-check"></i><b>21.3</b> <strong>Format colony locations as spatial objects</strong></a></li>
+<li class="chapter" data-level="21.4" data-path="seaward-extension-multiple-colonies.html"><a href="seaward-extension-multiple-colonies.html#create-a-background-raster-1"><i class="fa fa-check"></i><b>21.4</b> <strong>Create a background raster</strong></a></li>
+<li class="chapter" data-level="21.5" data-path="seaward-extension-multiple-colonies.html"><a href="seaward-extension-multiple-colonies.html#calculate-distance-by-sea-from-the-colony-per-cell-1"><i class="fa fa-check"></i><b>21.5</b> <strong>Calculate distance by sea from the colony per cell</strong></a></li>
+<li class="chapter" data-level="21.6" data-path="seaward-extension-multiple-colonies.html"><a href="seaward-extension-multiple-colonies.html#inspect-the-output-distance-from-colony-rasters"><i class="fa fa-check"></i><b>21.6</b> <strong>Inspect the output distance from colony rasters</strong></a></li>
+<li class="chapter" data-level="21.7" data-path="seaward-extension-multiple-colonies.html"><a href="seaward-extension-multiple-colonies.html#for-each-colony-estimate-number-of-birds-that-use-each-cell"><i class="fa fa-check"></i><b>21.7</b> <strong>For each colony, estimate number of birds that use each cell</strong></a></li>
+<li class="chapter" data-level="21.8" data-path="seaward-extension-multiple-colonies.html"><a href="seaward-extension-multiple-colonies.html#overlap-the-rasters-and-save-raster-outputs"><i class="fa fa-check"></i><b>21.8</b> <strong>Overlap the rasters and save raster outputs</strong></a></li>
+<li class="chapter" data-level="21.9" data-path="seaward-extension-multiple-colonies.html"><a href="seaward-extension-multiple-colonies.html#calculate-iba-raster-1"><i class="fa fa-check"></i><b>21.9</b> <strong>Calculate IBA raster</strong></a></li>
+<li class="chapter" data-level="21.10" data-path="seaward-extension-multiple-colonies.html"><a href="seaward-extension-multiple-colonies.html#calculate-iba-polygon-1"><i class="fa fa-check"></i><b>21.10</b> <strong>Calculate IBA polygon</strong></a></li>
+<li class="chapter" data-level="21.11" data-path="seaward-extension-multiple-colonies.html"><a href="seaward-extension-multiple-colonies.html#split-into-separate-iba-polygons-and-save-metadata"><i class="fa fa-check"></i><b>21.11</b> <strong>Split into separate IBA polygons and save metadata</strong></a></li>
+<li class="chapter" data-level="21.12" data-path="seaward-extension-multiple-colonies.html"><a href="seaward-extension-multiple-colonies.html#record-the-metadata-1"><i class="fa fa-check"></i><b>21.12</b> Record the metadata</a></li>
+</ul></li>
+<li class="chapter" data-level="22" data-path="tracking-data-brief-introduction.html"><a href="tracking-data-brief-introduction.html"><i class="fa fa-check"></i><b>22</b> Tracking data: Brief introduction</a>
+<ul>
+<li class="chapter" data-level="22.1" data-path="tracking-data-brief-introduction.html"><a href="tracking-data-brief-introduction.html#animal-tracking-data-considered-in-this-toolkit"><i class="fa fa-check"></i><b>22.1</b> Animal tracking data considered in this toolkit</a></li>
+<li class="chapter" data-level="22.2" data-path="tracking-data-brief-introduction.html"><a href="tracking-data-brief-introduction.html#general-introduction-to-animal-tracking-data"><i class="fa fa-check"></i><b>22.2</b> General introduction to animal tracking data</a></li>
+</ul></li>
+<li class="chapter" data-level="23" data-path="tracking-data-sampling-strategy.html"><a href="tracking-data-sampling-strategy.html"><i class="fa fa-check"></i><b>23</b> Tracking data: Sampling strategy</a>
+<ul>
+<li class="chapter" data-level="23.1" data-path="tracking-data-sampling-strategy.html"><a href="tracking-data-sampling-strategy.html#sampling-strategy-when-collecting-animal-tracking-data-for-seabirds"><i class="fa fa-check"></i><b>23.1</b> Sampling strategy when collecting animal tracking data for seabirds</a></li>
+<li class="chapter" data-level="23.2" data-path="tracking-data-sampling-strategy.html"><a href="tracking-data-sampling-strategy.html#how-many-birds-should-you-track"><i class="fa fa-check"></i><b>23.2</b> How many birds should you track?</a></li>
+<li class="chapter" data-level="23.3" data-path="tracking-data-sampling-strategy.html"><a href="tracking-data-sampling-strategy.html#how-many-years-of-tracking-data-should-you-collect"><i class="fa fa-check"></i><b>23.3</b> How many years of tracking data should you collect?</a></li>
+<li class="chapter" data-level="23.4" data-path="tracking-data-sampling-strategy.html"><a href="tracking-data-sampling-strategy.html#how-many-years-of-tracking-data-should-you-collect-for-kba-or-iba-identification"><i class="fa fa-check"></i><b>23.4</b> How many years of tracking data should you collect for KBA or IBA identification?</a></li>
+<li class="chapter" data-level="23.5" data-path="tracking-data-sampling-strategy.html"><a href="tracking-data-sampling-strategy.html#which-locations-should-you-track-animals-from"><i class="fa fa-check"></i><b>23.5</b> Which locations should you track animals from?</a></li>
+<li class="chapter" data-level="23.6" data-path="tracking-data-sampling-strategy.html"><a href="tracking-data-sampling-strategy.html#sampling-strategy-general-recommendations"><i class="fa fa-check"></i><b>23.6</b> Sampling strategy general recommendations</a></li>
+</ul></li>
+<li class="chapter" data-level="24" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html"><i class="fa fa-check"></i><b>24</b> Tracking data: Merge files together for analysis</a>
+<ul>
+<li class="chapter" data-level="24.1" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html#what-this-chapter-covers"><i class="fa fa-check"></i><b>24.1</b> What this chapter covers:</a></li>
+<li class="chapter" data-level="24.2" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html#where-you-can-get-example-data-for-the-chapter"><i class="fa fa-check"></i><b>24.2</b> Where you can get example data for the chapter:</a></li>
+<li class="chapter" data-level="24.3" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html#load-packages"><i class="fa fa-check"></i><b>24.3</b> Load packages</a></li>
+<li class="chapter" data-level="24.4" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html#define-object-names-for-chapter"><i class="fa fa-check"></i><b>24.4</b> Define object names for chapter</a></li>
+<li class="chapter" data-level="24.5" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html#storing-reading-and-formatting-raw-tracking-data"><i class="fa fa-check"></i><b>24.5</b> Storing, reading, and formatting raw tracking data</a>
+<ul>
+<li class="chapter" data-level="24.5.1" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html#storing-raw-tracking-data"><i class="fa fa-check"></i><b>24.5.1</b> Storing raw tracking data</a></li>
+<li class="chapter" data-level="24.5.2" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html#reading-raw-tracking-data-into-r-rstudio"><i class="fa fa-check"></i><b>24.5.2</b> Reading raw tracking data into R / Rstudio</a></li>
+</ul></li>
+<li class="chapter" data-level="24.6" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html#example-data-summary-yelkouan-shearwaters-puffinus-yelkouan-croatia"><i class="fa fa-check"></i><b>24.6</b> Example data summary: Yelkouan Shearwaters (<em>Puffinus yelkouan</em>), Croatia</a></li>
+<li class="chapter" data-level="24.7" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html#loading-example-data-yelkouan-shearwaters-puffinus-yelkouan"><i class="fa fa-check"></i><b>24.7</b> Loading example data: Yelkouan Shearwaters (<em>Puffinus yelkouan</em>)</a>
+<ul>
+<li class="chapter" data-level="24.7.1" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html#load-example-data-first-exploring-the-data-on-your-machine"><i class="fa fa-check"></i><b>24.7.1</b> Load example data: First, exploring the data on your machine</a></li>
+<li class="chapter" data-level="24.7.2" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html#load-example-data-second-prepare-the-files-for-loading-into-r"><i class="fa fa-check"></i><b>24.7.2</b> Load example data: Second, prepare the files for loading into R</a></li>
+<li class="chapter" data-level="24.7.3" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html#load-example-data-third-load-the-files-into-a-single-data-frame-in-r"><i class="fa fa-check"></i><b>24.7.3</b> Load example data: Third, load the files into a single data frame in R</a>
+<ul>
+<li class="chapter" data-level="24.7.3.1" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html#produce-list-of-file-names-with-all-your-tracking-data"><i class="fa fa-check"></i><b>24.7.3.1</b> Produce list of file names with all your tracking data</a></li>
+<li class="chapter" data-level="24.7.3.2" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html#merge-tracking-data-together-to-create-singe-file"><i class="fa fa-check"></i><b>24.7.3.2</b> Merge tracking data together to create singe file</a></li>
+</ul></li>
+<li class="chapter" data-level="24.7.4" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html#review-the-data-you-have-read-into-r"><i class="fa fa-check"></i><b>24.7.4</b> Review the data you have read into R</a></li>
+<li class="chapter" data-level="24.7.5" data-path="tracking-data-merge-files-together-for-analysis.html"><a href="tracking-data-merge-files-together-for-analysis.html#save-the-merged-data"><i class="fa fa-check"></i><b>24.7.5</b> Save the merged data</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="25" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><i class="fa fa-check"></i><b>25</b> Tracking data: Convert files into format of Seabird Tracking Database</a>
+<ul>
+<li class="chapter" data-level="25.1" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#what-this-chapter-covers-1"><i class="fa fa-check"></i><b>25.1</b> What this chapter covers:</a></li>
+<li class="chapter" data-level="25.2" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#where-you-can-get-example-data-for-the-chapter-1"><i class="fa fa-check"></i><b>25.2</b> Where you can get example data for the chapter:</a></li>
+<li class="chapter" data-level="25.3" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#load-packages-1"><i class="fa fa-check"></i><b>25.3</b> Load packages</a></li>
+<li class="chapter" data-level="25.4" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#define-object-names-for-chapter-1"><i class="fa fa-check"></i><b>25.4</b> Define object names for chapter</a></li>
+<li class="chapter" data-level="25.5" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#load-file-created-from-previous-chapter"><i class="fa fa-check"></i><b>25.5</b> Load file created from previous chapter</a></li>
+<li class="chapter" data-level="25.6" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#seabird-tracking-database-format"><i class="fa fa-check"></i><b>25.6</b> Seabird Tracking Database format</a></li>
+<li class="chapter" data-level="25.7" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#loading-the-dataset-template-from-seabird-tracking-database"><i class="fa fa-check"></i><b>25.7</b> Loading the dataset template from Seabird Tracking Database</a></li>
+<li class="chapter" data-level="25.8" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#input-format-seabird-tracking-database"><i class="fa fa-check"></i><b>25.8</b> INPUT format: Seabird Tracking Database</a>
+<ul>
+<li class="chapter" data-level="25.8.1" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#formatting-own-data-to-align-with-seabird-tracking-database-input-format"><i class="fa fa-check"></i><b>25.8.1</b> Formatting own data to align with Seabird Tracking Database INPUT format</a>
+<ul>
+<li class="chapter" data-level="25.8.1.1" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#dataset-level-information-required-for-stdb"><i class="fa fa-check"></i><b>25.8.1.1</b> “Dataset” level information required for STDB</a></li>
+<li class="chapter" data-level="25.8.1.2" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#metadata-information"><i class="fa fa-check"></i><b>25.8.1.2</b> Metadata information</a></li>
+<li class="chapter" data-level="25.8.1.3" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#obtain-point-data-file-for-data-points-level-information-required-for-stdb"><i class="fa fa-check"></i><b>25.8.1.3</b> Obtain point data file for “Data points” level information required for STDB</a></li>
+<li class="chapter" data-level="25.8.1.4" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#review-of-the-input-format-for-the-seabird-tracking-database"><i class="fa fa-check"></i><b>25.8.1.4</b> Review of the INPUT format for the Seabird Tracking Database</a></li>
+</ul></li>
+<li class="chapter" data-level="25.8.2" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#input-stdb-format-saving"><i class="fa fa-check"></i><b>25.8.2</b> INPUT STDB format: saving</a></li>
+</ul></li>
+<li class="chapter" data-level="25.9" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#output-format-seabird-tracking-database"><i class="fa fa-check"></i><b>25.9</b> OUTPUT format: Seabird Tracking Database</a>
+<ul>
+<li class="chapter" data-level="25.9.1" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#load-stdb-output-template"><i class="fa fa-check"></i><b>25.9.1</b> Load STDB output template</a></li>
+<li class="chapter" data-level="25.9.2" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#convert-data-to-stdb-output-template"><i class="fa fa-check"></i><b>25.9.2</b> Convert data to STDB output template</a></li>
+<li class="chapter" data-level="25.9.3" data-path="tracking-data-convert-files-into-format-of-seabird-tracking-database.html"><a href="tracking-data-convert-files-into-format-of-seabird-tracking-database.html#output-stdb-format-saving"><i class="fa fa-check"></i><b>25.9.3</b> OUTPUT STDB format: saving</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="26" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><i class="fa fa-check"></i><b>26</b> Tracking data: Plotting tracks and reviewing tabular data</a>
+<ul>
+<li class="chapter" data-level="26.1" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#what-this-chapter-covers-2"><i class="fa fa-check"></i><b>26.1</b> What this chapter covers:</a></li>
+<li class="chapter" data-level="26.2" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#where-you-can-get-example-data-for-the-chapter-2"><i class="fa fa-check"></i><b>26.2</b> Where you can get example data for the chapter:</a></li>
+<li class="chapter" data-level="26.3" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#load-packages-2"><i class="fa fa-check"></i><b>26.3</b> Load packages</a></li>
+<li class="chapter" data-level="26.4" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#define-object-names-for-chapter-2"><i class="fa fa-check"></i><b>26.4</b> Define object names for chapter</a></li>
+<li class="chapter" data-level="26.5" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#load-file-or-file-created-from-previous-chapter"><i class="fa fa-check"></i><b>26.5</b> Load file (or file created from previous chapter)</a>
+<ul>
+<li class="chapter" data-level="26.5.1" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#simplify-object-names-if-need-be"><i class="fa fa-check"></i><b>26.5.1</b> Simplify object names if need be</a></li>
+</ul></li>
+<li class="chapter" data-level="26.6" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#explore-the-tabular-data"><i class="fa fa-check"></i><b>26.6</b> Explore the tabular data</a></li>
+<li class="chapter" data-level="26.7" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#review-of-summary-output"><i class="fa fa-check"></i><b>26.7</b> Review of summary output</a></li>
+<li class="chapter" data-level="26.8" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#arrange-data-and-remove-duplicate-entries"><i class="fa fa-check"></i><b>26.8</b> Arrange data and remove duplicate entries</a></li>
+<li class="chapter" data-level="26.9" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#visualise-all-the-location-data"><i class="fa fa-check"></i><b>26.9</b> Visualise all the location data</a></li>
+<li class="chapter" data-level="26.10" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#review-of-overall-plot-for-all-data-points"><i class="fa fa-check"></i><b>26.10</b> Review of overall plot for all data points</a></li>
+<li class="chapter" data-level="26.11" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#save-all-the-location-data-as-a-shapefile"><i class="fa fa-check"></i><b>26.11</b> Save all the location data as a shapefile</a></li>
+<li class="chapter" data-level="26.12" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#save-all-the-location-data-as-a-plot"><i class="fa fa-check"></i><b>26.12</b> Save all the location data as a plot</a></li>
+<li class="chapter" data-level="26.13" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#visualise-individual-animal-tracks"><i class="fa fa-check"></i><b>26.13</b> Visualise individual animal tracks</a>
+<ul>
+<li class="chapter" data-level="26.13.1" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#denote-beginning-and-end-of-tracks-for-individual-animals-entire-track"><i class="fa fa-check"></i><b>26.13.1</b> Denote beginning and end of tracks for individual animals entire track</a></li>
+<li class="chapter" data-level="26.13.2" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#save-individual-tracks-as-static-plots"><i class="fa fa-check"></i><b>26.13.2</b> Save individual tracks as static plots</a></li>
+<li class="chapter" data-level="26.13.3" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#save-individual-tracks-as-shapefiles"><i class="fa fa-check"></i><b>26.13.3</b> Save individual tracks as shapefiles</a></li>
+</ul></li>
+<li class="chapter" data-level="26.14" data-path="tracking-data-plotting-tracks-and-reviewing-tabular-data.html"><a href="tracking-data-plotting-tracks-and-reviewing-tabular-data.html#when-to-remove-or-salvage-data-from-a-tracked-individuals"><i class="fa fa-check"></i><b>26.14</b> When to remove or salvage data from a tracked individual(s)</a></li>
+</ul></li>
+<li class="chapter" data-level="27" data-path="tracking-data-cleaning-tracking-data.html"><a href="tracking-data-cleaning-tracking-data.html"><i class="fa fa-check"></i><b>27</b> Tracking data: Cleaning tracking data</a></li>
+<li class="chapter" data-level="28" data-path="track2kba-introduction.html"><a href="track2kba-introduction.html"><i class="fa fa-check"></i><b>28</b> Track2KBA: Introduction</a></li>
+<li class="chapter" data-level="29" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><i class="fa fa-check"></i><b>29</b> Track2KBA - Central Place Foragers: Clean and summarise data for analysis</a>
+<ul>
+<li class="chapter" data-level="29.1" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#what-this-chapter-covers-3"><i class="fa fa-check"></i><b>29.1</b> What this chapter covers:</a></li>
+<li class="chapter" data-level="29.2" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#outputs-and-assumptions-of-data-within-this-chapter"><i class="fa fa-check"></i><b>29.2</b> Outputs and assumptions of data within this chapter:</a></li>
+<li class="chapter" data-level="29.3" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#where-you-can-get-example-data-for-the-chapter-3"><i class="fa fa-check"></i><b>29.3</b> Where you can get example data for the chapter:</a></li>
+<li class="chapter" data-level="29.4" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#load-packages-3"><i class="fa fa-check"></i><b>29.4</b> Load packages</a></li>
+<li class="chapter" data-level="29.5" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#define-object-names-for-chapter-3"><i class="fa fa-check"></i><b>29.5</b> Define object names for chapter</a></li>
+<li class="chapter" data-level="29.6" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#load-file-or-file-created-from-previous-chapter-1"><i class="fa fa-check"></i><b>29.6</b> Load file (or file created from previous chapter)</a></li>
+<li class="chapter" data-level="29.7" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#datagroup-prepare-relevant-grouping-of-data-for-analyses"><i class="fa fa-check"></i><b>29.7</b> dataGroup: prepare relevant grouping of data for analyses</a>
+<ul>
+<li class="chapter" data-level="29.7.1" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#datagroup-defining-the-datagroup-for-the-tutorial"><i class="fa fa-check"></i><b>29.7.1</b> dataGroup: Defining the dataGroup for the tutorial</a></li>
+<li class="chapter" data-level="29.7.2" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#datagroup-extracting-data-for-the-analyses"><i class="fa fa-check"></i><b>29.7.2</b> dataGroup: extracting data for the analyses</a></li>
+</ul></li>
+<li class="chapter" data-level="29.8" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#datagroup-inspection-visual-review"><i class="fa fa-check"></i><b>29.8</b> dataGroup inspection: visual review</a></li>
+<li class="chapter" data-level="29.9" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#arrange-data-and-remove-duplicate-entries-1"><i class="fa fa-check"></i><b>29.9</b> Arrange data and remove duplicate entries</a></li>
+<li class="chapter" data-level="29.10" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#speed-filter-gps-data-remove-erroneous-location-points"><i class="fa fa-check"></i><b>29.10</b> Speed filter GPS data: remove erroneous location points</a></li>
+<li class="chapter" data-level="29.11" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#speed-filter-ptt-data-remove-erroneous-location-points"><i class="fa fa-check"></i><b>29.11</b> Speed filter PTT data: remove erroneous location points</a></li>
+<li class="chapter" data-level="29.12" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#speed-filter-data-review-plotting"><i class="fa fa-check"></i><b>29.12</b> Speed filter data review: plotting</a></li>
+<li class="chapter" data-level="29.13" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#data-cleaning-for-cpf-n_locs-sampling-interval-interpolation"><i class="fa fa-check"></i><b>29.13</b> Data cleaning for CPF: n_locs, sampling interval, interpolation</a>
+<ul>
+<li class="chapter" data-level="29.13.1" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#data-cleaning-for-cpf-seabirds-tracks-vs.-trips"><i class="fa fa-check"></i><b>29.13.1</b> Data cleaning for CPF seabirds: tracks vs. trips</a></li>
+<li class="chapter" data-level="29.13.2" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#data-cleaning-for-cpf-seabirds-nesting-habitat-considerations"><i class="fa fa-check"></i><b>29.13.2</b> Data cleaning for CPF seabirds: Nesting habitat considerations</a></li>
+</ul></li>
+<li class="chapter" data-level="29.14" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#track2kba-format-data-for-use"><i class="fa fa-check"></i><b>29.14</b> track2KBA: format data for use</a>
+<ul>
+<li class="chapter" data-level="29.14.1" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#track2kbaformatfields"><i class="fa fa-check"></i><b>29.14.1</b> track2KBA::formatFields()</a></li>
+</ul></li>
+<li class="chapter" data-level="29.15" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#track2kba-split-tracks-into-trips"><i class="fa fa-check"></i><b>29.15</b> track2KBA: Split tracks into trips</a>
+<ul>
+<li class="chapter" data-level="29.15.1" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#define-colony-of-origin"><i class="fa fa-check"></i><b>29.15.1</b> Define colony of origin</a></li>
+<li class="chapter" data-level="29.15.2" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#colony-of-origin-review"><i class="fa fa-check"></i><b>29.15.2</b> Colony of origin review</a></li>
+<li class="chapter" data-level="29.15.3" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#apply-tripsplit"><i class="fa fa-check"></i><b>29.15.3</b> Apply <code>tripSplit()</code></a></li>
+<li class="chapter" data-level="29.15.4" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#review-of-tripsplit-output"><i class="fa fa-check"></i><b>29.15.4</b> Review of tripSplit() output</a></li>
+<li class="chapter" data-level="29.15.5" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#understanding-what-is-happening-in-tripsplit-further"><i class="fa fa-check"></i><b>29.15.5</b> Understanding what is happening in tripSplit() further</a></li>
+<li class="chapter" data-level="29.15.6" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#review-the-individual-trips-for-each-tracked-animal-after-applying-tripsplit"><i class="fa fa-check"></i><b>29.15.6</b> Review the individual trips for each tracked animal after applying tripSplit()</a></li>
+<li class="chapter" data-level="29.15.7" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#plot-the-individual-trips-for-each-tracked-animal-after-applying-tripsplit"><i class="fa fa-check"></i><b>29.15.7</b> Plot the individual trips for each tracked animal after applying tripSplit()</a></li>
+</ul></li>
+<li class="chapter" data-level="29.16" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#track2kba-what-trip-data-to-use-complete-or-incomplete-trips"><i class="fa fa-check"></i><b>29.16</b> track2kba: What trip data to use (complete or incomplete trips)</a>
+<ul>
+<li class="chapter" data-level="29.16.1" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#track2kba-choice-of-complete-trips-only"><i class="fa fa-check"></i><b>29.16.1</b> track2KBA: Choice of complete trips only</a></li>
+</ul></li>
+<li class="chapter" data-level="29.17" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#track2kba-use-only-at-sea-sections-of-trips"><i class="fa fa-check"></i><b>29.17</b> track2KBA: Use only at-sea sections of trips</a></li>
+<li class="chapter" data-level="29.18" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#track2kba-number-of-locations-filter"><i class="fa fa-check"></i><b>29.18</b> track2KBA: Number of locations filter</a></li>
+<li class="chapter" data-level="29.19" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#track2kba-tripsummary"><i class="fa fa-check"></i><b>29.19</b> track2KBA: tripSummary()</a>
+<ul>
+<li class="chapter" data-level="29.19.1" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#trip-summary-data-review"><i class="fa fa-check"></i><b>29.19.1</b> Trip summary data review</a></li>
+</ul></li>
+<li class="chapter" data-level="29.20" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#track2kba-sampling-interval-assessment"><i class="fa fa-check"></i><b>29.20</b> track2KBA: Sampling interval assessment</a>
+<ul>
+<li class="chapter" data-level="29.20.1" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#sampling-interval-review"><i class="fa fa-check"></i><b>29.20.1</b> Sampling interval review</a></li>
+</ul></li>
+<li class="chapter" data-level="29.21" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#track2kba-interpolating-data-for-analysis"><i class="fa fa-check"></i><b>29.21</b> track2KBA: Interpolating data for analysis</a>
+<ul>
+<li class="chapter" data-level="29.21.1" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#interpolating-data-using-only-at-sea-locations"><i class="fa fa-check"></i><b>29.21.1</b> Interpolating data: using only at-sea locations</a></li>
+<li class="chapter" data-level="29.21.2" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#interpolating-data-choice-of-sampling-interval"><i class="fa fa-check"></i><b>29.21.2</b> Interpolating data: choice of sampling interval</a></li>
+<li class="chapter" data-level="29.21.3" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#interpolating-data-linear-interpolation-implementation"><i class="fa fa-check"></i><b>29.21.3</b> Interpolating data: linear interpolation implementation</a></li>
+</ul></li>
+<li class="chapter" data-level="29.22" data-path="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html"><a href="track2kba---central-place-foragers-clean-and-summarise-data-for-analysis.html#save-data"><i class="fa fa-check"></i><b>29.22</b> Save data</a></li>
+</ul></li>
+<li class="chapter" data-level="30" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html"><i class="fa fa-check"></i><b>30</b> Track2KBA - Central Place Foragers: Analyse cleanded data</a>
+<ul>
+<li class="chapter" data-level="30.1" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#what-this-chapter-covers-4"><i class="fa fa-check"></i><b>30.1</b> What this chapter covers:</a></li>
+<li class="chapter" data-level="30.2" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#where-you-can-get-example-data-for-the-chapter-4"><i class="fa fa-check"></i><b>30.2</b> Where you can get example data for the chapter:</a></li>
+<li class="chapter" data-level="30.3" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#description-of-data-prefiltering-for-main-track2kba-analysis"><i class="fa fa-check"></i><b>30.3</b> Description of data prefiltering for main track2kba analysis:</a></li>
+<li class="chapter" data-level="30.4" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#load-packages-4"><i class="fa fa-check"></i><b>30.4</b> Load packages</a></li>
+<li class="chapter" data-level="30.5" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#define-object-names-for-chapter-4"><i class="fa fa-check"></i><b>30.5</b> Define object names for chapter</a></li>
+<li class="chapter" data-level="30.6" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#read-in-file-or-file-created-from-previous-chapter"><i class="fa fa-check"></i><b>30.6</b> Read in file (or file created from previous chapter)</a></li>
+<li class="chapter" data-level="30.7" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kba-format-data-for-use-1"><i class="fa fa-check"></i><b>30.7</b> track2KBA: format data for use</a>
+<ul>
+<li class="chapter" data-level="30.7.1" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kbaformatfields-1"><i class="fa fa-check"></i><b>30.7.1</b> track2KBA::formatFields()</a></li>
+</ul></li>
+<li class="chapter" data-level="30.8" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kba-projecttracks"><i class="fa fa-check"></i><b>30.8</b> track2kba:: projectTracks()</a></li>
+<li class="chapter" data-level="30.9" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kba-findscale"><i class="fa fa-check"></i><b>30.9</b> track2kba:: findScale()</a></li>
+<li class="chapter" data-level="30.10" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kba-estspaceuse"><i class="fa fa-check"></i><b>30.10</b> track2kba: estSpaceUse()</a></li>
+<li class="chapter" data-level="30.11" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kba-mapkde"><i class="fa fa-check"></i><b>30.11</b> track2kba:: mapKDE()</a></li>
+<li class="chapter" data-level="30.12" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kba-review-choice-of-smoothing-parameter"><i class="fa fa-check"></i><b>30.12</b> track2kba: review choice of smoothing parameter</a></li>
+<li class="chapter" data-level="30.13" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kbarepassess"><i class="fa fa-check"></i><b>30.13</b> track2kba::repAssess()</a></li>
+<li class="chapter" data-level="30.14" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kbafindsite"><i class="fa fa-check"></i><b>30.14</b> track2kba::findSite()</a></li>
+<li class="chapter" data-level="30.15" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kbamapsite"><i class="fa fa-check"></i><b>30.15</b> track2kba::mapSite()</a></li>
+<li class="chapter" data-level="30.16" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kbafindsite-further-understanding"><i class="fa fa-check"></i><b>30.16</b> track2kba::findSite(), further understanding</a></li>
+<li class="chapter" data-level="30.17" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kbafindsite-outputs-explained"><i class="fa fa-check"></i><b>30.17</b> track2kba::findSite(), outputs explained</a></li>
+<li class="chapter" data-level="30.18" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kba-save-key-outputs"><i class="fa fa-check"></i><b>30.18</b> track2kba: Save key outputs</a></li>
+<li class="chapter" data-level="30.19" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#track2kbafindsite-iba-kba-assessment-considerations"><i class="fa fa-check"></i><b>30.19</b> track2kba::findSite(), IBA / KBA assessment considerations</a></li>
+<li class="chapter" data-level="30.20" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#iba-assessment-data-preparation"><i class="fa fa-check"></i><b>30.20</b> IBA assessment data preparation</a></li>
+<li class="chapter" data-level="30.21" data-path="track2kba---central-place-foragers-analyse-cleanded-data.html"><a href="track2kba---central-place-foragers-analyse-cleanded-data.html#saving-outputs"><i class="fa fa-check"></i><b>30.21</b> SAVING OUTPUTS</a></li>
+</ul></li>
+<li class="chapter" data-level="31" data-path="track2kba-non-central-place-foraging-animal-movement.html"><a href="track2kba-non-central-place-foraging-animal-movement.html"><i class="fa fa-check"></i><b>31</b> Track2KBA: Non central place foraging animal movement</a></li>
+<li class="chapter" data-level="32" data-path="sites-assessing-criteria.html"><a href="sites-assessing-criteria.html"><i class="fa fa-check"></i><b>32</b> Sites: Assessing criteria</a></li>
+<li class="chapter" data-level="33" data-path="sites-considerations-for-assessing-sites-against-criteria.html"><a href="sites-considerations-for-assessing-sites-against-criteria.html"><i class="fa fa-check"></i><b>33</b> Sites: Considerations for assessing sites against criteria</a></li>
+<li class="chapter" data-level="34" data-path="sites-merging-layers.html"><a href="sites-merging-layers.html"><i class="fa fa-check"></i><b>34</b> Sites: Merging layers</a></li>
+<li class="chapter" data-level="35" data-path="sites-refining-boundaries.html"><a href="sites-refining-boundaries.html"><i class="fa fa-check"></i><b>35</b> Sites: Refining boundaries</a>
+<ul>
+<li class="chapter" data-level="35.1" data-path="sites-refining-boundaries.html"><a href="sites-refining-boundaries.html#lessons-from-key-biodiversity-areas"><i class="fa fa-check"></i><b>35.1</b> Lessons from Key Biodiversity Areas</a></li>
+<li class="chapter" data-level="35.2" data-path="sites-refining-boundaries.html"><a href="sites-refining-boundaries.html#lessons-from-important-bird-and-biodiversity-areas"><i class="fa fa-check"></i><b>35.2</b> Lessons from Important Bird and Biodiversity Areas</a></li>
+</ul></li>
+<li class="chapter" data-level="36" data-path="supporting-data-at-sea-survey-data.html"><a href="supporting-data-at-sea-survey-data.html"><i class="fa fa-check"></i><b>36</b> Supporting data: At-sea survey data</a>
+<ul>
+<li class="chapter" data-level="36.1" data-path="supporting-data-at-sea-survey-data.html"><a href="supporting-data-at-sea-survey-data.html#at-sea-survey-data-and-tracking-data"><i class="fa fa-check"></i><b>36.1</b> At-sea survey data and tracking data</a></li>
+<li class="chapter" data-level="36.2" data-path="supporting-data-at-sea-survey-data.html"><a href="supporting-data-at-sea-survey-data.html#at-sea-survey-methodology"><i class="fa fa-check"></i><b>36.2</b> At-sea survey methodology</a></li>
+<li class="chapter" data-level="36.3" data-path="supporting-data-at-sea-survey-data.html"><a href="supporting-data-at-sea-survey-data.html#at-sea-survey-data-for-kbas-or-ibas"><i class="fa fa-check"></i><b>36.3</b> At-sea survey data for KBAs or IBAs</a></li>
+<li class="chapter" data-level="36.4" data-path="supporting-data-at-sea-survey-data.html"><a href="supporting-data-at-sea-survey-data.html#citations"><i class="fa fa-check"></i><b>36.4</b> Citations</a></li>
+</ul></li>
+<li class="chapter" data-level="37" data-path="supporting-data-statistical-models.html"><a href="supporting-data-statistical-models.html"><i class="fa fa-check"></i><b>37</b> Supporting data: statistical models</a>
+<ul>
+<li class="chapter" data-level="37.1" data-path="supporting-data-statistical-models.html"><a href="supporting-data-statistical-models.html#introduction-to-statistical-models-for-estimating-animal-distribution"><i class="fa fa-check"></i><b>37.1</b> Introduction to statistical models for estimating animal distribution</a></li>
+<li class="chapter" data-level="37.2" data-path="supporting-data-statistical-models.html"><a href="supporting-data-statistical-models.html#how-do-statistical-models-for-estimating-animal-distribution-work-broadly-speaking"><i class="fa fa-check"></i><b>37.2</b> How do statistical models for estimating animal distribution work (broadly speaking)?</a></li>
+<li class="chapter" data-level="37.3" data-path="supporting-data-statistical-models.html"><a href="supporting-data-statistical-models.html#examples-of-what-you-can-use-distribution-models-for"><i class="fa fa-check"></i><b>37.3</b> Examples of what you can use distribution models for</a></li>
+<li class="chapter" data-level="37.4" data-path="supporting-data-statistical-models.html"><a href="supporting-data-statistical-models.html#further-detail-to-statistical-models-for-estimating-animal-distribution"><i class="fa fa-check"></i><b>37.4</b> Further detail to statistical models for estimating animal distribution</a></li>
+<li class="chapter" data-level="37.5" data-path="supporting-data-statistical-models.html"><a href="supporting-data-statistical-models.html#examples-of-different-statistical-modelling-approaches-for-predicting-distribution"><i class="fa fa-check"></i><b>37.5</b> Examples of different statistical modelling approaches for predicting distribution</a></li>
+<li class="chapter" data-level="37.6" data-path="supporting-data-statistical-models.html"><a href="supporting-data-statistical-models.html#using-statistical-models-to-estimate-distribution-in-unsampled-locations"><i class="fa fa-check"></i><b>37.6</b> Using statistical models to estimate distribution in unsampled locations</a></li>
+<li class="chapter" data-level="37.7" data-path="supporting-data-statistical-models.html"><a href="supporting-data-statistical-models.html#examples-of-using-predicted-species-distribution-outputs-for-conservation-purposes"><i class="fa fa-check"></i><b>37.7</b> Examples of using predicted species distribution outputs for conservation purposes</a></li>
+<li class="chapter" data-level="37.8" data-path="supporting-data-statistical-models.html"><a href="supporting-data-statistical-models.html#further-resources"><i class="fa fa-check"></i><b>37.8</b> Further resources</a></li>
+</ul></li>
+<li class="chapter" data-level="38" data-path="sites-proposing-a-kba.html"><a href="sites-proposing-a-kba.html"><i class="fa fa-check"></i><b>38</b> Sites: Proposing a KBA</a>
+<ul>
+<li class="chapter" data-level="38.1" data-path="sites-proposing-a-kba.html"><a href="sites-proposing-a-kba.html#who-can-propose-a-kba"><i class="fa fa-check"></i><b>38.1</b> Who can propose a KBA?</a></li>
+<li class="chapter" data-level="38.2" data-path="sites-proposing-a-kba.html"><a href="sites-proposing-a-kba.html#queries-about-proposing-a-kba"><i class="fa fa-check"></i><b>38.2</b> Queries about proposing a KBA?</a></li>
+</ul></li>
+<li class="chapter" data-level="39" data-path="sites-monitoring.html"><a href="sites-monitoring.html"><i class="fa fa-check"></i><b>39</b> Sites: Monitoring</a>
+<ul>
+<li class="chapter" data-level="39.1" data-path="sites-monitoring.html"><a href="sites-monitoring.html#why-monitor-sites"><i class="fa fa-check"></i><b>39.1</b> Why monitor sites?</a></li>
+<li class="chapter" data-level="39.2" data-path="sites-monitoring.html"><a href="sites-monitoring.html#what-does-the-kba-monitoring-protocol-entail"><i class="fa fa-check"></i><b>39.2</b> What does the KBA monitoring protocol entail?</a></li>
+<li class="chapter" data-level="39.3" data-path="sites-monitoring.html"><a href="sites-monitoring.html#how-to-establish-an-effectively-implemented-monitoring-protocol"><i class="fa fa-check"></i><b>39.3</b> How to establish an effectively implemented monitoring protocol?</a></li>
+</ul></li>
+<li class="chapter" data-level="40" data-path="sites-conservation-of-sites.html"><a href="sites-conservation-of-sites.html"><i class="fa fa-check"></i><b>40</b> Sites: Conservation of sites</a>
+<ul>
+<li class="chapter" data-level="40.1" data-path="sites-conservation-of-sites.html"><a href="sites-conservation-of-sites.html#what-threats-exist-1"><i class="fa fa-check"></i><b>40.1</b> What threats exist?</a></li>
+<li class="chapter" data-level="40.2" data-path="sites-conservation-of-sites.html"><a href="sites-conservation-of-sites.html#what-threats-impact-seabirds-1"><i class="fa fa-check"></i><b>40.2</b> What threats impact seabirds?</a></li>
+<li class="chapter" data-level="40.3" data-path="sites-conservation-of-sites.html"><a href="sites-conservation-of-sites.html#what-known-solutions-to-threats-exist-1"><i class="fa fa-check"></i><b>40.3</b> What known solutions to threats exist?</a></li>
+<li class="chapter" data-level="40.4" data-path="sites-conservation-of-sites.html"><a href="sites-conservation-of-sites.html#what-scale-should-threat-mitigation-be-considered-over-1"><i class="fa fa-check"></i><b>40.4</b> What scale should threat mitigation be considered over?</a></li>
+<li class="chapter" data-level="40.5" data-path="sites-conservation-of-sites.html"><a href="sites-conservation-of-sites.html#best-available-science-1"><i class="fa fa-check"></i><b>40.5</b> Best available science</a></li>
+</ul></li>
+<li class="chapter" data-level="41" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html"><i class="fa fa-check"></i><b>41</b> Sites: Policy and advocacy</a>
+<ul>
+<li class="chapter" data-level="41.1" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#achieving-the-goal-marine-megafauna-in-favourable-conservation-status"><i class="fa fa-check"></i><b>41.1</b> Achieving the goal: “marine megafauna in favourable conservation status”</a></li>
+<li class="chapter" data-level="41.2" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#achieving-conservation-of-sites"><i class="fa fa-check"></i><b>41.2</b> Achieving conservation of sites</a></li>
+<li class="chapter" data-level="41.3" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#important-sites-in-the-marine-environment-1"><i class="fa fa-check"></i><b>41.3</b> Important sites in the marine environment</a></li>
+<li class="chapter" data-level="41.4" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#key-biodiversity-area-kba-definition-and-scope"><i class="fa fa-check"></i><b>41.4</b> Key Biodiversity Area (KBA) definition and scope</a></li>
+<li class="chapter" data-level="41.5" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#kba-recognition-internationally"><i class="fa fa-check"></i><b>41.5</b> KBA recognition internationally</a></li>
+<li class="chapter" data-level="41.6" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#kba-conservation-through-international-mechanisms"><i class="fa fa-check"></i><b>41.6</b> KBA conservation through international mechanisms</a>
+<ul>
+<li class="chapter" data-level="41.6.0.1" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#convention-on-biological-diversity-cbd"><i class="fa fa-check"></i><b>41.6.0.1</b> Convention on Biological Diversity (CBD)</a></li>
+<li class="chapter" data-level="41.6.1" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#united-nations-sustainable-development-goals"><i class="fa fa-check"></i><b>41.6.1</b> United Nation’s Sustainable Development Goals</a></li>
+<li class="chapter" data-level="41.6.2" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#united-nations-convention-on-the-law-of-the-sea-unclos"><i class="fa fa-check"></i><b>41.6.2</b> United Nations Convention on the Law of the Sea (UNCLOS)</a></li>
+</ul></li>
+<li class="chapter" data-level="41.7" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#kba-conservation-through-marine-protected-areas"><i class="fa fa-check"></i><b>41.7</b> KBA conservation through marine protected areas</a>
+<ul>
+<li class="chapter" data-level="41.7.1" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#regional-seas-agreements"><i class="fa fa-check"></i><b>41.7.1</b> Regional Seas Agreements</a></li>
+<li class="chapter" data-level="41.7.2" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#the-high-seas-treaty"><i class="fa fa-check"></i><b>41.7.2</b> The High Seas Treaty</a></li>
+<li class="chapter" data-level="41.7.3" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#advocating-for-the-protection-of-a-kba-through-mpa-status"><i class="fa fa-check"></i><b>41.7.3</b> Advocating for the protection of a KBA through MPA status</a>
+<ul>
+<li class="chapter" data-level="41.7.3.1" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#build-a-strong-case"><i class="fa fa-check"></i><b>41.7.3.1</b> Build a Strong Case</a></li>
+<li class="chapter" data-level="41.7.3.2" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#raise-awareness-and-mobilize-support"><i class="fa fa-check"></i><b>41.7.3.2</b> Raise Awareness and Mobilize Support</a></li>
+<li class="chapter" data-level="41.7.3.3" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#engage-decision-makers"><i class="fa fa-check"></i><b>41.7.3.3</b> Engage Decision-Makers</a></li>
+<li class="chapter" data-level="41.7.3.4" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#collaborate-with-environmental-mechanisms"><i class="fa fa-check"></i><b>41.7.3.4</b> Collaborate with Environmental Mechanisms</a></li>
+<li class="chapter" data-level="41.7.3.5" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#seek-legal-and-policy-support"><i class="fa fa-check"></i><b>41.7.3.5</b> Seek legal and policy support</a></li>
+</ul></li>
+<li class="chapter" data-level="41.7.4" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#kba-conservation-through-alternative-pathways"><i class="fa fa-check"></i><b>41.7.4</b> KBA conservation through alternative pathways</a>
+<ul>
+<li class="chapter" data-level="41.7.4.1" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#sustainable-fisheries-management"><i class="fa fa-check"></i><b>41.7.4.1</b> Sustainable fisheries management</a></li>
+<li class="chapter" data-level="41.7.4.2" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#ecosystem-based-management-through-marine-spatial-planning-msp"><i class="fa fa-check"></i><b>41.7.4.2</b> Ecosystem-based management through marine spatial planning (MSP)</a></li>
+<li class="chapter" data-level="41.7.4.3" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#major-conventions-convention-on-migratory-species"><i class="fa fa-check"></i><b>41.7.4.3</b> Major Conventions: Convention on Migratory Species</a></li>
+</ul></li>
+<li class="chapter" data-level="41.7.5" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#kba-conservation-guidance-further-information"><i class="fa fa-check"></i><b>41.7.5</b> KBA conservation guidance: further information</a>
+<ul>
+<li class="chapter" data-level="41.7.5.1" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#the-international-union-for-conservation-of-nature-iucn"><i class="fa fa-check"></i><b>41.7.5.1</b> The International Union for Conservation of Nature (IUCN)</a></li>
+<li class="chapter" data-level="41.7.5.2" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#the-global-ocean-biodiversity-initiative"><i class="fa fa-check"></i><b>41.7.5.2</b> The Global Ocean Biodiversity Initiative</a></li>
+</ul></li>
+<li class="chapter" data-level="41.7.6" data-path="sites-policy-and-advocacy.html"><a href="sites-policy-and-advocacy.html#are-kba-conservation-actions-working-monitor-and-document"><i class="fa fa-check"></i><b>41.7.6</b> Are KBA conservation actions working? Monitor and document</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="42" data-path="sites-proposing-an-iba.html"><a href="sites-proposing-an-iba.html"><i class="fa fa-check"></i><b>42</b> Sites: Proposing an IBA</a>
+<ul>
+<li class="chapter" data-level="42.1" data-path="sites-proposing-an-iba.html"><a href="sites-proposing-an-iba.html#who-can-propose-an-iba"><i class="fa fa-check"></i><b>42.1</b> Who can propose an IBA?</a></li>
+<li class="chapter" data-level="42.2" data-path="sites-proposing-an-iba.html"><a href="sites-proposing-an-iba.html#queries-about-proposing-an-iba"><i class="fa fa-check"></i><b>42.2</b> Queries about proposing an IBA?</a></li>
+</ul></li>
+<li class="chapter" data-level="43" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html"><i class="fa fa-check"></i><b>43</b> Appendix: Tracking data: advanced interpolation</a>
+<ul>
+<li class="chapter" data-level="43.1" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#goal-of-chapter"><i class="fa fa-check"></i><b>43.1</b> Goal of chapter:</a></li>
+<li class="chapter" data-level="43.2" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#interpolation"><i class="fa fa-check"></i><b>43.2</b> Interpolation</a></li>
+<li class="chapter" data-level="43.3" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#load-packages-5"><i class="fa fa-check"></i><b>43.3</b> Load packages</a></li>
+<li class="chapter" data-level="43.4" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#input-parameters-for-chapter-tutorial"><i class="fa fa-check"></i><b>43.4</b> Input parameters for chapter tutorial</a></li>
+<li class="chapter" data-level="43.5" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#load-input-example-data-and-prepare-for-track2kba-r-package-protocol"><i class="fa fa-check"></i><b>43.5</b> Load input example data and prepare for track2KBA R package protocol</a></li>
+<li class="chapter" data-level="43.6" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#interpolation-methods-differences"><i class="fa fa-check"></i><b>43.6</b> Interpolation methods differences</a>
+<ul>
+<li class="chapter" data-level="43.6.1" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#get-example-data-for-testing"><i class="fa fa-check"></i><b>43.6.1</b> Get example data for testing</a></li>
+</ul></li>
+<li class="chapter" data-level="43.7" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#speed-filter-linear-interpolation"><i class="fa fa-check"></i><b>43.7</b> Speed filter &amp; linear interpolation</a></li>
+<li class="chapter" data-level="43.8" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#plot-speed-filtered-and-linear-interpolation-data"><i class="fa fa-check"></i><b>43.8</b> Plot: speed filtered and linear interpolation data</a></li>
+<li class="chapter" data-level="43.9" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#advanced-interpolation"><i class="fa fa-check"></i><b>43.9</b> Advanced interpolation</a></li>
+<li class="chapter" data-level="43.10" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#compare-different-interplation-methods"><i class="fa fa-check"></i><b>43.10</b> Compare different interplation methods</a></li>
+<li class="chapter" data-level="43.11" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#review-comparison"><i class="fa fa-check"></i><b>43.11</b> Review comparison</a></li>
+<li class="chapter" data-level="43.12" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#interpolation-all-data"><i class="fa fa-check"></i><b>43.12</b> Interpolation: all data</a>
+<ul>
+<li class="chapter" data-level="43.12.1" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#linear-interpolation-all-animals"><i class="fa fa-check"></i><b>43.12.1</b> Linear interpolation: all animals</a>
+<ul>
+<li class="chapter" data-level="43.12.1.1" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#review-interpolation-for-all-animals"><i class="fa fa-check"></i><b>43.12.1.1</b> Review interpolation for all animals</a></li>
+<li class="chapter" data-level="43.12.1.2" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#save-linear-interpolation-for-all-animals-for-next-steps"><i class="fa fa-check"></i><b>43.12.1.2</b> Save linear interpolation for all animals for next steps</a></li>
+</ul></li>
+<li class="chapter" data-level="43.12.2" data-path="appendix-tracking-data-advanced-interpolation.html"><a href="appendix-tracking-data-advanced-interpolation.html#advanced-interpolation-all-animals"><i class="fa fa-check"></i><b>43.12.2</b> Advanced interpolation: all animals</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="44" data-path="contact-us.html"><a href="contact-us.html"><i class="fa fa-check"></i><b>44</b> Contact us</a></li>
+<li class="chapter" data-level="45" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>45</b> References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Marine Megafauna Conservation Toolkit</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="seaward-extension-multiple-colonies" class="section level1 hasAnchor" number="21">
+<h1><span class="header-section-number">21</span> Seaward Extension: multiple colonies<a href="seaward-extension-multiple-colonies.html#seaward-extension-multiple-colonies" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This analysis was performed in <strong>R version 4.3.2 (2023-10-31 ucrt)</strong><br />
+</p>
+<p>This document was last updated on <strong>2024-02-23</strong>
+<br><br></p>
+<p><strong>What does this section cover:</strong></p>
+<ul>
+<li>Create a seaward extension raster and polygon for multiple colonies of breeding seabirds</li>
+</ul>
+<p><strong>Input data:</strong>
+- csv file containing:</p>
+<ul>
+<li><p>Seabird breeding colony location (latitude and longitude)</p></li>
+<li><p>Abundance estimate for seabird breeding colony</p></li>
+<li><p>Global abundance estimate for seabird species</p></li>
+<li><p>Estimate of appropriate distance travelled from the colony for behaviour of interest (foraging, or behaviours near to the colony such as rafting, bathing, preening, collecting nesting material). This is usually estimate from tracking data for the species collected at different site. [add guidance on how to find this information]</p></li>
+<li><p>IUCN Red List status</p></li>
+</ul>
+<p><strong>Outputs:</strong></p>
+<ul>
+<li>A polygon of each site that meets IBA criteria</li>
+<li>Metadata needed for the IBA form</li>
+</ul>
+<!--- In the code chunk below, we specify include = F, so that we will run the chunk but not include the chunk in the final document. We set a global argument in the code chunk of echo = T, so that in later code chunks, the code will be displayed in the RMarkdown document -->
+<div id="load-required-r-packages-1" class="section level2 hasAnchor" number="21.1">
+<h2><span class="header-section-number">21.1</span> <strong>Load required R packages:</strong><a href="seaward-extension-multiple-colonies.html#load-required-r-packages-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>If the packages fail to load, you will need to install them.
+If the install script fails, try downloading a new version of R here: <a href="https://cran.rstudio.com/index.html" class="uri">https://cran.rstudio.com/index.html</a>
+If that fails try installing Rtools.</p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="seaward-extension-multiple-colonies.html#cb31-1" tabindex="-1"></a><span class="co">#If needed remove the &quot;#&quot; and run the code below to install the packages. This only needs to be done once.</span></span>
+<span id="cb31-2"><a href="seaward-extension-multiple-colonies.html#cb31-2" tabindex="-1"></a><span class="co">#install.packages(&quot;sf&quot;)</span></span>
+<span id="cb31-3"><a href="seaward-extension-multiple-colonies.html#cb31-3" tabindex="-1"></a><span class="co">#install.packages(&quot;terra&quot;)</span></span>
+<span id="cb31-4"><a href="seaward-extension-multiple-colonies.html#cb31-4" tabindex="-1"></a><span class="co">#install.packages(&quot;rnaturalearth&quot;)</span></span>
+<span id="cb31-5"><a href="seaward-extension-multiple-colonies.html#cb31-5" tabindex="-1"></a><span class="co">#install.packages(&quot;smoothr&quot;)</span></span>
+<span id="cb31-6"><a href="seaward-extension-multiple-colonies.html#cb31-6" tabindex="-1"></a><span class="co">#install.packages(&quot;tidyverse&quot;)</span></span>
+<span id="cb31-7"><a href="seaward-extension-multiple-colonies.html#cb31-7" tabindex="-1"></a><span class="co">#install.packages(&quot;stringr&quot;)</span></span>
+<span id="cb31-8"><a href="seaward-extension-multiple-colonies.html#cb31-8" tabindex="-1"></a></span>
+<span id="cb31-9"><a href="seaward-extension-multiple-colonies.html#cb31-9" tabindex="-1"></a><span class="co">#Load the libraries. This needs to done every time R is restarted.</span></span>
+<span id="cb31-10"><a href="seaward-extension-multiple-colonies.html#cb31-10" tabindex="-1"></a><span class="fu">library</span>(sf)     <span class="co">#for handling spatial points and polygons</span></span>
+<span id="cb31-11"><a href="seaward-extension-multiple-colonies.html#cb31-11" tabindex="-1"></a><span class="fu">library</span>(terra)  <span class="co">#for handling rasters</span></span>
+<span id="cb31-12"><a href="seaward-extension-multiple-colonies.html#cb31-12" tabindex="-1"></a><span class="fu">library</span>(smoothr)<span class="co">#for filling holes in polygons</span></span>
+<span id="cb31-13"><a href="seaward-extension-multiple-colonies.html#cb31-13" tabindex="-1"></a><span class="fu">library</span>(rnaturalearth)<span class="co"># rnaturalearth package for geographic basemaps</span></span>
+<span id="cb31-14"><a href="seaward-extension-multiple-colonies.html#cb31-14" tabindex="-1"></a><span class="fu">library</span>(tidyverse) <span class="co">#for plots and data wrangling</span></span>
+<span id="cb31-15"><a href="seaward-extension-multiple-colonies.html#cb31-15" tabindex="-1"></a><span class="fu">library</span>(stringr) <span class="co">#for text edits</span></span>
+<span id="cb31-16"><a href="seaward-extension-multiple-colonies.html#cb31-16" tabindex="-1"></a></span>
+<span id="cb31-17"><a href="seaward-extension-multiple-colonies.html#cb31-17" tabindex="-1"></a><span class="co">#If it shows, the following warning can be ignored:</span></span>
+<span id="cb31-18"><a href="seaward-extension-multiple-colonies.html#cb31-18" tabindex="-1"></a><span class="co">#The legacy packages maptools, rgdal, and rgeos, underpinning this package</span></span>
+<span id="cb31-19"><a href="seaward-extension-multiple-colonies.html#cb31-19" tabindex="-1"></a><span class="co">#will retire shortly. Please refer to R-spatial evolution reports on</span></span>
+<span id="cb31-20"><a href="seaward-extension-multiple-colonies.html#cb31-20" tabindex="-1"></a><span class="co">#https://r-spatial.org/r/2023/05/15/evolution4.html for details.</span></span>
+<span id="cb31-21"><a href="seaward-extension-multiple-colonies.html#cb31-21" tabindex="-1"></a><span class="co">#This package is now running under evolution status 0 </span></span>
+<span id="cb31-22"><a href="seaward-extension-multiple-colonies.html#cb31-22" tabindex="-1"></a><span class="co">#Support for Spatial objects (`sp`) will be deprecated in {rnaturalearth} and will be removed in a future release of the package. Please use `sf` objects with #{rnaturalearth}. For example: `ne_download(returnclass = &#39;sf&#39;)`</span></span></code></pre></div>
+</div>
+<div id="supply-input-data-1" class="section level2 hasAnchor" number="21.2">
+<h2><span class="header-section-number">21.2</span> <strong>Supply input data</strong><a href="seaward-extension-multiple-colonies.html#supply-input-data-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This script imports a polygon of the land directly into R using the rnaturaleath package. This resolution is generally suitable, but if you want to use a different basemap (e.g. high resolution and/or a particular projection), go to appendix # and this script will give an example.</p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="seaward-extension-multiple-colonies.html#cb32-1" tabindex="-1"></a><span class="do">## Colony data: location, abundance estimate</span></span>
+<span id="cb32-2"><a href="seaward-extension-multiple-colonies.html#cb32-2" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="fu">paste0</span>(wd,<span class="st">&quot;/data-input-files-bookdown/AdeliePenguin_example_dataset_62.csv&quot;</span>))</span>
+<span id="cb32-3"><a href="seaward-extension-multiple-colonies.html#cb32-3" tabindex="-1"></a><span class="fu">head</span>(df)</span></code></pre></div>
+<pre><code>##         colony_name colony_size colony_size_min colony_size_max latitude
+## 1      Acuna Island        3079            1880            3079 -60.7612
+## 2        Ambush Bay       17621           17621           17621 -63.1840
+## 3 Amphibolite Point        7660            5000            7660 -60.6840
+## 4     Ardley Island         260             260            1331 -62.2130
+## 5     Beagle Island      284535           96892          284535 -63.4139
+## 6       Cape Bowles         395              60             395 -61.3160
+##   longitude
+## 1  -44.6370
+## 2  -55.3930
+## 3  -45.3390
+## 4  -58.9330
+## 5  -54.6675
+## 6  -54.0910</code></pre>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="seaward-extension-multiple-colonies.html#cb34-1" tabindex="-1"></a><span class="co">#[add guidance, bp?]</span></span>
+<span id="cb34-2"><a href="seaward-extension-multiple-colonies.html#cb34-2" tabindex="-1"></a></span>
+<span id="cb34-3"><a href="seaward-extension-multiple-colonies.html#cb34-3" tabindex="-1"></a><span class="co">#Global population size (this is not the real value, just used for the example!)</span></span>
+<span id="cb34-4"><a href="seaward-extension-multiple-colonies.html#cb34-4" tabindex="-1"></a>min_global_estimate <span class="ot">&lt;-</span> <span class="cn">NA</span></span>
+<span id="cb34-5"><a href="seaward-extension-multiple-colonies.html#cb34-5" tabindex="-1"></a>max_global_estimate <span class="ot">&lt;-</span> <span class="cn">NA</span></span>
+<span id="cb34-6"><a href="seaward-extension-multiple-colonies.html#cb34-6" tabindex="-1"></a>best_global_estimate <span class="ot">&lt;-</span> <span class="dv">10000000</span> <span class="co">#this can be the mean of min &amp; max if another best estimate is not available using the code below:</span></span>
+<span id="cb34-7"><a href="seaward-extension-multiple-colonies.html#cb34-7" tabindex="-1"></a><span class="co">#best_global_estimate &lt;- mean(c(min_global_estimate,max_global_estimate))</span></span>
+<span id="cb34-8"><a href="seaward-extension-multiple-colonies.html#cb34-8" tabindex="-1"></a></span>
+<span id="cb34-9"><a href="seaward-extension-multiple-colonies.html#cb34-9" tabindex="-1"></a><span class="co">#where can partner&#39;s get the global estimate?</span></span>
+<span id="cb34-10"><a href="seaward-extension-multiple-colonies.html#cb34-10" tabindex="-1"></a><span class="co"># - we can get data through BirdLife if not available on the red list</span></span>
+<span id="cb34-11"><a href="seaward-extension-multiple-colonies.html#cb34-11" tabindex="-1"></a><span class="co">#make sure it is mature individuals - not breeding pairs!</span></span>
+<span id="cb34-12"><a href="seaward-extension-multiple-colonies.html#cb34-12" tabindex="-1"></a><span class="co">#first place to look is red list</span></span>
+<span id="cb34-13"><a href="seaward-extension-multiple-colonies.html#cb34-13" tabindex="-1"></a></span>
+<span id="cb34-14"><a href="seaward-extension-multiple-colonies.html#cb34-14" tabindex="-1"></a><span class="co">#Red List category to know for IBA &amp; KBA criteria</span></span>
+<span id="cb34-15"><a href="seaward-extension-multiple-colonies.html#cb34-15" tabindex="-1"></a>red_list_category <span class="ot">&lt;-</span> <span class="st">&quot;LC&quot;</span></span>
+<span id="cb34-16"><a href="seaward-extension-multiple-colonies.html#cb34-16" tabindex="-1"></a><span class="co">#LC = Least Concern, NT = Near Threatened, VU = Vulnerable, </span></span>
+<span id="cb34-17"><a href="seaward-extension-multiple-colonies.html#cb34-17" tabindex="-1"></a><span class="co">#EN = Endangered, CR = Critically Endangered</span></span>
+<span id="cb34-18"><a href="seaward-extension-multiple-colonies.html#cb34-18" tabindex="-1"></a><span class="co">#DD = Deficient (only uses number based thresholds, not %)</span></span>
+<span id="cb34-19"><a href="seaward-extension-multiple-colonies.html#cb34-19" tabindex="-1"></a></span>
+<span id="cb34-20"><a href="seaward-extension-multiple-colonies.html#cb34-20" tabindex="-1"></a><span class="co">#if they are globally threatened, only need 20 mature individuals</span></span>
+<span id="cb34-21"><a href="seaward-extension-multiple-colonies.html#cb34-21" tabindex="-1"></a><span class="co">#For KBAs, also can assess more criteria</span></span>
+<span id="cb34-22"><a href="seaward-extension-multiple-colonies.html#cb34-22" tabindex="-1"></a><span class="co">#red_list_codes &lt;- c(&quot;A2ace&quot;,&quot;3bce&quot;,&quot;4ace&quot;)</span></span>
+<span id="cb34-23"><a href="seaward-extension-multiple-colonies.html#cb34-23" tabindex="-1"></a></span>
+<span id="cb34-24"><a href="seaward-extension-multiple-colonies.html#cb34-24" tabindex="-1"></a><span class="co">#[add some images for how to get this from iucnredlist.org]</span></span>
+<span id="cb34-25"><a href="seaward-extension-multiple-colonies.html#cb34-25" tabindex="-1"></a></span>
+<span id="cb34-26"><a href="seaward-extension-multiple-colonies.html#cb34-26" tabindex="-1"></a><span class="do">## Maximum colony radius distance (m)</span></span>
+<span id="cb34-27"><a href="seaward-extension-multiple-colonies.html#cb34-27" tabindex="-1"></a>max_colony_radius <span class="ot">&lt;-</span> <span class="dv">149000</span></span>
+<span id="cb34-28"><a href="seaward-extension-multiple-colonies.html#cb34-28" tabindex="-1"></a></span>
+<span id="cb34-29"><a href="seaward-extension-multiple-colonies.html#cb34-29" tabindex="-1"></a><span class="do">## Specified resolution of grid cell (m)</span></span>
+<span id="cb34-30"><a href="seaward-extension-multiple-colonies.html#cb34-30" tabindex="-1"></a>grid_res <span class="ot">&lt;-</span> <span class="dv">1000</span></span>
+<span id="cb34-31"><a href="seaward-extension-multiple-colonies.html#cb34-31" tabindex="-1"></a></span>
+<span id="cb34-32"><a href="seaward-extension-multiple-colonies.html#cb34-32" tabindex="-1"></a><span class="co">#[For Marine Toolkit, need to provide guidance on choice of resolution. 5km aligned with same scale as the #Critchley et al. 2018 paper, changed to 1km as failed during the example because the birds could cross diagonally through land]</span></span>
+<span id="cb34-33"><a href="seaward-extension-multiple-colonies.html#cb34-33" tabindex="-1"></a></span>
+<span id="cb34-34"><a href="seaward-extension-multiple-colonies.html#cb34-34" tabindex="-1"></a><span class="do">## Land polygon</span></span>
+<span id="cb34-35"><a href="seaward-extension-multiple-colonies.html#cb34-35" tabindex="-1"></a><span class="co">#Include the name of the country you wish to import a map for</span></span>
+<span id="cb34-36"><a href="seaward-extension-multiple-colonies.html#cb34-36" tabindex="-1"></a><span class="co">#To include multiple countries use for example &quot;country = c(&quot;Antarctica&quot;,&quot;Chile&quot;)&quot;</span></span>
+<span id="cb34-37"><a href="seaward-extension-multiple-colonies.html#cb34-37" tabindex="-1"></a>land <span class="ot">&lt;-</span> <span class="fu">ne_countries</span>(<span class="at">scale =</span> <span class="st">&quot;large&quot;</span>, <span class="at">returnclass =</span> <span class="st">&quot;sf&quot;</span>,</span>
+<span id="cb34-38"><a href="seaward-extension-multiple-colonies.html#cb34-38" tabindex="-1"></a>                     <span class="at">country =</span> <span class="st">&quot;Antarctica&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">st_make_valid</span>()</span></code></pre></div>
+</div>
+<div id="format-colony-locations-as-spatial-objects" class="section level2 hasAnchor" number="21.3">
+<h2><span class="header-section-number">21.3</span> <strong>Format colony locations as spatial objects</strong><a href="seaward-extension-multiple-colonies.html#format-colony-locations-as-spatial-objects" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>If the colony locations are not projected into an equal areas crs with metres (m) as the unit, this will need to be done before calculating the distance.
+[add link to page on projections]</p>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="seaward-extension-multiple-colonies.html#cb35-1" tabindex="-1"></a><span class="co">#The script requires the spatial data to be projected into an equal areas projection with meters (m) as a unit</span></span>
+<span id="cb35-2"><a href="seaward-extension-multiple-colonies.html#cb35-2" tabindex="-1"></a><span class="co">#To do this, we create a custom projection centered around the data</span></span>
+<span id="cb35-3"><a href="seaward-extension-multiple-colonies.html#cb35-3" tabindex="-1"></a>basemap <span class="ot">&lt;-</span> <span class="fu">st_transform</span>(land, <span class="at">crs =</span> <span class="fu">paste0</span>(<span class="st">&quot;+proj=laea +x_0=0 +y_0=0 +lon_0=&quot;</span>,<span class="fu">mean</span>(df<span class="sc">$</span>longitude),</span>
+<span id="cb35-4"><a href="seaward-extension-multiple-colonies.html#cb35-4" tabindex="-1"></a>                                           <span class="st">&quot; +lat_0=&quot;</span>,<span class="fu">mean</span>(df<span class="sc">$</span>latitude)))</span>
+<span id="cb35-5"><a href="seaward-extension-multiple-colonies.html#cb35-5" tabindex="-1"></a></span>
+<span id="cb35-6"><a href="seaward-extension-multiple-colonies.html#cb35-6" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code></pre></div>
+<pre><code>## null device 
+##           1</code></pre>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="seaward-extension-multiple-colonies.html#cb37-1" tabindex="-1"></a><span class="fu">plot</span>(basemap[<span class="dv">1</span>], <span class="at">main =</span> <span class="st">&quot;Basemap&quot;</span>)</span>
+<span id="cb37-2"><a href="seaward-extension-multiple-colonies.html#cb37-2" tabindex="-1"></a></span>
+<span id="cb37-3"><a href="seaward-extension-multiple-colonies.html#cb37-3" tabindex="-1"></a><span class="co">#Set coordinate reference system (CRS) for colony locations (example for lat/lon, WGS84)</span></span>
+<span id="cb37-4"><a href="seaward-extension-multiple-colonies.html#cb37-4" tabindex="-1"></a>col_locs <span class="ot">&lt;-</span> <span class="fu">st_as_sf</span>(df,<span class="at">coords =</span> <span class="fu">c</span>(<span class="st">&quot;longitude&quot;</span>,<span class="st">&quot;latitude&quot;</span>), <span class="at">crs =</span> <span class="dv">4326</span>) </span>
+<span id="cb37-5"><a href="seaward-extension-multiple-colonies.html#cb37-5" tabindex="-1"></a></span>
+<span id="cb37-6"><a href="seaward-extension-multiple-colonies.html#cb37-6" tabindex="-1"></a><span class="co">#Make sure colony data is projected to the basemap crs </span></span>
+<span id="cb37-7"><a href="seaward-extension-multiple-colonies.html#cb37-7" tabindex="-1"></a>col_locs_proj <span class="ot">&lt;-</span> <span class="fu">st_transform</span>(col_locs, <span class="at">crs =</span> <span class="fu">st_crs</span>(basemap))</span></code></pre></div>
+</div>
+<div id="create-a-background-raster-1" class="section level2 hasAnchor" number="21.4">
+<h2><span class="header-section-number">21.4</span> <strong>Create a background raster</strong><a href="seaward-extension-multiple-colonies.html#create-a-background-raster-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Create a raster (grid) that can be used for delineation of a seaward extension boundary from a colony of breeding seabirds. This raster will:
+- Have a specified cell size (resolution).
+- Cover the location of the colony or colonies with a buffer greater than the maximum radius distance.
+- Specify cells at either marine or terrestrial (ice can be classified as terrestrial).</p>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="seaward-extension-multiple-colonies.html#cb38-1" tabindex="-1"></a><span class="co">#First set a buffer (m) around the colony/colonies + the resolution of the grid to make sure the grid is large enough. </span></span>
+<span id="cb38-2"><a href="seaward-extension-multiple-colonies.html#cb38-2" tabindex="-1"></a>raster_buffer <span class="ot">&lt;-</span> max_colony_radius <span class="sc">+</span> grid_res</span>
+<span id="cb38-3"><a href="seaward-extension-multiple-colonies.html#cb38-3" tabindex="-1"></a></span>
+<span id="cb38-4"><a href="seaward-extension-multiple-colonies.html#cb38-4" tabindex="-1"></a><span class="co">#Find the extent of the colony locations</span></span>
+<span id="cb38-5"><a href="seaward-extension-multiple-colonies.html#cb38-5" tabindex="-1"></a>bounds <span class="ot">&lt;-</span> <span class="fu">st_bbox</span>(col_locs_proj)</span>
+<span id="cb38-6"><a href="seaward-extension-multiple-colonies.html#cb38-6" tabindex="-1"></a></span>
+<span id="cb38-7"><a href="seaward-extension-multiple-colonies.html#cb38-7" tabindex="-1"></a><span class="co">#Create the blank raster grid with the crs of the land polygon</span></span>
+<span id="cb38-8"><a href="seaward-extension-multiple-colonies.html#cb38-8" tabindex="-1"></a>ras <span class="ot">&lt;-</span> terra<span class="sc">::</span><span class="fu">rast</span>(<span class="at">xmin =</span> bounds[[<span class="dv">1</span>]] <span class="sc">-</span> raster_buffer, </span>
+<span id="cb38-9"><a href="seaward-extension-multiple-colonies.html#cb38-9" tabindex="-1"></a>                   <span class="at">ymin =</span> bounds[[<span class="dv">2</span>]] <span class="sc">-</span> raster_buffer, </span>
+<span id="cb38-10"><a href="seaward-extension-multiple-colonies.html#cb38-10" tabindex="-1"></a>                   <span class="at">xmax =</span> bounds[[<span class="dv">3</span>]] <span class="sc">+</span> raster_buffer, </span>
+<span id="cb38-11"><a href="seaward-extension-multiple-colonies.html#cb38-11" tabindex="-1"></a>                   <span class="at">ymax =</span> bounds[[<span class="dv">4</span>]] <span class="sc">+</span> raster_buffer, </span>
+<span id="cb38-12"><a href="seaward-extension-multiple-colonies.html#cb38-12" tabindex="-1"></a>                   <span class="at">resolution =</span> grid_res,</span>
+<span id="cb38-13"><a href="seaward-extension-multiple-colonies.html#cb38-13" tabindex="-1"></a>                   <span class="at">crs =</span> <span class="fu">st_crs</span>(basemap)<span class="sc">$</span>wkt)</span>
+<span id="cb38-14"><a href="seaward-extension-multiple-colonies.html#cb38-14" tabindex="-1"></a></span>
+<span id="cb38-15"><a href="seaward-extension-multiple-colonies.html#cb38-15" tabindex="-1"></a><span class="co">#Convert the basemap, currently in polygon format, to a raster and then overlay with the blank raster</span></span>
+<span id="cb38-16"><a href="seaward-extension-multiple-colonies.html#cb38-16" tabindex="-1"></a>basemap_vector <span class="ot">&lt;-</span> <span class="fu">vect</span>(basemap)</span>
+<span id="cb38-17"><a href="seaward-extension-multiple-colonies.html#cb38-17" tabindex="-1"></a>mask <span class="ot">&lt;-</span> terra<span class="sc">::</span><span class="fu">rasterize</span>(basemap_vector, ras)</span>
+<span id="cb38-18"><a href="seaward-extension-multiple-colonies.html#cb38-18" tabindex="-1"></a>mask[<span class="fu">is.na</span>(mask)] <span class="ot">&lt;-</span> <span class="dv">2</span></span>
+<span id="cb38-19"><a href="seaward-extension-multiple-colonies.html#cb38-19" tabindex="-1"></a>mask[mask <span class="sc">==</span> <span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="cn">NA</span></span>
+<span id="cb38-20"><a href="seaward-extension-multiple-colonies.html#cb38-20" tabindex="-1"></a>mask[mask <span class="sc">==</span> <span class="dv">2</span>] <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb38-21"><a href="seaward-extension-multiple-colonies.html#cb38-21" tabindex="-1"></a></span>
+<span id="cb38-22"><a href="seaward-extension-multiple-colonies.html#cb38-22" tabindex="-1"></a>ras <span class="ot">&lt;-</span> mask</span>
+<span id="cb38-23"><a href="seaward-extension-multiple-colonies.html#cb38-23" tabindex="-1"></a></span>
+<span id="cb38-24"><a href="seaward-extension-multiple-colonies.html#cb38-24" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code></pre></div>
+<pre><code>## null device 
+##           1</code></pre>
+<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="seaward-extension-multiple-colonies.html#cb40-1" tabindex="-1"></a><span class="fu">plot</span>(ras)</span></code></pre></div>
+</div>
+<div id="calculate-distance-by-sea-from-the-colony-per-cell-1" class="section level2 hasAnchor" number="21.5">
+<h2><span class="header-section-number">21.5</span> <strong>Calculate distance by sea from the colony per cell</strong><a href="seaward-extension-multiple-colonies.html#calculate-distance-by-sea-from-the-colony-per-cell-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Calculate distances from the colony to each cell travelling only through marine cells, because the birds are expect to travel around land masses rather than over them to reach marine destinations.</li>
+<li>For each raster, the script will provide a note to say whether the calculation is successful and advice on what to do if it is not.
+[add info about the distance calc successful messages]</li>
+</ul>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="seaward-extension-multiple-colonies.html#cb41-1" tabindex="-1"></a><span class="co">#Create a loop to apply the same method to each colony</span></span>
+<span id="cb41-2"><a href="seaward-extension-multiple-colonies.html#cb41-2" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(df))){</span>
+<span id="cb41-3"><a href="seaward-extension-multiple-colonies.html#cb41-3" tabindex="-1"></a>  </span>
+<span id="cb41-4"><a href="seaward-extension-multiple-colonies.html#cb41-4" tabindex="-1"></a>  colony <span class="ot">&lt;-</span> <span class="fu">subset</span>(col_locs_proj,colony_name <span class="sc">==</span> df<span class="sc">$</span>colony_name[i]);colony</span>
+<span id="cb41-5"><a href="seaward-extension-multiple-colonies.html#cb41-5" tabindex="-1"></a></span>
+<span id="cb41-6"><a href="seaward-extension-multiple-colonies.html#cb41-6" tabindex="-1"></a>  <span class="do">## Extract the cell location of the colony</span></span>
+<span id="cb41-7"><a href="seaward-extension-multiple-colonies.html#cb41-7" tabindex="-1"></a>  pp <span class="ot">&lt;-</span> terra<span class="sc">::</span><span class="fu">extract</span>(ras,<span class="fu">vect</span>(colony), <span class="at">cells=</span><span class="cn">TRUE</span>) </span>
+<span id="cb41-8"><a href="seaward-extension-multiple-colonies.html#cb41-8" tabindex="-1"></a></span>
+<span id="cb41-9"><a href="seaward-extension-multiple-colonies.html#cb41-9" tabindex="-1"></a>  <span class="do">## convert that cell to a value of 2</span></span>
+<span id="cb41-10"><a href="seaward-extension-multiple-colonies.html#cb41-10" tabindex="-1"></a>  colony_ras <span class="ot">&lt;-</span> ras</span>
+<span id="cb41-11"><a href="seaward-extension-multiple-colonies.html#cb41-11" tabindex="-1"></a>  colony_ras[pp<span class="sc">$</span>cell] <span class="ot">&lt;-</span> <span class="dv">2</span></span>
+<span id="cb41-12"><a href="seaward-extension-multiple-colonies.html#cb41-12" tabindex="-1"></a></span>
+<span id="cb41-13"><a href="seaward-extension-multiple-colonies.html#cb41-13" tabindex="-1"></a>  <span class="do">## You now have a raster with colony cell = 2, land cells = NA and sea cells = 1</span></span>
+<span id="cb41-14"><a href="seaward-extension-multiple-colonies.html#cb41-14" tabindex="-1"></a></span>
+<span id="cb41-15"><a href="seaward-extension-multiple-colonies.html#cb41-15" tabindex="-1"></a>  <span class="do">## Calculate distance from colony via sea, cell values of NA are avoided while determining distance</span></span>
+<span id="cb41-16"><a href="seaward-extension-multiple-colonies.html#cb41-16" tabindex="-1"></a>  DistSea <span class="ot">&lt;-</span> terra<span class="sc">::</span><span class="fu">gridDist</span>(<span class="at">x=</span>colony_ras,  <span class="co"># x specifies which raster to use</span></span>
+<span id="cb41-17"><a href="seaward-extension-multiple-colonies.html#cb41-17" tabindex="-1"></a>                             <span class="at">target=</span><span class="dv">2</span>)      <span class="co"># specifies which cell to determine distance from distance</span></span>
+<span id="cb41-18"><a href="seaward-extension-multiple-colonies.html#cb41-18" tabindex="-1"></a>  </span>
+<span id="cb41-19"><a href="seaward-extension-multiple-colonies.html#cb41-19" tabindex="-1"></a>  <span class="co">#Add the minimum grid resolution</span></span>
+<span id="cb41-20"><a href="seaward-extension-multiple-colonies.html#cb41-20" tabindex="-1"></a>DistSea <span class="ot">&lt;-</span> DistSea <span class="sc">+</span> grid_res</span>
+<span id="cb41-21"><a href="seaward-extension-multiple-colonies.html#cb41-21" tabindex="-1"></a>  </span>
+<span id="cb41-22"><a href="seaward-extension-multiple-colonies.html#cb41-22" tabindex="-1"></a>  <span class="co">#Add colony name to raster</span></span>
+<span id="cb41-23"><a href="seaward-extension-multiple-colonies.html#cb41-23" tabindex="-1"></a>  <span class="fu">names</span>(DistSea) <span class="ot">&lt;-</span> df<span class="sc">$</span>colony_name[i]</span>
+<span id="cb41-24"><a href="seaward-extension-multiple-colonies.html#cb41-24" tabindex="-1"></a></span>
+<span id="cb41-25"><a href="seaward-extension-multiple-colonies.html#cb41-25" tabindex="-1"></a>  <span class="co">#Check calculation is successful</span></span>
+<span id="cb41-26"><a href="seaward-extension-multiple-colonies.html#cb41-26" tabindex="-1"></a>  <span class="cf">if</span>(terra<span class="sc">::</span><span class="fu">minmax</span>(DistSea)[<span class="dv">2</span>] <span class="sc">==</span> <span class="dv">0</span>) <span class="fu">print</span>(<span class="st">&quot;WARNING: Check for NAs in final output. Your origin(colony) may be to far in land. </span></span>
+<span id="cb41-27"><a href="seaward-extension-multiple-colonies.html#cb41-27" tabindex="-1"></a><span class="st">                                                  Therefore, your origin is completely buffered by omit cells (land cells), </span></span>
+<span id="cb41-28"><a href="seaward-extension-multiple-colonies.html#cb41-28" tabindex="-1"></a><span class="st">                                                  and no distance calculation for cells at sea can be performed&quot;</span>) <span class="cf">else</span> <span class="fu">print</span>(<span class="fu">paste</span>(i,</span>
+<span id="cb41-29"><a href="seaward-extension-multiple-colonies.html#cb41-29" tabindex="-1"></a>                                         <span class="st">&quot;Distance calculation successful&quot;</span>))</span>
+<span id="cb41-30"><a href="seaward-extension-multiple-colonies.html#cb41-30" tabindex="-1"></a></span>
+<span id="cb41-31"><a href="seaward-extension-multiple-colonies.html#cb41-31" tabindex="-1"></a></span>
+<span id="cb41-32"><a href="seaward-extension-multiple-colonies.html#cb41-32" tabindex="-1"></a>  <span class="co">#Save rasters </span></span>
+<span id="cb41-33"><a href="seaward-extension-multiple-colonies.html#cb41-33" tabindex="-1"></a>  <span class="cf">if</span>(i <span class="sc">==</span> <span class="dv">1</span>){</span>
+<span id="cb41-34"><a href="seaward-extension-multiple-colonies.html#cb41-34" tabindex="-1"></a>      ColonyStack <span class="ot">&lt;-</span> DistSea</span>
+<span id="cb41-35"><a href="seaward-extension-multiple-colonies.html#cb41-35" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb41-36"><a href="seaward-extension-multiple-colonies.html#cb41-36" tabindex="-1"></a>     ColonyStack <span class="ot">&lt;-</span> <span class="fu">c</span>(ColonyStack,DistSea)</span>
+<span id="cb41-37"><a href="seaward-extension-multiple-colonies.html#cb41-37" tabindex="-1"></a>  }</span>
+<span id="cb41-38"><a href="seaward-extension-multiple-colonies.html#cb41-38" tabindex="-1"></a>}</span></code></pre></div>
+<pre><code>## [1] &quot;1 Distance calculation successful&quot;
+## [1] &quot;2 Distance calculation successful&quot;
+## [1] &quot;3 Distance calculation successful&quot;
+## [1] &quot;4 Distance calculation successful&quot;
+## [1] &quot;5 Distance calculation successful&quot;
+## [1] &quot;6 Distance calculation successful&quot;
+## [1] &quot;7 Distance calculation successful&quot;
+## [1] &quot;8 Distance calculation successful&quot;
+## [1] &quot;9 Distance calculation successful&quot;
+## [1] &quot;10 Distance calculation successful&quot;
+## [1] &quot;11 Distance calculation successful&quot;
+## [1] &quot;12 Distance calculation successful&quot;
+## [1] &quot;13 Distance calculation successful&quot;
+## [1] &quot;14 Distance calculation successful&quot;
+## [1] &quot;15 Distance calculation successful&quot;
+## [1] &quot;16 Distance calculation successful&quot;
+## [1] &quot;17 Distance calculation successful&quot;
+## [1] &quot;18 Distance calculation successful&quot;
+## [1] &quot;19 Distance calculation successful&quot;
+## [1] &quot;20 Distance calculation successful&quot;
+## [1] &quot;21 Distance calculation successful&quot;
+## [1] &quot;22 Distance calculation successful&quot;
+## [1] &quot;23 Distance calculation successful&quot;
+## [1] &quot;24 Distance calculation successful&quot;
+## [1] &quot;25 Distance calculation successful&quot;
+## [1] &quot;26 Distance calculation successful&quot;
+## [1] &quot;27 Distance calculation successful&quot;
+## [1] &quot;28 Distance calculation successful&quot;
+## [1] &quot;29 Distance calculation successful&quot;
+## [1] &quot;30 Distance calculation successful&quot;
+## [1] &quot;31 Distance calculation successful&quot;
+## [1] &quot;32 Distance calculation successful&quot;
+## [1] &quot;33 Distance calculation successful&quot;
+## [1] &quot;34 Distance calculation successful&quot;
+## [1] &quot;35 Distance calculation successful&quot;
+## [1] &quot;36 Distance calculation successful&quot;
+## [1] &quot;37 Distance calculation successful&quot;
+## [1] &quot;38 Distance calculation successful&quot;
+## [1] &quot;39 Distance calculation successful&quot;
+## [1] &quot;40 Distance calculation successful&quot;
+## [1] &quot;41 Distance calculation successful&quot;
+## [1] &quot;42 Distance calculation successful&quot;
+## [1] &quot;43 Distance calculation successful&quot;
+## [1] &quot;44 Distance calculation successful&quot;
+## [1] &quot;45 Distance calculation successful&quot;
+## [1] &quot;46 Distance calculation successful&quot;
+## [1] &quot;47 Distance calculation successful&quot;
+## [1] &quot;48 Distance calculation successful&quot;
+## [1] &quot;49 Distance calculation successful&quot;
+## [1] &quot;50 Distance calculation successful&quot;
+## [1] &quot;51 Distance calculation successful&quot;
+## [1] &quot;52 Distance calculation successful&quot;
+## [1] &quot;53 Distance calculation successful&quot;
+## [1] &quot;54 Distance calculation successful&quot;
+## [1] &quot;55 Distance calculation successful&quot;
+## [1] &quot;56 Distance calculation successful&quot;
+## [1] &quot;57 Distance calculation successful&quot;
+## [1] &quot;58 Distance calculation successful&quot;
+## [1] &quot;59 Distance calculation successful&quot;
+## [1] &quot;60 Distance calculation successful&quot;
+## [1] &quot;61 Distance calculation successful&quot;
+## [1] &quot;62 Distance calculation successful&quot;</code></pre>
+</div>
+<div id="inspect-the-output-distance-from-colony-rasters" class="section level2 hasAnchor" number="21.6">
+<h2><span class="header-section-number">21.6</span> <strong>Inspect the output distance from colony rasters</strong><a href="seaward-extension-multiple-colonies.html#inspect-the-output-distance-from-colony-rasters" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Look at the object and plot examples</li>
+</ul>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="seaward-extension-multiple-colonies.html#cb43-1" tabindex="-1"></a><span class="co">#Output is a stack of rasters containing a layer for each colony</span></span>
+<span id="cb43-2"><a href="seaward-extension-multiple-colonies.html#cb43-2" tabindex="-1"></a>ColonyStack</span></code></pre></div>
+<pre><code>## class       : SpatRaster 
+## dimensions  : 640, 1075, 62  (nrow, ncol, nlyr)
+## resolution  : 1000, 1000  (x, y)
+## extent      : -467720.8558, 607279.1442, -329322.1032, 310677.8968  (xmin, xmax, ymin, ymax)
+## coord. ref. : +proj=laea +lat_0=-62.2587353064516 +lon_0=-52.8170365645161 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs 
+## source(s)   : memory
+## names       : Acuna Island,  Ambush Bay, Amphi~Point, Ardle~sland, Beagl~sland, Cape Bowles, ... 
+## min values  :     1000.000,   1000.0000,    1000.000,    1000.000,   1000.0000,   1000.0000, ... 
+## max values  :  1130910.822, 909312.8419, 1099295.598, 1060033.621, 882253.9674, 855354.4725, ...</code></pre>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="seaward-extension-multiple-colonies.html#cb45-1" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste</span>(<span class="fu">nlyr</span>(ColonyStack),<span class="st">&quot;raster layers&quot;</span>))</span></code></pre></div>
+<pre><code>## [1] &quot;62 raster layers&quot;</code></pre>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="seaward-extension-multiple-colonies.html#cb47-1" tabindex="-1"></a><span class="co">#To plot a particular raster use the index number</span></span>
+<span id="cb47-2"><a href="seaward-extension-multiple-colonies.html#cb47-2" tabindex="-1"></a><span class="fu">plot</span>(ColonyStack[[<span class="dv">1</span>]], <span class="at">main =</span> df<span class="sc">$</span>colony_name[<span class="dv">1</span>]) </span>
+<span id="cb47-3"><a href="seaward-extension-multiple-colonies.html#cb47-3" tabindex="-1"></a><span class="fu">plot</span>(ColonyStack[[<span class="dv">2</span>]], <span class="at">main =</span> df<span class="sc">$</span>colony_name[<span class="dv">2</span>]) </span>
+<span id="cb47-4"><a href="seaward-extension-multiple-colonies.html#cb47-4" tabindex="-1"></a><span class="fu">plot</span>(ColonyStack[[<span class="dv">3</span>]], <span class="at">main =</span> df<span class="sc">$</span>colony_name[<span class="dv">3</span>]) </span>
+<span id="cb47-5"><a href="seaward-extension-multiple-colonies.html#cb47-5" tabindex="-1"></a><span class="fu">plot</span>(ColonyStack[[<span class="dv">4</span>]], <span class="at">main =</span> df<span class="sc">$</span>colony_name[<span class="dv">4</span>]) </span></code></pre></div>
+<p><img src="_main_files/figure-html/swe3-plot-calc-dist-1.png" width="50%" /><img src="_main_files/figure-html/swe3-plot-calc-dist-2.png" width="50%" /><img src="_main_files/figure-html/swe3-plot-calc-dist-3.png" width="50%" /><img src="_main_files/figure-html/swe3-plot-calc-dist-4.png" width="50%" /></p>
+</div>
+<div id="for-each-colony-estimate-number-of-birds-that-use-each-cell" class="section level2 hasAnchor" number="21.7">
+<h2><span class="header-section-number">21.7</span> <strong>For each colony, estimate number of birds that use each cell</strong><a href="seaward-extension-multiple-colonies.html#for-each-colony-estimate-number-of-birds-that-use-each-cell" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Set any cells that are further that the provided maximum distance from the colony to NA</li>
+<li>Normalise to 0 and 1 probability of occurrence instead of distance using a log decay function</li>
+<li>Multiply by colony size</li>
+<li>Save ouputs to another raster stack</li>
+<li>Plot examples</li>
+</ul>
+<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="seaward-extension-multiple-colonies.html#cb48-1" tabindex="-1"></a><span class="co">#Loop through colonies</span></span>
+<span id="cb48-2"><a href="seaward-extension-multiple-colonies.html#cb48-2" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(df)){</span>
+<span id="cb48-3"><a href="seaward-extension-multiple-colonies.html#cb48-3" tabindex="-1"></a></span>
+<span id="cb48-4"><a href="seaward-extension-multiple-colonies.html#cb48-4" tabindex="-1"></a>  DistSea <span class="ot">&lt;-</span> ColonyStack[[i]]</span>
+<span id="cb48-5"><a href="seaward-extension-multiple-colonies.html#cb48-5" tabindex="-1"></a>  </span>
+<span id="cb48-6"><a href="seaward-extension-multiple-colonies.html#cb48-6" tabindex="-1"></a>  <span class="do">## Set any cell further than maximum distance to NA</span></span>
+<span id="cb48-7"><a href="seaward-extension-multiple-colonies.html#cb48-7" tabindex="-1"></a>  DistSea[DistSea <span class="sc">&gt;</span> max_colony_radius] <span class="ot">&lt;-</span> <span class="cn">NA</span></span>
+<span id="cb48-8"><a href="seaward-extension-multiple-colonies.html#cb48-8" tabindex="-1"></a></span>
+<span id="cb48-9"><a href="seaward-extension-multiple-colonies.html#cb48-9" tabindex="-1"></a>  <span class="do">## Normalise to 0 and 1 probability of occurrence</span></span>
+<span id="cb48-10"><a href="seaward-extension-multiple-colonies.html#cb48-10" tabindex="-1"></a>  ProbOccurence <span class="ot">&lt;-</span> <span class="sc">-</span><span class="dv">1</span><span class="sc">*</span>(DistSea<span class="sc">/</span>max_colony_radius)<span class="sc">+</span><span class="dv">1</span> </span>
+<span id="cb48-11"><a href="seaward-extension-multiple-colonies.html#cb48-11" tabindex="-1"></a></span>
+<span id="cb48-12"><a href="seaward-extension-multiple-colonies.html#cb48-12" tabindex="-1"></a>  <span class="co">#Apply logarithmic decay function as done in Critchley et al. 2020. </span></span>
+<span id="cb48-13"><a href="seaward-extension-multiple-colonies.html#cb48-13" tabindex="-1"></a>  <span class="co">#https://onlinelibrary.wiley.com/doi/full/10.1111/ecog.04653</span></span>
+<span id="cb48-14"><a href="seaward-extension-multiple-colonies.html#cb48-14" tabindex="-1"></a>  <span class="co">#Skipping this step will result in a linear decay. Other decay functions could be input here if justified.</span></span>
+<span id="cb48-15"><a href="seaward-extension-multiple-colonies.html#cb48-15" tabindex="-1"></a>  ProbOccurenceLog <span class="ot">&lt;-</span> ProbOccurence<span class="sc">*</span>(<span class="dv">1</span><span class="sc">/</span><span class="fu">log</span>(DistSea))</span>
+<span id="cb48-16"><a href="seaward-extension-multiple-colonies.html#cb48-16" tabindex="-1"></a>  </span>
+<span id="cb48-17"><a href="seaward-extension-multiple-colonies.html#cb48-17" tabindex="-1"></a>    <span class="co">#Rescale to between 0 and 1</span></span>
+<span id="cb48-18"><a href="seaward-extension-multiple-colonies.html#cb48-18" tabindex="-1"></a>  ProbOccurenceLog <span class="ot">&lt;-</span> ProbOccurenceLog<span class="sc">/</span></span>
+<span id="cb48-19"><a href="seaward-extension-multiple-colonies.html#cb48-19" tabindex="-1"></a>    <span class="fu">max</span>(<span class="fu">values</span>(ProbOccurenceLog), <span class="at">na.rm =</span>T)</span>
+<span id="cb48-20"><a href="seaward-extension-multiple-colonies.html#cb48-20" tabindex="-1"></a>  </span>
+<span id="cb48-21"><a href="seaward-extension-multiple-colonies.html#cb48-21" tabindex="-1"></a>  <span class="co">#Multiply by population size</span></span>
+<span id="cb48-22"><a href="seaward-extension-multiple-colonies.html#cb48-22" tabindex="-1"></a>  PopRaster <span class="ot">&lt;-</span> ProbOccurenceLog<span class="sc">*</span>df<span class="sc">$</span>colony_size[i]</span>
+<span id="cb48-23"><a href="seaward-extension-multiple-colonies.html#cb48-23" tabindex="-1"></a>  </span>
+<span id="cb48-24"><a href="seaward-extension-multiple-colonies.html#cb48-24" tabindex="-1"></a>  <span class="co">#Add colony name to raster</span></span>
+<span id="cb48-25"><a href="seaward-extension-multiple-colonies.html#cb48-25" tabindex="-1"></a>  <span class="fu">names</span>(PopRaster) <span class="ot">&lt;-</span> df<span class="sc">$</span>colony_name[i]</span>
+<span id="cb48-26"><a href="seaward-extension-multiple-colonies.html#cb48-26" tabindex="-1"></a>  </span>
+<span id="cb48-27"><a href="seaward-extension-multiple-colonies.html#cb48-27" tabindex="-1"></a>  <span class="co">#Save rasters </span></span>
+<span id="cb48-28"><a href="seaward-extension-multiple-colonies.html#cb48-28" tabindex="-1"></a>  <span class="cf">if</span>(i <span class="sc">==</span> <span class="dv">1</span>){</span>
+<span id="cb48-29"><a href="seaward-extension-multiple-colonies.html#cb48-29" tabindex="-1"></a>      ColonyStack_pop <span class="ot">&lt;-</span> PopRaster</span>
+<span id="cb48-30"><a href="seaward-extension-multiple-colonies.html#cb48-30" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb48-31"><a href="seaward-extension-multiple-colonies.html#cb48-31" tabindex="-1"></a>     ColonyStack_pop <span class="ot">&lt;-</span> <span class="fu">c</span>(ColonyStack_pop,PopRaster)</span>
+<span id="cb48-32"><a href="seaward-extension-multiple-colonies.html#cb48-32" tabindex="-1"></a>  }</span>
+<span id="cb48-33"><a href="seaward-extension-multiple-colonies.html#cb48-33" tabindex="-1"></a>}</span>
+<span id="cb48-34"><a href="seaward-extension-multiple-colonies.html#cb48-34" tabindex="-1"></a></span>
+<span id="cb48-35"><a href="seaward-extension-multiple-colonies.html#cb48-35" tabindex="-1"></a><span class="co">#To plot a particular raster use the index number</span></span>
+<span id="cb48-36"><a href="seaward-extension-multiple-colonies.html#cb48-36" tabindex="-1"></a><span class="fu">plot</span>(ColonyStack_pop[[<span class="dv">1</span>]], <span class="at">main =</span> df<span class="sc">$</span>colony_name[<span class="dv">1</span>]) </span>
+<span id="cb48-37"><a href="seaward-extension-multiple-colonies.html#cb48-37" tabindex="-1"></a><span class="fu">plot</span>(ColonyStack_pop[[<span class="dv">2</span>]], <span class="at">main =</span> df<span class="sc">$</span>colony_name[<span class="dv">2</span>]) </span>
+<span id="cb48-38"><a href="seaward-extension-multiple-colonies.html#cb48-38" tabindex="-1"></a><span class="fu">plot</span>(ColonyStack_pop[[<span class="dv">3</span>]], <span class="at">main =</span> df<span class="sc">$</span>colony_name[<span class="dv">3</span>]) </span>
+<span id="cb48-39"><a href="seaward-extension-multiple-colonies.html#cb48-39" tabindex="-1"></a><span class="fu">plot</span>(ColonyStack_pop[[<span class="dv">4</span>]], <span class="at">main =</span> df<span class="sc">$</span>colony_name[<span class="dv">4</span>]) </span></code></pre></div>
+<p><img src="_main_files/figure-html/swe3-dist-to-pop-1.png" width="50%" /><img src="_main_files/figure-html/swe3-dist-to-pop-2.png" width="50%" /><img src="_main_files/figure-html/swe3-dist-to-pop-3.png" width="50%" /><img src="_main_files/figure-html/swe3-dist-to-pop-4.png" width="50%" /></p>
+</div>
+<div id="overlap-the-rasters-and-save-raster-outputs" class="section level2 hasAnchor" number="21.8">
+<h2><span class="header-section-number">21.8</span> <strong>Overlap the rasters and save raster outputs</strong><a href="seaward-extension-multiple-colonies.html#overlap-the-rasters-and-save-raster-outputs" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>If rasters from multiple colonies overlap, you can combine the rasters</li>
+<li>This means that if two nearby colonies don’t trigger IBA criteria individually, they may do in the areas they overlap</li>
+</ul>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="seaward-extension-multiple-colonies.html#cb49-1" tabindex="-1"></a>all_sites_raster <span class="ot">&lt;-</span> <span class="fu">sum</span>(ColonyStack_pop, <span class="at">na.rm =</span> T)</span>
+<span id="cb49-2"><a href="seaward-extension-multiple-colonies.html#cb49-2" tabindex="-1"></a><span class="fu">plot</span>(all_sites_raster)</span></code></pre></div>
+<p><img src="_main_files/figure-html/swe3-raster-ovelap-1.png" width="672" /></p>
+<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="seaward-extension-multiple-colonies.html#cb50-1" tabindex="-1"></a><span class="co">#create a folder to contain the outputs</span></span>
+<span id="cb50-2"><a href="seaward-extension-multiple-colonies.html#cb50-2" tabindex="-1"></a>outputs <span class="ot">&lt;-</span> <span class="st">&quot;/seaward_extension_outputs&quot;</span></span>
+<span id="cb50-3"><a href="seaward-extension-multiple-colonies.html#cb50-3" tabindex="-1"></a><span class="fu">dir.create</span>(<span class="fu">paste0</span>(wd,outputs))</span>
+<span id="cb50-4"><a href="seaward-extension-multiple-colonies.html#cb50-4" tabindex="-1"></a></span>
+<span id="cb50-5"><a href="seaward-extension-multiple-colonies.html#cb50-5" tabindex="-1"></a><span class="co">#save</span></span>
+<span id="cb50-6"><a href="seaward-extension-multiple-colonies.html#cb50-6" tabindex="-1"></a><span class="co">#terra::writeRaster(all_sites_raster,paste0(wd,outputs,&quot;/seaward-ext-multi-col-dist.tif&quot;), overwrite=T)</span></span></code></pre></div>
+</div>
+<div id="calculate-iba-raster-1" class="section level2 hasAnchor" number="21.9">
+<h2><span class="header-section-number">21.9</span> <strong>Calculate IBA raster</strong><a href="seaward-extension-multiple-colonies.html#calculate-iba-raster-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>If the species is not Threatened (Red List category of Least Concern, Near Threatened or Vulnerable), filter out cells containing less than 1% of the global population</li>
+</ul>
+<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="seaward-extension-multiple-colonies.html#cb51-1" tabindex="-1"></a><span class="co">#turn abundance raster to dataframe. use IBA criteria function</span></span>
+<span id="cb51-2"><a href="seaward-extension-multiple-colonies.html#cb51-2" tabindex="-1"></a><span class="co">#test each iba criteria cell by cell, record whether meets each critirea (only global)</span></span>
+<span id="cb51-3"><a href="seaward-extension-multiple-colonies.html#cb51-3" tabindex="-1"></a></span>
+<span id="cb51-4"><a href="seaward-extension-multiple-colonies.html#cb51-4" tabindex="-1"></a><span class="co">#Waterbird or seabird?</span></span>
+<span id="cb51-5"><a href="seaward-extension-multiple-colonies.html#cb51-5" tabindex="-1"></a><span class="co">#Can we use lists from datazone</span></span>
+<span id="cb51-6"><a href="seaward-extension-multiple-colonies.html#cb51-6" tabindex="-1"></a><span class="co">#Jono will follow up with Ian B</span></span>
+<span id="cb51-7"><a href="seaward-extension-multiple-colonies.html#cb51-7" tabindex="-1"></a></span>
+<span id="cb51-8"><a href="seaward-extension-multiple-colonies.html#cb51-8" tabindex="-1"></a><span class="co">#Sometimes we need to know what red list criteria was applied to applu IBA/KBA sub criteria.</span></span>
+<span id="cb51-9"><a href="seaward-extension-multiple-colonies.html#cb51-9" tabindex="-1"></a><span class="co">#We can&#39;t share the BL database with this info.</span></span>
+<span id="cb51-10"><a href="seaward-extension-multiple-colonies.html#cb51-10" tabindex="-1"></a><span class="co">#red list api R</span></span>
+<span id="cb51-11"><a href="seaward-extension-multiple-colonies.html#cb51-11" tabindex="-1"></a></span>
+<span id="cb51-12"><a href="seaward-extension-multiple-colonies.html#cb51-12" tabindex="-1"></a><span class="co">#stored:</span></span>
+<span id="cb51-13"><a href="seaward-extension-multiple-colonies.html#cb51-13" tabindex="-1"></a><span class="co">#Science (W:) &gt; 2 Species data &gt; 2022 Red List datasets &gt; 2022-12 &gt; BL_Population_2022-12</span></span>
+<span id="cb51-14"><a href="seaward-extension-multiple-colonies.html#cb51-14" tabindex="-1"></a></span>
+<span id="cb51-15"><a href="seaward-extension-multiple-colonies.html#cb51-15" tabindex="-1"></a><span class="cf">if</span>(red_list_category <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;LC&quot;</span>,<span class="st">&quot;NT&quot;</span>,<span class="st">&quot;VU&quot;</span>)){</span>
+<span id="cb51-16"><a href="seaward-extension-multiple-colonies.html#cb51-16" tabindex="-1"></a></span>
+<span id="cb51-17"><a href="seaward-extension-multiple-colonies.html#cb51-17" tabindex="-1"></a>  <span class="co">#Convert to with more (1) or less (0) than 1% of global population </span></span>
+<span id="cb51-18"><a href="seaward-extension-multiple-colonies.html#cb51-18" tabindex="-1"></a>  IBA_raster <span class="ot">&lt;-</span> all_sites_raster</span>
+<span id="cb51-19"><a href="seaward-extension-multiple-colonies.html#cb51-19" tabindex="-1"></a>  IBA_raster[IBA_raster <span class="sc">&lt;</span> best_global_estimate<span class="sc">/</span><span class="dv">100</span>] <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb51-20"><a href="seaward-extension-multiple-colonies.html#cb51-20" tabindex="-1"></a>  IBA_raster[IBA_raster <span class="sc">&gt;=</span> best_global_estimate<span class="sc">/</span><span class="dv">100</span>] <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb51-21"><a href="seaward-extension-multiple-colonies.html#cb51-21" tabindex="-1"></a>  </span>
+<span id="cb51-22"><a href="seaward-extension-multiple-colonies.html#cb51-22" tabindex="-1"></a>  <span class="co">#plot to check</span></span>
+<span id="cb51-23"><a href="seaward-extension-multiple-colonies.html#cb51-23" tabindex="-1"></a>  <span class="fu">plot</span>(IBA_raster) </span>
+<span id="cb51-24"><a href="seaward-extension-multiple-colonies.html#cb51-24" tabindex="-1"></a>  </span>
+<span id="cb51-25"><a href="seaward-extension-multiple-colonies.html#cb51-25" tabindex="-1"></a>  <span class="co">#set to NA cells </span></span>
+<span id="cb51-26"><a href="seaward-extension-multiple-colonies.html#cb51-26" tabindex="-1"></a>  IBA_raster[IBA_raster <span class="sc">==</span> <span class="dv">0</span>] <span class="ot">&lt;-</span> <span class="cn">NA</span></span>
+<span id="cb51-27"><a href="seaward-extension-multiple-colonies.html#cb51-27" tabindex="-1"></a>}</span>
+<span id="cb51-28"><a href="seaward-extension-multiple-colonies.html#cb51-28" tabindex="-1"></a></span>
+<span id="cb51-29"><a href="seaward-extension-multiple-colonies.html#cb51-29" tabindex="-1"></a><span class="co">#There are other IBA and KBA criteria, you can look these up, but we are not able to include codes to assess all criteria in this toolkit.</span></span></code></pre></div>
+<p><img src="_main_files/figure-html/swe3-iba-rasters-1.png" width="50%" /></p>
+</div>
+<div id="calculate-iba-polygon-1" class="section level2 hasAnchor" number="21.10">
+<h2><span class="header-section-number">21.10</span> <strong>Calculate IBA polygon</strong><a href="seaward-extension-multiple-colonies.html#calculate-iba-polygon-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li>Convert to polygon format</li>
+<li>Simplify the polygon to a more usable shape</li>
+<li>Fill in small holes between the land and simplified polygon</li>
+<li>Cut out the area covered by land</li>
+<li>Save the output</li>
+</ol>
+<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="seaward-extension-multiple-colonies.html#cb52-1" tabindex="-1"></a><span class="co">#convert raster to a polygon format</span></span>
+<span id="cb52-2"><a href="seaward-extension-multiple-colonies.html#cb52-2" tabindex="-1"></a>IBA_poly_ras <span class="ot">&lt;-</span> IBA_raster <span class="sc">%&gt;%</span></span>
+<span id="cb52-3"><a href="seaward-extension-multiple-colonies.html#cb52-3" tabindex="-1"></a>  terra<span class="sc">::</span><span class="fu">as.polygons</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb52-4"><a href="seaward-extension-multiple-colonies.html#cb52-4" tabindex="-1"></a>  sf<span class="sc">::</span><span class="fu">st_as_sf</span>()</span>
+<span id="cb52-5"><a href="seaward-extension-multiple-colonies.html#cb52-5" tabindex="-1"></a></span>
+<span id="cb52-6"><a href="seaward-extension-multiple-colonies.html#cb52-6" tabindex="-1"></a><span class="co">#simplify the polygon</span></span>
+<span id="cb52-7"><a href="seaward-extension-multiple-colonies.html#cb52-7" tabindex="-1"></a>IBA_poly <span class="ot">&lt;-</span> IBA_poly_ras <span class="sc">%&gt;%</span></span>
+<span id="cb52-8"><a href="seaward-extension-multiple-colonies.html#cb52-8" tabindex="-1"></a>  sf<span class="sc">::</span><span class="fu">st_simplify</span>(<span class="at">dTolerance =</span> <span class="dv">2</span><span class="sc">*</span><span class="fu">res</span>(IBA_raster)[<span class="dv">1</span>]) </span>
+<span id="cb52-9"><a href="seaward-extension-multiple-colonies.html#cb52-9" tabindex="-1"></a></span>
+<span id="cb52-10"><a href="seaward-extension-multiple-colonies.html#cb52-10" tabindex="-1"></a><span class="do">##Make buffer to crop to local part of basemap  </span></span>
+<span id="cb52-11"><a href="seaward-extension-multiple-colonies.html#cb52-11" tabindex="-1"></a>max_dist_buffer <span class="ot">&lt;-</span> <span class="fu">st_buffer</span>(col_locs_proj, <span class="at">dist =</span> max_colony_radius)</span>
+<span id="cb52-12"><a href="seaward-extension-multiple-colonies.html#cb52-12" tabindex="-1"></a>land <span class="ot">&lt;-</span> basemap <span class="sc">%&gt;%</span> </span>
+<span id="cb52-13"><a href="seaward-extension-multiple-colonies.html#cb52-13" tabindex="-1"></a>  <span class="fu">st_crop</span>(<span class="fu">st_bbox</span>(max_dist_buffer)) <span class="sc">%&gt;%</span></span>
+<span id="cb52-14"><a href="seaward-extension-multiple-colonies.html#cb52-14" tabindex="-1"></a>  <span class="fu">st_union</span>()</span>
+<span id="cb52-15"><a href="seaward-extension-multiple-colonies.html#cb52-15" tabindex="-1"></a></span>
+<span id="cb52-16"><a href="seaward-extension-multiple-colonies.html#cb52-16" tabindex="-1"></a><span class="co">#fill in holes in the polygon, and holes between the coatline and the polygon,</span></span>
+<span id="cb52-17"><a href="seaward-extension-multiple-colonies.html#cb52-17" tabindex="-1"></a><span class="co">#then trim out the areas covered by land</span></span>
+<span id="cb52-18"><a href="seaward-extension-multiple-colonies.html#cb52-18" tabindex="-1"></a>IBA_poly_trim <span class="ot">&lt;-</span> smoothr<span class="sc">::</span><span class="fu">fill_holes</span>(IBA_poly, <span class="at">threshold =</span> <span class="fu">st_area</span>(IBA_poly)) <span class="sc">%&gt;%</span> </span>
+<span id="cb52-19"><a href="seaward-extension-multiple-colonies.html#cb52-19" tabindex="-1"></a>  <span class="fu">st_union</span>(.,land) <span class="sc">%&gt;%</span></span>
+<span id="cb52-20"><a href="seaward-extension-multiple-colonies.html#cb52-20" tabindex="-1"></a>  smoothr<span class="sc">::</span><span class="fu">fill_holes</span>(<span class="at">threshold =</span> <span class="fu">st_area</span>(IBA_poly)) <span class="sc">%&gt;%</span>  </span>
+<span id="cb52-21"><a href="seaward-extension-multiple-colonies.html#cb52-21" tabindex="-1"></a>  <span class="fu">st_difference</span>(land)</span>
+<span id="cb52-22"><a href="seaward-extension-multiple-colonies.html#cb52-22" tabindex="-1"></a></span>
+<span id="cb52-23"><a href="seaward-extension-multiple-colonies.html#cb52-23" tabindex="-1"></a><span class="co">#plot the result</span></span>
+<span id="cb52-24"><a href="seaward-extension-multiple-colonies.html#cb52-24" tabindex="-1"></a><span class="fu">ggplot</span>(IBA_poly_trim)<span class="sc">+</span></span>
+<span id="cb52-25"><a href="seaward-extension-multiple-colonies.html#cb52-25" tabindex="-1"></a>   <span class="fu">geom_sf</span>(<span class="at">data =</span> IBA_poly_ras, <span class="at">fill =</span> <span class="st">&quot;lightblue&quot;</span>, <span class="at">color =</span> <span class="cn">NA</span>)<span class="sc">+</span></span>
+<span id="cb52-26"><a href="seaward-extension-multiple-colonies.html#cb52-26" tabindex="-1"></a>   <span class="fu">geom_sf</span>(<span class="at">data =</span> land, <span class="at">fill =</span> <span class="st">&quot;grey&quot;</span>, <span class="at">colour =</span> <span class="cn">NA</span>)<span class="sc">+</span></span>
+<span id="cb52-27"><a href="seaward-extension-multiple-colonies.html#cb52-27" tabindex="-1"></a>   <span class="fu">geom_sf</span>(<span class="at">fill =</span> <span class="cn">NA</span>, <span class="at">color =</span> <span class="st">&quot;red&quot;</span>) </span></code></pre></div>
+<p><img src="_main_files/figure-html/swe3-poly-1.png" width="672" /></p>
+</div>
+<div id="split-into-separate-iba-polygons-and-save-metadata" class="section level2 hasAnchor" number="21.11">
+<h2><span class="header-section-number">21.11</span> <strong>Split into separate IBA polygons and save metadata</strong><a href="seaward-extension-multiple-colonies.html#split-into-separate-iba-polygons-and-save-metadata" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>#next task is to split the mulitpolygon into 2 separate polygons</p>
+<p>then for each polygon,</p>
+<p>min, max</p>
+<p>polys_df &lt;-</p>
+<p>create column for each criteria and polygon ID number</p>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="seaward-extension-multiple-colonies.html#cb53-1" tabindex="-1"></a><span class="co">#Split multipolygon into separate polygons</span></span>
+<span id="cb53-2"><a href="seaward-extension-multiple-colonies.html#cb53-2" tabindex="-1"></a>polys <span class="ot">&lt;-</span> <span class="fu">st_cast</span>(IBA_poly_trim, <span class="at">to =</span> <span class="st">&quot;POLYGON&quot;</span>) <span class="co">#Warning message is ok</span></span>
+<span id="cb53-3"><a href="seaward-extension-multiple-colonies.html#cb53-3" tabindex="-1"></a></span>
+<span id="cb53-4"><a href="seaward-extension-multiple-colonies.html#cb53-4" tabindex="-1"></a><span class="co">#Many polygons?</span></span>
+<span id="cb53-5"><a href="seaward-extension-multiple-colonies.html#cb53-5" tabindex="-1"></a><span class="fu">nrow</span>(polys) <span class="co">#2</span></span></code></pre></div>
+<pre><code>## [1] 2</code></pre>
+<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="seaward-extension-multiple-colonies.html#cb55-1" tabindex="-1"></a><span class="co">#for(i in 1:nrow(polys)){</span></span>
+<span id="cb55-2"><a href="seaward-extension-multiple-colonies.html#cb55-2" tabindex="-1"></a>  </span>
+<span id="cb55-3"><a href="seaward-extension-multiple-colonies.html#cb55-3" tabindex="-1"></a> <span class="co"># IBA_poly_single &lt;- polys[i,]</span></span>
+<span id="cb55-4"><a href="seaward-extension-multiple-colonies.html#cb55-4" tabindex="-1"></a><span class="co">#  plot(IBA_poly_single)</span></span>
+<span id="cb55-5"><a href="seaward-extension-multiple-colonies.html#cb55-5" tabindex="-1"></a>  </span>
+<span id="cb55-6"><a href="seaward-extension-multiple-colonies.html#cb55-6" tabindex="-1"></a>  <span class="co">#abudance_raster_IBA &lt;- terra::mask(all_sites_raster, IBA_poly_ras_single) </span></span>
+<span id="cb55-7"><a href="seaward-extension-multiple-colonies.html#cb55-7" tabindex="-1"></a>  </span>
+<span id="cb55-8"><a href="seaward-extension-multiple-colonies.html#cb55-8" tabindex="-1"></a>  <span class="co">#polys_df$min_abundance[i] &lt;- round(min(values(abudance_raster_IBA),na.rm = T))</span></span>
+<span id="cb55-9"><a href="seaward-extension-multiple-colonies.html#cb55-9" tabindex="-1"></a>  <span class="co">#polys_df$max_abundance[i] &lt;- round(max(values(abudance_raster_IBA),na.rm = T))</span></span>
+<span id="cb55-10"><a href="seaward-extension-multiple-colonies.html#cb55-10" tabindex="-1"></a></span>
+<span id="cb55-11"><a href="seaward-extension-multiple-colonies.html#cb55-11" tabindex="-1"></a>  <span class="co">#record all the criteria met (unique in each cells)</span></span>
+<span id="cb55-12"><a href="seaward-extension-multiple-colonies.html#cb55-12" tabindex="-1"></a>  <span class="co">#then 1 row of data per polgyons</span></span>
+<span id="cb55-13"><a href="seaward-extension-multiple-colonies.html#cb55-13" tabindex="-1"></a>  </span>
+<span id="cb55-14"><a href="seaward-extension-multiple-colonies.html#cb55-14" tabindex="-1"></a>  <span class="co">#subspecies can be used a regional IBA criteria</span></span>
+<span id="cb55-15"><a href="seaward-extension-multiple-colonies.html#cb55-15" tabindex="-1"></a>  <span class="co">#Olivia&#39;s current scripts don&#39;t use regional pop est. criteria</span></span>
+<span id="cb55-16"><a href="seaward-extension-multiple-colonies.html#cb55-16" tabindex="-1"></a>  <span class="co">#Add text to say that we aren&#39;t considering regional criteria, but they do exist</span></span>
+<span id="cb55-17"><a href="seaward-extension-multiple-colonies.html#cb55-17" tabindex="-1"></a>  </span>
+<span id="cb55-18"><a href="seaward-extension-multiple-colonies.html#cb55-18" tabindex="-1"></a>  <span class="co">#area</span></span>
+<span id="cb55-19"><a href="seaward-extension-multiple-colonies.html#cb55-19" tabindex="-1"></a>  <span class="co">#centroid</span></span>
+<span id="cb55-20"><a href="seaward-extension-multiple-colonies.html#cb55-20" tabindex="-1"></a>  <span class="co">#species</span></span>
+<span id="cb55-21"><a href="seaward-extension-multiple-colonies.html#cb55-21" tabindex="-1"></a>  </span>
+<span id="cb55-22"><a href="seaward-extension-multiple-colonies.html#cb55-22" tabindex="-1"></a>  </span>
+<span id="cb55-23"><a href="seaward-extension-multiple-colonies.html#cb55-23" tabindex="-1"></a>  <span class="co">#numbers are not in a good order</span></span>
+<span id="cb55-24"><a href="seaward-extension-multiple-colonies.html#cb55-24" tabindex="-1"></a>  <span class="co">#would be good to order north to south or clockwise, or left to right</span></span>
+<span id="cb55-25"><a href="seaward-extension-multiple-colonies.html#cb55-25" tabindex="-1"></a>  </span>
+<span id="cb55-26"><a href="seaward-extension-multiple-colonies.html#cb55-26" tabindex="-1"></a>  <span class="co">#add the polygon number to the plot</span></span>
+<span id="cb55-27"><a href="seaward-extension-multiple-colonies.html#cb55-27" tabindex="-1"></a>  </span>
+<span id="cb55-28"><a href="seaward-extension-multiple-colonies.html#cb55-28" tabindex="-1"></a><span class="co">#}</span></span></code></pre></div>
+<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="seaward-extension-multiple-colonies.html#cb56-1" tabindex="-1"></a><span class="co">#plot the final polygon with foraging radius approach</span></span>
+<span id="cb56-2"><a href="seaward-extension-multiple-colonies.html#cb56-2" tabindex="-1"></a><span class="co">#colony &lt;- subset(col_locs_proj,colony_name == df$colony_name[i]);colony</span></span>
+<span id="cb56-3"><a href="seaward-extension-multiple-colonies.html#cb56-3" tabindex="-1"></a><span class="co">#max_dist_buffer &lt;- st_buffer(col_locs_proj, dist = max_colony_radius) %&gt;%</span></span>
+<span id="cb56-4"><a href="seaward-extension-multiple-colonies.html#cb56-4" tabindex="-1"></a><span class="co">#    st_union()</span></span>
+<span id="cb56-5"><a href="seaward-extension-multiple-colonies.html#cb56-5" tabindex="-1"></a></span>
+<span id="cb56-6"><a href="seaward-extension-multiple-colonies.html#cb56-6" tabindex="-1"></a><span class="co">#plot the result</span></span>
+<span id="cb56-7"><a href="seaward-extension-multiple-colonies.html#cb56-7" tabindex="-1"></a><span class="co">#ggplot(IBA_poly_trim)+</span></span>
+<span id="cb56-8"><a href="seaward-extension-multiple-colonies.html#cb56-8" tabindex="-1"></a><span class="co">#  geom_sf(data = land, fill = &quot;grey&quot;, colour = NA)+</span></span>
+<span id="cb56-9"><a href="seaward-extension-multiple-colonies.html#cb56-9" tabindex="-1"></a><span class="co">#   geom_sf(fill = &quot;#fcba0350&quot;, color = &quot;red&quot;) </span></span>
+<span id="cb56-10"><a href="seaward-extension-multiple-colonies.html#cb56-10" tabindex="-1"></a></span>
+<span id="cb56-11"><a href="seaward-extension-multiple-colonies.html#cb56-11" tabindex="-1"></a><span class="co">#ggplot(max_dist_buffer)+</span></span>
+<span id="cb56-12"><a href="seaward-extension-multiple-colonies.html#cb56-12" tabindex="-1"></a><span class="co">#  geom_sf(fill = NA, col = &quot;blue&quot;)+</span></span>
+<span id="cb56-13"><a href="seaward-extension-multiple-colonies.html#cb56-13" tabindex="-1"></a><span class="co">#  geom_sf(data = IBA_poly_trim, fill = &quot;#fcba0350&quot;, col = &quot;red&quot;)+</span></span>
+<span id="cb56-14"><a href="seaward-extension-multiple-colonies.html#cb56-14" tabindex="-1"></a><span class="co">#  geom_sf(data = land, fill = &quot;grey&quot;, color = NA) +</span></span>
+<span id="cb56-15"><a href="seaward-extension-multiple-colonies.html#cb56-15" tabindex="-1"></a><span class="co">#  ggtitle(&quot;All colonies&quot;)</span></span>
+<span id="cb56-16"><a href="seaward-extension-multiple-colonies.html#cb56-16" tabindex="-1"></a></span>
+<span id="cb56-17"><a href="seaward-extension-multiple-colonies.html#cb56-17" tabindex="-1"></a><span class="co">#add metadata to the polygon before saving</span></span>
+<span id="cb56-18"><a href="seaward-extension-multiple-colonies.html#cb56-18" tabindex="-1"></a><span class="co">#add metadata to the plot</span></span>
+<span id="cb56-19"><a href="seaward-extension-multiple-colonies.html#cb56-19" tabindex="-1"></a></span>
+<span id="cb56-20"><a href="seaward-extension-multiple-colonies.html#cb56-20" tabindex="-1"></a><span class="co">#if different cells meet different criteria, we can draw a polygon around the entire area</span></span>
+<span id="cb56-21"><a href="seaward-extension-multiple-colonies.html#cb56-21" tabindex="-1"></a>  </span>
+<span id="cb56-22"><a href="seaward-extension-multiple-colonies.html#cb56-22" tabindex="-1"></a><span class="co">#Jono removed polygons that are less than 1 cell large - but for this we will not drop any polygons - instead add guidance that they should. </span></span>
+<span id="cb56-23"><a href="seaward-extension-multiple-colonies.html#cb56-23" tabindex="-1"></a></span>
+<span id="cb56-24"><a href="seaward-extension-multiple-colonies.html#cb56-24" tabindex="-1"></a><span class="co">#site_name &lt;- &quot;Spindrift Rocks Seaward Extension&quot;</span></span>
+<span id="cb56-25"><a href="seaward-extension-multiple-colonies.html#cb56-25" tabindex="-1"></a></span>
+<span id="cb56-26"><a href="seaward-extension-multiple-colonies.html#cb56-26" tabindex="-1"></a><span class="co">#plot the result</span></span>
+<span id="cb56-27"><a href="seaward-extension-multiple-colonies.html#cb56-27" tabindex="-1"></a><span class="co">#ggplot(IBA_poly_trim)+</span></span>
+<span id="cb56-28"><a href="seaward-extension-multiple-colonies.html#cb56-28" tabindex="-1"></a><span class="co">#  geom_sf(data = land, fill = &quot;grey&quot;, colour = NA)+</span></span>
+<span id="cb56-29"><a href="seaward-extension-multiple-colonies.html#cb56-29" tabindex="-1"></a><span class="co">#   geom_sf(fill = &quot;#fcba0350&quot;, color = &quot;red&quot;) +</span></span>
+<span id="cb56-30"><a href="seaward-extension-multiple-colonies.html#cb56-30" tabindex="-1"></a><span class="co">#   ggtitle(site_name)</span></span>
+<span id="cb56-31"><a href="seaward-extension-multiple-colonies.html#cb56-31" tabindex="-1"></a></span>
+<span id="cb56-32"><a href="seaward-extension-multiple-colonies.html#cb56-32" tabindex="-1"></a><span class="co">#save the polygon</span></span>
+<span id="cb56-33"><a href="seaward-extension-multiple-colonies.html#cb56-33" tabindex="-1"></a><span class="co">#st_write(IBA_poly_trim, paste0(getwd(),&quot;\\outputs\\IBA_polygon&quot;,gsub(&quot; #&quot;,&quot;_&quot;,site_name),&quot;.shp&quot;))</span></span></code></pre></div>
+</div>
+<div id="record-the-metadata-1" class="section level2 hasAnchor" number="21.12">
+<h2><span class="header-section-number">21.12</span> Record the metadata<a href="seaward-extension-multiple-colonies.html#record-the-metadata-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This is needed for the submission of the site in the WBDB.
+Many variables have already been input or generated by the script so far.
+Some need to be calculated:
+- Area
+- Coordinates of the mid point
+- Min/best/max estimate of number of mature individuals in the site (not pairs)</p>
+<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="seaward-extension-multiple-colonies.html#cb57-1" tabindex="-1"></a><span class="co">#Calculate the area of the site. </span></span>
+<span id="cb57-2"><a href="seaward-extension-multiple-colonies.html#cb57-2" tabindex="-1"></a><span class="co">#area_km2 &lt;- as.numeric(st_area(IBA_poly_trim)/1000000)</span></span>
+<span id="cb57-3"><a href="seaward-extension-multiple-colonies.html#cb57-3" tabindex="-1"></a><span class="co">#area_hectare &lt;- area_km2*100</span></span>
+<span id="cb57-4"><a href="seaward-extension-multiple-colonies.html#cb57-4" tabindex="-1"></a></span>
+<span id="cb57-5"><a href="seaward-extension-multiple-colonies.html#cb57-5" tabindex="-1"></a><span class="co">#Calculate the midpoint of the site and record in the different formats</span></span>
+<span id="cb57-6"><a href="seaward-extension-multiple-colonies.html#cb57-6" tabindex="-1"></a><span class="co">#midpoint &lt;- st_centroid(IBA_poly_trim) %&gt;%</span></span>
+<span id="cb57-7"><a href="seaward-extension-multiple-colonies.html#cb57-7" tabindex="-1"></a><span class="co">#  st_transform(4326) </span></span>
+<span id="cb57-8"><a href="seaward-extension-multiple-colonies.html#cb57-8" tabindex="-1"></a></span>
+<span id="cb57-9"><a href="seaward-extension-multiple-colonies.html#cb57-9" tabindex="-1"></a></span>
+<span id="cb57-10"><a href="seaward-extension-multiple-colonies.html#cb57-10" tabindex="-1"></a><span class="co">#lat_midpoint_decdeg &lt;- midpoint$geometry[[1]][2]</span></span>
+<span id="cb57-11"><a href="seaward-extension-multiple-colonies.html#cb57-11" tabindex="-1"></a><span class="co">#lat_mid_deg &lt;- gsub(&quot;-&quot;,&quot;&quot;,gsub(&quot;\\..*&quot;,&quot;&quot;,lat_midpoint_decdeg)) </span></span>
+<span id="cb57-12"><a href="seaward-extension-multiple-colonies.html#cb57-12" tabindex="-1"></a><span class="co">#lat_mid_decmin &lt;- as.numeric(paste0(&quot;0.&quot;,strsplit(as.character(lat_midpoint_#decdeg), split = &quot;[.]&quot;)[[1]][2]))*60</span></span>
+<span id="cb57-13"><a href="seaward-extension-multiple-colonies.html#cb57-13" tabindex="-1"></a><span class="co">#lat_mid_north_or_south &lt;- ifelse(substr(lat_midpoint_decdeg,1,1) == &quot;-&quot;, #&quot;South&quot;, &quot;North&quot;)</span></span>
+<span id="cb57-14"><a href="seaward-extension-multiple-colonies.html#cb57-14" tabindex="-1"></a><span class="co">#lon_midpoint_decdeg &lt;- midpoint$geometry[[1]][1]</span></span>
+<span id="cb57-15"><a href="seaward-extension-multiple-colonies.html#cb57-15" tabindex="-1"></a><span class="co">#lon_mid_deg &lt;- gsub(&quot;-&quot;,&quot;&quot;,gsub(&quot;\\..*&quot;,&quot;&quot;,lon_midpoint_decdeg)) </span></span>
+<span id="cb57-16"><a href="seaward-extension-multiple-colonies.html#cb57-16" tabindex="-1"></a><span class="co">#lon_mid_decmin &lt;- as.numeric(paste0(&quot;0.&quot;,strsplit(as.character(lon_midpoint_#decdeg), split = &quot;[.]&quot;)[[1]][2]))*60</span></span>
+<span id="cb57-17"><a href="seaward-extension-multiple-colonies.html#cb57-17" tabindex="-1"></a><span class="co">#lon_mid_north_or_south &lt;- ifelse(substr(lat_midpoint_decdeg,1,1) == &quot;-&quot;, #&quot;West&quot;, &quot;East&quot;)</span></span>
+<span id="cb57-18"><a href="seaward-extension-multiple-colonies.html#cb57-18" tabindex="-1"></a></span>
+<span id="cb57-19"><a href="seaward-extension-multiple-colonies.html#cb57-19" tabindex="-1"></a><span class="co">#collate the metadat already input or generate in this script</span></span>
+<span id="cb57-20"><a href="seaward-extension-multiple-colonies.html#cb57-20" tabindex="-1"></a><span class="co">#metadata &lt;- as.data.frame(cbind(site_name, area_km2, area_hectare, </span></span>
+<span id="cb57-21"><a href="seaward-extension-multiple-colonies.html#cb57-21" tabindex="-1"></a><span class="co">#                                lat_midpoint_decdeg, lat_mid_deg, #lat_mid_decmin, lat_mid_north_or_south, </span></span>
+<span id="cb57-22"><a href="seaward-extension-multiple-colonies.html#cb57-22" tabindex="-1"></a><span class="co">#                                lon_midpoint_decdeg, lon_mid_deg, #lon_mid_decmin, lon_mid_north_or_south,</span></span>
+<span id="cb57-23"><a href="seaward-extension-multiple-colonies.html#cb57-23" tabindex="-1"></a><span class="co">#                                common_name, scientific_name, colony_size, </span></span>
+<span id="cb57-24"><a href="seaward-extension-multiple-colonies.html#cb57-24" tabindex="-1"></a><span class="co">#                                best_global_estimate, red_list_category, #red_list_criteria))</span></span>
+<span id="cb57-25"><a href="seaward-extension-multiple-colonies.html#cb57-25" tabindex="-1"></a></span>
+<span id="cb57-26"><a href="seaward-extension-multiple-colonies.html#cb57-26" tabindex="-1"></a><span class="co">#write.csv(metadata, paste0(&quot;IBA_metadata_&quot;,gsub(&quot; &quot;,&quot;_&quot;,site_name),&quot;.csv&quot;),</span></span>
+<span id="cb57-27"><a href="seaward-extension-multiple-colonies.html#cb57-27" tabindex="-1"></a><span class="co">#          row.names = F)</span></span></code></pre></div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="seaward-extension-single-colony.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="tracking-data-brief-introduction.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
